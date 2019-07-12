@@ -1,5 +1,6 @@
 ---
-title: This will be used as the title-tag of the page head
+title: Quick Start
+nav_order: 1
 ---
 
 # Quick Start

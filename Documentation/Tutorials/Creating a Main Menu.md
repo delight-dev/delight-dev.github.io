@@ -1,6 +1,16 @@
+---
+title: Creating a Main Menu
+nav_order: 2
+---
+
 # Creating a Main Menu
 
 [TOC]
+
+```
+1. TOC
+{:toc}
+```
 
 ## Introduction
 

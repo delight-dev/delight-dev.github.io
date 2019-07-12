@@ -1,4 +1,12 @@
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
-title: Delight
-description: test description
+search_enabled: true
+title: "Delight"
+description: "test description"
+
+# Aux links for the upper right navigation
+aux_links:
+    "Unity Asset Store":
+      - "//github.com/pmarsceill/just-the-docs"
+    "Chat":
+      - "//github.com/pmarsceill/just-the-docs"
