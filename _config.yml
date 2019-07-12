@@ -1,5 +1,5 @@
 theme: minima
 title: Delight
 description: Description of project
-logo: logo.png
-show_downloads: "true"
+header_pages:
+  - Quick Start.md
