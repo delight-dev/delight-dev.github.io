@@ -1,3 +1,2 @@
-remote-theme: pmarsceill/just-the-docs
-title: Delight
-description: Description of Project
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "dark"
