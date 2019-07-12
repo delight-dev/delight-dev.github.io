@@ -2,4 +2,4 @@ theme: minima
 title: Delight
 description: Description of project
 header_pages:
-  - Quick Start.md
+  - Documentation/Tutorials/Quick Start.md
