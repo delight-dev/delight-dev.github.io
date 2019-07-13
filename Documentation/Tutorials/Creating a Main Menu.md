@@ -108,11 +108,13 @@ namespace Delight
     {
         public void Play(PointerEventData pointerData)
         {
+            // comment
             Debug.Log("Play clicked");
         }
 
         public void Options(PointerEventData pointerData)
         {
+            Test = "test";
             Debug.Log("Options clicked");
         }
 
