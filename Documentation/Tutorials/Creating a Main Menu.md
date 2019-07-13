@@ -86,7 +86,7 @@ You can also add your own custom dependency properties to your view which we'll 
 
 Open the `MainMenu` view and add the following click-handlers to the XML:
 
-{: .label .xml-file }
+{: .xml-file }
 
 MainMenu.xml
 
