@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 8
 ---
+
 # ScrollableRegion
+
 Based on [UICanvas](UICanvas)
+
 ## Description
+
 Scrollable region.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | AdditionalShaderChannels | [AdditionalCanvasShaderChannels]("http://docs.unity3d.com/ScriptReference/AdditionalCanvasShaderChannels.html") |  |

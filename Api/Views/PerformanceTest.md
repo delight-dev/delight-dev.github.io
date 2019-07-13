@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 6
 ---
+
 # PerformanceTest
+
 Based on [UIView](UIView)
+
 ## Description
+
 PerformanceTest view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

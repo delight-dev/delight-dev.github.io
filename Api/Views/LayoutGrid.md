@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 4
 ---
+
 # Grid
+
 Based on [UIImageView](UIImageView)
+
 ## Description
+
 Grid view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

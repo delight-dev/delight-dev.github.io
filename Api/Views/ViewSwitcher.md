@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 11
 ---
+
 # ViewSwitcher
+
 Based on [UIView](UIView)
+
 ## Description
+
 Provides logic for switching between views.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

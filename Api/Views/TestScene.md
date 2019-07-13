@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 9
 ---
+
 # TestScene
+
 Based on [LayoutRoot](LayoutRoot)
+
 ## Description
+
 TestScene view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | AdditionalShaderChannels | [AdditionalCanvasShaderChannels]("http://docs.unity3d.com/ScriptReference/AdditionalCanvasShaderChannels.html") |  |

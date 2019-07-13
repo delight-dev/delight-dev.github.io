@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 1
 ---
+
 # Button
+
 Based on [UIImageView](UIImageView)
+
 ## Description
-Button view. 
+
+Button view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |
@@ -63,24 +69,3 @@ Button view.
 | ToggleValue | bool |  |
 | UseFastShader | bool |  |
 | Width | [ElementSize](ElementSize) |  |
-
-## Table 2 test
-
-| Name | Type | Description |
-| --- | --- | --- |
-| Alignment | [ElementAlignment](ElementAlignment) | test |
-| Alpha | float | test |
-
-## Table 3 test
-
-| Name | Type | Description |
-| --- | --- | --- |
-| Alignment | [ElementAlignment](ElementAlignment) |  |
-| Alpha | float | test |
-
-## Table 4 test
-
-| Name | Type | Description |
-| --- | --- | --- |
-| Alignment | test | test |
-| Alpha | float | test |

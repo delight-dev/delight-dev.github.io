@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 3
 ---
+
 # Group
+
 Based on [UIImageView](UIImageView)
+
 ## Description
+
 Group view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

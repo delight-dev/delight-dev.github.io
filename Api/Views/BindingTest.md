@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 0
 ---
+
 # BindingTest
+
 Based on [UIView](UIView)
+
 ## Description
+
 Binding test view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

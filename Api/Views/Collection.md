@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 2
 ---
+
 # Collection
+
 Based on [UIImageView](UIImageView)
+
 ## Description
+
 Generic collection view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | Alignment | [ElementAlignment](ElementAlignment) |  |

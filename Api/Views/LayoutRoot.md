@@ -4,11 +4,17 @@ parent: Views
 grand_parent: API
 nav_order: 5
 ---
+
 # LayoutRoot
+
 Based on [UICanvas](UICanvas)
+
 ## Description
+
 LayoutRoot view.
+
 ## Dependency Properties
+
 | Name | Type | Description |
 | --- | --- | --- |
 | AdditionalShaderChannels | [AdditionalCanvasShaderChannels]("http://docs.unity3d.com/ScriptReference/AdditionalCanvasShaderChannels.html") |  |
