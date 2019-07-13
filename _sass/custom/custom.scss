@@ -13,23 +13,23 @@ $body-font-family: "segoe ui", -apple-system, BlinkMacSystemFont, "helvetica neu
 // //
 //
 $white: #fff;
-//
-// $grey-dk-000: #959396;
-// $grey-dk-100: #5c5962;
-// $grey-dk-200: #44434d;
-// $grey-dk-250: #302d36 !default;
-// $grey-dk-300: #27262b;
-//
-// $grey-lt-000: #f5f6fa;
-// $grey-lt-100: #eeebee;
-// $grey-lt-200: #ecebed;
-// $grey-lt-300: #e6e1e8;
-//
+
+$grey-dk-000: #959396;
+$grey-dk-100: #5c5962;
+$grey-dk-200: #44434d;
+$grey-dk-250: #302d36 !default;
+$grey-dk-300: #27262b;
+
+$grey-lt-000: #f5f6fa;
+$grey-lt-100: #eeebee;
+$grey-lt-200: #ecebed;
+$grey-lt-300: #e6e1e8;
+
 $purple-000: #66a4ff;
-// $purple-000: #66a4ff;
-// $purple-100: #5e41d0;
-// $purple-200: #4e26af;
-// $purple-300: #381885;
+$purple-000: #66a4ff;
+$purple-100: #5e41d0;
+$purple-200: #4e26af;
+$purple-300: #381885;
 //
 // $blue-000: #2c84fa;
 // $blue-100: #2869e6;
@@ -43,16 +43,16 @@ $purple-000: #66a4ff;
 
 //$link-000: #66a4ff;
 //
-// $body-background-color: $white !default;
+$body-background-color: $white !default;
 $sidebar-color: $white !default;
-// $sidebar-color: $grey-lt-000 !default;
-// $code-background-color: $grey-lt-000 !default;
-// $body-text-color: $grey-dk-100 !default;
-// $body-heading-color: $grey-dk-300 !default;
-// $nav-child-link-color: $grey-dk-100 !default;
+//$sidebar-color: $grey-lt-000 !default;
+$code-background-color: $grey-lt-000 !default;
+$body-text-color: $grey-dk-100 !default;
+$body-heading-color: $grey-dk-300 !default;
+$nav-child-link-color: $grey-dk-100 !default;
 $link-color: $purple-000 !default;
-// $btn-primary-color: $purple-100 !default;
-// $base-button-color: #f7f7f7 !default;
+$btn-primary-color: $purple-100 !default;
+$base-button-color: #f7f7f7 !default;
 //
 // //
 // // Media queries in pixels
