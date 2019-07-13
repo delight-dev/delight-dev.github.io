@@ -1,6 +1,3 @@
----
-title: Home
----
 # About
 
 Overview of the framework. 
