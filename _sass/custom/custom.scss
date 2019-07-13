@@ -12,7 +12,7 @@ $body-font-family: "segoe ui", -apple-system, BlinkMacSystemFont, "helvetica neu
 // // Colors
 // //
 //
-// $white: #fff;
+$white: #fff;
 //
 // $grey-dk-000: #959396;
 // $grey-dk-100: #5c5962;
@@ -25,7 +25,7 @@ $body-font-family: "segoe ui", -apple-system, BlinkMacSystemFont, "helvetica neu
 // $grey-lt-200: #ecebed;
 // $grey-lt-300: #e6e1e8;
 //
-// $purple-000: #7253ed;
+// $purple-000: #66a4ff;
 // $purple-100: #5e41d0;
 // $purple-200: #4e26af;
 // $purple-300: #381885;
@@ -39,15 +39,17 @@ $body-font-family: "segoe ui", -apple-system, BlinkMacSystemFont, "helvetica neu
 // $green-100: #11b584;
 // $green-200: #009c7b;
 // $green-300: #026e57;
+
+$link-000: #66a4ff;
 //
 // $body-background-color: $white !default;
+$sidebar-color: $white !default;
 // $sidebar-color: $grey-lt-000 !default;
 // $code-background-color: $grey-lt-000 !default;
-
 // $body-text-color: $grey-dk-100 !default;
 // $body-heading-color: $grey-dk-300 !default;
 // $nav-child-link-color: $grey-dk-100 !default;
-// $link-color: $purple-000 !default;
+$link-color: link-000 !default;
 // $btn-primary-color: $purple-100 !default;
 // $base-button-color: #f7f7f7 !default;
 //
@@ -109,8 +111,6 @@ $body-font-family: "segoe ui", -apple-system, BlinkMacSystemFont, "helvetica neu
 // $gutter-spacing: $sp-6;
 // $gutter-spacing-sm: $sp-4;
 // $nav-width: 232px;
-$nav-width: 464px;
-$content-width: 568px;
 // $content-width: 800px;
 //
 // $media-queries: (
