@@ -26,6 +26,8 @@ pre.highlight {
 .highlighter-rouge {
 	margin-bottom: $sp-3;
 	overflow: hidden;
+	background-color: $code-background-color;
+	border: $border $border-color;
 	border-radius: $border-radius;
 	color: #404040;
 }
