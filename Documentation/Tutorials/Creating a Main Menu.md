@@ -82,15 +82,15 @@ You can also add your own custom dependency properties to your view which we'll 
 
 Open the `MainMenu` view and add the following click-handlers to the XML:
 
-*MainMenu.xml*
+*MainMenu.xml*{: .label }
 
 ```xml
 <MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="Delight ../Delight.xsd">
   <Group Spacing="10">
-    <Button Text="Play" [[Click="StartGame"]] />
-    <Button Text="Options" [[Click="Options"]] />
-    <Button Text="Quit" [[Click="Quit"]] />
+    <Button Text="Play" Click="StartGame"{:.label} />
+    <Button Text="Options" Click="Options" />
+    <Button Text="Quit" Click="Quit" />
   </Group>
 </MainMenu>
 
