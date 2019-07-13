@@ -9,13 +9,13 @@ nav_order: 2
 1. TOC
 {:toc}
 
-# Component-oriented architecture
-# Views
-# Data-binding
-# Data schemas
-# Styling
-# On-demand loading
-# Localization
-# Layout
-# Dynamic lists
-# Animations
+## Component-oriented architecture
+## Views
+## Data-binding
+## Data schemas
+## Styling
+## On-demand loading
+## Localization
+## Layout
+## Dynamic lists
+## Animations
