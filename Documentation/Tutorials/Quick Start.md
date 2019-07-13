@@ -1,3 +1,7 @@
+---
+title: Quick Start
+nav_order: 1
+---
 # Quick Start
 
 1. Import the [Delight unity package](link-to-package.html) into your Unity project. It will create two folders:

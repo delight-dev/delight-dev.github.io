@@ -1,8 +1,9 @@
 ---
 title: Creating a Main Menu
-nav_order: 2
+parent: Tutorials
+has_children: false
+nav_order: 1
 ---
-
 # Creating a Main Menu
 
 1. TOC
