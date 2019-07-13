@@ -14,9 +14,9 @@ nav_order: 1
 
    Press enter and open the newly created `NewScene.xml`  XML file and edit it so it contains the following content:
 
-   {: .label . xml-file }
+   {: .xml-file }
 
-   *NewScene.xml*
+   NewScene.xml
 
    ```xml
    <NewScene xmlns="Delight" 
