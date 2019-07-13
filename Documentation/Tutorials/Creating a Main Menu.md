@@ -21,7 +21,7 @@ We'll start by creating a Main Menu scene. Right-click in your project hierarchy
 
 Open the scene `MainMenuScene.xml` and add a `MainMenu` view to it:
 
-{: .label .xml-file }
+{: .xml-file }
 
 MainMenuScene.xml
 
@@ -47,7 +47,7 @@ You can now open `MainMenuScene.unity` which you can run throughout the tutorial
 
 Open the `MainMenu` view and edit it so it contains the following:
 
-{: .label .xml-file }
+{: .xml-file }
 
 MainMenu.xml
 
@@ -106,7 +106,7 @@ MainMenu.xml
 
 This will generate the click handlers in the code-behind. Modify the handlers so they log messages:
 
-{: .label .cs-file }
+{: .cs-file }
 
 MainMenu.cs
 
