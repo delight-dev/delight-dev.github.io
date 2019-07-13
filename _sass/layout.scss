@@ -69,7 +69,7 @@
 	}
 
 	@include mq(lg) {
-		padding-left: $gutter-spacing * 10;
+		padding-left: $gutter-spacing * 2;
 		margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
 	}
 }
