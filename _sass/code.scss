@@ -46,7 +46,8 @@ pre.highlight {
 }
 // generic //
 .highlight .k {
-	color: #3b9bff;
+	//color: #3b9bff;
+	color: #0054ff;
 }
 // keyword //
 .highlight .l {
@@ -54,7 +55,8 @@ pre.highlight {
 }
 // literal //
 .highlight .n {
-	color: #93a1a1;
+	//color: #93a1a1;
+	color: #ff4879;
 }
 // name //
 .highlight .o {
@@ -160,13 +162,13 @@ pre.highlight {
 }
 // literal.number //
 .highlight .s {
-	color: #ff4879;
-	//color: #3b9bff;
+	//color: #ff4879;
+	color: #3b9bff;
 }
 // literal.string //
 .highlight .na {
-	color: #3b9bff;
-	//color: #ff4879;
+	//color: #3b9bff;
+	color: #ff4879;
 }
 // name.attribute //
 .highlight .nb {
