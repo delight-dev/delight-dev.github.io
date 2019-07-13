@@ -111,6 +111,12 @@
 	}
 }
 
+.site-title {
+	background-image: url(logo-small.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
 .navigation {
 	@include mq(md) {
 		padding-top: $sp-8;
