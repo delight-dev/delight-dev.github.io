@@ -24,7 +24,7 @@
 	margin-top: $sp-4;
 	margin-bottom: 0;
 	list-style: none;
-	font-size: 18px;
+	font-size: 16px;
 
 	@include mq(md) {
 		margin-top: 0;
@@ -41,7 +41,7 @@
 
 	.navigation-list-item {
 		position: relative;
-		font-size: 18px;
+		font-size: 16px;
 
 		&::before {
 			position: absolute;
@@ -62,7 +62,7 @@
 .navigation-list-item {
 	@include fs-4;
 	margin: 0;
-	font-size: 18px;
+	font-size: 16px;
 
 	@include mq(md) {
 		@include fs-3;
@@ -83,7 +83,7 @@
 	display: block;
 	padding-top: $sp-1;
 	padding-bottom: $sp-1;
-	font-size: 18px;
+	font-size: 16px;
 
 	&.active {
 		font-weight: 600;
