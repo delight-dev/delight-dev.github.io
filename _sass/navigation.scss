@@ -41,7 +41,6 @@
 
 	.navigation-list-item {
 		position: relative;
-		font-size: 18px;
 
 		&::before {
 			position: absolute;
@@ -82,6 +81,7 @@
 	display: block;
 	padding-top: $sp-1;
 	padding-bottom: $sp-1;
+	font-size: 18px;
 
 	&.active {
 		font-weight: 600;
