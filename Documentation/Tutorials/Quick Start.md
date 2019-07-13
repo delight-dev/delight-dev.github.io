@@ -4,11 +4,7 @@ nav_order: 1
 ---
 # Quick Start
 
-1. Import the [Delight unity package](link-to-package.html) into your Unity project. It will create two folders:
-
-   `Content/` - your project's content
-
-   `Delight/` - framework source and content
+1. Import the [Delight unity package](link-to-package.html) into your Unity project. 
 
    
 
@@ -16,7 +12,9 @@ nav_order: 1
 
    `Create -> Delight Scene`. 
 
-   Press enter to create the scene `NewScene`. Open the newly created `NewScene.xml`  XML file and edit it so it contains the following content:
+   Press enter and open the newly created `NewScene.xml`  XML file and edit it so it contains the following content:
+
+   {: .label . xml-file }
 
    *NewScene.xml*
 
@@ -38,5 +36,5 @@ Congratulations, you've created your first scene in Delight :).
 
 ![](awesome.png)
 
-For more information check out the [documentation](Docs.html). A good start would be checking [Creating a Main Menu](Creating a Main Menu.html) for a practical introduction and [Basic Overview](Basic Overview.html).
+Check out the [Tutorials](Tutorials) and get started creating some awesome UI components.
 
