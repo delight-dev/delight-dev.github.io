@@ -21,7 +21,9 @@ We'll start by creating a Main Menu scene. Right-click in your project hierarchy
 
 Open the scene `MainMenuScene.xml` and add a `MainMenu` view to it:
 
-*MainMenuScene.xml*
+{: .label .label-red }
+
+MainMenuScene.xml
 
 ```xml
 <MainMenuScene xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Delight ../Delight.xsd">
@@ -45,7 +47,9 @@ You can now open `MainMenuScene.unity` which you can run throughout the tutorial
 
 Open the `MainMenu` view and edit it so it contains the following:
 
-*MainMenu.xml*
+{: .label .label-red }
+
+MainMenu.xml
 
    ```xml
 <MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -82,7 +86,7 @@ You can also add your own custom dependency properties to your view which we'll 
 
 Open the `MainMenu` view and add the following click-handlers to the XML:
 
-{: .label }
+{: .label .label-red }
 
 MainMenu.xml
 
@@ -102,7 +106,9 @@ MainMenu.xml
 
 This will generate the click handlers in the code-behind. Modify the handlers so they log messages:
 
-*MainMenu.cs*
+{: .label }
+
+MainMenu.cs
 
 ```c#
 namespace Delight
