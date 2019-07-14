@@ -3,6 +3,8 @@ color_scheme: "light"
 search_enabled: true
 title: "Delight"
 description: "test description"
+kramdown:
+  parse_block_html: true
 
 # Aux links for the upper right navigation
 aux_links:
