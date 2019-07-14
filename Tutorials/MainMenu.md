@@ -11,7 +11,7 @@ nav_order: 1
 
 ## Introduction
 
-This tutorial serves as a practical introduction to the framework by showing you how to create a main menu. Be sure to also check out the [Quick Start](../Index.html#quick-start)  guide on how to get started and the [Feature Overview](FeatureOverview) to get a conceptual overview of the framework. 
+This tutorial serves as a practical introduction to the framework by showing you how to create a main menu. Be sure to also check out the [Quick Start](../index.html#quick-start)  guide on how to get started and the [Feature Overview](FeatureOverview) to get a conceptual overview of the framework. 
 
 
 
@@ -35,11 +35,13 @@ You've now created a scene that is set up to display a single view, the `MainMen
 
 ![](main-menu-files.png)
 
-{{Note you can also manually create new views by choosing `Create -> Delight View` }}
+{: .info-box }
+Note you can also manually create new views by choosing `Create -> Delight View`
 
 You can now open `MainMenuScene.unity` which you can run throughout the tutorial to see the main menu taking shape.
 
-{{All content files, like the XML files MainMenuScene.xml and MainMenu.xml are automatically processed by the framework as they are changed (if the editor is open). To manually tell the framework to process all content, press the "Reload All" button in the Delight window (Window -> Delight). Also note that files with the "_g" postfix are generated (and overwritten) when the XML files are processed. }}
+{: .info-box }
+All content files, like the XML files MainMenuScene.xml and MainMenu.xml are automatically processed by the framework as they are changed (if the editor is open). To manually tell the framework to process all content, press the "Reload All" button in the Delight window (Window -> Delight). Also note that files with the "_g" postfix are generated (and overwritten) when the XML files are processed.
 
 
 
@@ -62,9 +64,9 @@ MainMenu.xml
 </MainMenu>
    ```
 
-The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](~/Api/Views/Button) views that are arranged vertically by a [Group](Group) view. The [API](//Api/Api) contains detailed information about all the 40+ views included in the framework.
+The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](../Api/Views/Button) views that are arranged vertically by a [Group](../Api/Views/Group) view. The [API](../Api) contains detailed information about all the 40+ views included in the framework.
 
-`Spacing="10"` and `Text="Play"` are [dependency properties](link-to-dependency-properties-in-overview) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
+`Spacing="10"` and `Text="Play"` are [dependency properties](FeatureOverview#dependency-properties) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
 
 Different views have different properties but most views are based on the `UIView` which has the following properties that are used to do layout:
 
@@ -102,7 +104,8 @@ MainMenu.xml
 
 ```
 
-{{`Click` is one of the standard view actions that can be set on all views (others include `Drag`, `MouseEnter`, `MouseUp`, `Scroll`, etc.). }}
+{: .info-box }
+`Click` is one of the standard view actions that can be set on all views (others include `Drag`, `MouseEnter`, `MouseUp`, `Scroll`, etc.).
 
 This will generate the click handlers in the code-behind. Modify the handlers so they log messages:
 
@@ -117,13 +120,11 @@ namespace Delight
     {
         public void Play(PointerEventData pointerData)
         {
-            // comment
             Debug.Log("Play clicked");
         }
 
         public void Options(PointerEventData pointerData)
         {
-            Test = "test";
             Debug.Log("Options clicked");
         }
 
