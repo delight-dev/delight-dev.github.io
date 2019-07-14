@@ -14,7 +14,7 @@ Delight is an open source component-oriented framework for Unity, mainly centere
 
 ## Quick Start
 
-1. Import the [Delight unity package](link-to-package.html) into your Unity project. 
+1. Import the [Delight unity package](https://assetstore.unity.com/packages/slug/150494) into your Unity project. 
 
 
 
