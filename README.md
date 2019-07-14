@@ -10,7 +10,7 @@ Delight is an open source component-oriented framework for Unity, mainly centere
 
 ## Contributing
 
-Feel free to contribute content to the website - tutorials, extras, corrections, anything you feel will benefit the community.
+Feel free to contribute content to the website - tutorials, extras, corrections, anything you feel will benefit the community. For minor contributions, such as typos and information, open a pull request. If your contribution is larger, such as showcasing adding extra content, consider opening an issue first to engage the community. If you want to contribute to the Delight framework check out the [Delight GitHub](https://github.com/delight-dev/Delight). 
 
 ## License
 
