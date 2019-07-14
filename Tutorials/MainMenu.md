@@ -64,7 +64,7 @@ MainMenu.xml
 </MainMenu>
    ```
 
-The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](../Api/Views/Button) views that are arranged vertically by a [Group](../Api/Views/Group) view. The [API](../Api) contains detailed information about all the 40+ views included in the framework.
+The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](../Api/Views/Button) views that are arranged vertically by a [Group](../Api/Views/Group) view. The [API](../Api/Views/Views) contains detailed information about all the 40+ views included in the framework.
 
 `Spacing="10"` and `Text="Play"` are [dependency properties](FeatureOverview#dependency-properties) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
 
