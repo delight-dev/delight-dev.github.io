@@ -30,8 +30,8 @@ Delight is an open source component-oriented framework for Unity, mainly centere
 
    ```xml
    <NewScene xmlns="Delight" 
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="Delight ../Delight.xsd">
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="Delight ../Delight.xsd">
      
        <Label Text="Awesome!" />
    
@@ -52,4 +52,4 @@ Check out the [Tutorials](Tutorials/Tutorials) and get started creating some awe
 
 ## News
 
-Links to latest announcements.
+{% include recent-posts.html %}
