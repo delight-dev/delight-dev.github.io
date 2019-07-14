@@ -44,9 +44,9 @@ Delight is an open source component-oriented framework for Unity, mainly centere
 
 Congratulations, you've created your first scene in Delight :). 
 
-![](awesome.png)
+![](Tutorials/awesome.png)
 
-Check out the [Tutorials](Tutorials) and get started creating some awesome UI components.
+Check out the [Tutorials](Tutorials/Tutorials) and get started creating some awesome UI components.
 
 
 
