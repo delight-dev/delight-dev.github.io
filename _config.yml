@@ -2,14 +2,13 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
 title: "Delight"
-description: "test description"
 kramdown:
   parse_block_html: true
 
 # Aux links for the upper right navigation
 aux_links:
     "Unity Asset Store":
-      - "//github.com/pmarsceill/just-the-docs"
+      - "//assetstore.unity.com/packages/slug/150494"
     "GitHub":
       - "//github.com/delight-dev/Delight"
     "Chat":
