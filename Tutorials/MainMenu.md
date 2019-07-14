@@ -11,7 +11,7 @@ nav_order: 1
 
 ## Introduction
 
-This tutorial serves as a practical introduction to the framework by showing you how to create a main menu. Be sure to also check out the [Quick Start](Index.html#quick-start)  guide on how to get started and the [Feature Overview](FeatureOverview) to get a conceptual overview of the framework. 
+This tutorial serves as a practical introduction to the framework by showing you how to create a main menu. Be sure to also check out the [Quick Start](../Index.html#quick-start)  guide on how to get started and the [Feature Overview](FeatureOverview) to get a conceptual overview of the framework. 
 
 
 
@@ -62,7 +62,7 @@ MainMenu.xml
 </MainMenu>
    ```
 
-The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](Api/Views/Button) views that are arranged vertically by a [Group](Api/Views/Group) view. The [API](Api) contains detailed information about all the 40+ views included in the framework.
+The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](~/Api/Views/Button) views that are arranged vertically by a [Group](Group) view. The [API](//Api/Api) contains detailed information about all the 40+ views included in the framework.
 
 `Spacing="10"` and `Text="Play"` are [dependency properties](link-to-dependency-properties-in-overview) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
 
