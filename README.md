@@ -1,3 +1,6 @@
+---
+title: "Home"
+---
 # Create UI components in Unity
 
 {: .fs-6 .fw-300} 
