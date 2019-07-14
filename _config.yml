@@ -8,5 +8,7 @@ description: "test description"
 aux_links:
     "Unity Asset Store":
       - "//github.com/pmarsceill/just-the-docs"
+    "GitHub":
+      - "//github.com/delight-dev/Delight"
     "Chat":
-      - "//github.com/pmarsceill/just-the-docs"
+      - "//gitter.im/DelightChat/community/~chat#share"
