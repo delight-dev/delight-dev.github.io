@@ -2,7 +2,7 @@
 title: Collection
 parent: Views
 grand_parent: API
-nav_order: 2
+nav_order: 3
 ---
 
 # Collection
@@ -11,7 +11,7 @@ Based on [UIImageView](UIImageView)
 
 ## Description
 
-Generic collection view.
+Generic collection view. Used by views such as Lists and TabPanel that wants to display dynamic content through the Item property.
 
 ## Dependency Properties
 

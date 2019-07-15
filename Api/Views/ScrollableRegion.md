@@ -2,7 +2,7 @@
 title: ScrollableRegion
 parent: Views
 grand_parent: API
-nav_order: 8
+nav_order: 20
 ---
 
 # ScrollableRegion
@@ -11,7 +11,7 @@ Based on [UICanvas](UICanvas)
 
 ## Description
 
-Scrollable region.
+Presents scrollable content with optional scrollbars. Behaves similar to the UGUI Panel component.
 
 ## Dependency Properties
 

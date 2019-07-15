@@ -2,7 +2,7 @@
 title: ViewSwitcher
 parent: Views
 grand_parent: API
-nav_order: 11
+nav_order: 32
 ---
 
 # ViewSwitcher
@@ -11,7 +11,7 @@ Based on [UIView](UIView)
 
 ## Description
 
-Provides logic for switching between views.
+Provides logic for switching between mutliple child views and displaying one at a time. By default the views are loaded when they are displayed, behavior can be changed through the SwitchMode property.
 
 ## Dependency Properties
 

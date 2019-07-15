@@ -2,11 +2,11 @@
 title: INotifyCollectionChanged
 parent: Types
 grand_parent: API
-nav_order: 47
+nav_order: 50
 ---
 
 # INotifyCollectionChanged
 
 ## Description
 
-Base class for bindable objects.
+Interface for collections notifying listeners the collection has been changed.

@@ -2,11 +2,11 @@
 title: AssetObject<T>
 parent: Types
 grand_parent: API
-nav_order: 4
+nav_order: 5
 ---
 
 # AssetObject<T>
 
 ## Description
 
-Base class for unity asset objects.
+Generic base class for unity asset object managers. Loads/unloads the asset on-demand as it's requested by views.

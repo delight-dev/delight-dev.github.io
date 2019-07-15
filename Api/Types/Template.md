@@ -2,11 +2,11 @@
 title: Template
 parent: Types
 grand_parent: API
-nav_order: 73
+nav_order: 84
 ---
 
 # Template
 
 ## Description
 
-View data template.
+View data template. A data template is associated with a view type and allows for the framework to keep track of an hierarchy of default values. It allows for values in dependenc properties to be stored per type rather than instance.

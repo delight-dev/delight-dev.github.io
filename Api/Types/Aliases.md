@@ -2,7 +2,7 @@
 title: Aliases
 parent: Types
 grand_parent: API
-nav_order: 0
+nav_order: 1
 ---
 
 # Aliases

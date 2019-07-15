@@ -2,7 +2,7 @@
 title: BatchedCollectionChangedEventArgs
 parent: Types
 grand_parent: API
-nav_order: 10
+nav_order: 12
 ---
 
 # BatchedCollectionChangedEventArgs

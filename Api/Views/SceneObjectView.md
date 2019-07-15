@@ -2,7 +2,7 @@
 title: SceneObjectView
 parent: Views
 grand_parent: API
-nav_order: 7
+nav_order: 19
 ---
 
 # SceneObjectView
@@ -11,7 +11,7 @@ Based on [View](View)
 
 ## Description
 
-Scene object view.
+Base class for all views that has a game object in the scene.
 
 ## Dependency Properties
 

@@ -2,7 +2,7 @@
 title: LayoutRoot
 parent: Views
 grand_parent: API
-nav_order: 5
+nav_order: 11
 ---
 
 # LayoutRoot
@@ -11,7 +11,7 @@ Based on [UICanvas](UICanvas)
 
 ## Description
 
-LayoutRoot view.
+Represents a layout root canvas under which all UI views must reside.
 
 ## Dependency Properties
 

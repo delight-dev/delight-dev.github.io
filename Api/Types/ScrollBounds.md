@@ -2,7 +2,7 @@
 title: ScrollBounds
 parent: Types
 grand_parent: API
-nav_order: 66
+nav_order: 72
 ---
 
 # ScrollBounds

@@ -2,7 +2,7 @@
 title: CellIndex
 parent: Types
 grand_parent: API
-nav_order: 18
+nav_order: 20
 ---
 
 # CellIndex

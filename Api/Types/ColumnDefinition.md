@@ -2,7 +2,7 @@
 title: ColumnDefinition
 parent: Types
 grand_parent: API
-nav_order: 24
+nav_order: 26
 ---
 
 # ColumnDefinition

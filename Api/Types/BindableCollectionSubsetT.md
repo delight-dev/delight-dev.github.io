@@ -2,11 +2,11 @@
 title: BindableCollectionSubset<T>
 parent: Types
 grand_parent: API
-nav_order: 13
+nav_order: 15
 ---
 
 # BindableCollectionSubset<T>
 
 ## Description
 
-Contains a subset of items from a parent collection.
+Contains a subset of items from a parent bindable collection. It's automatically updated when the parent collection changes and allows for things like filtered collections.

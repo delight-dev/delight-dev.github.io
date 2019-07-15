@@ -2,7 +2,7 @@
 title: Grid
 parent: Views
 grand_parent: API
-nav_order: 4
+nav_order: 10
 ---
 
 # Grid
@@ -11,7 +11,7 @@ Based on [UIImageView](UIImageView)
 
 ## Description
 
-Grid view.
+View that displays static content in a grid layout (note has the alias Grid in XML).
 
 ## Dependency Properties
 

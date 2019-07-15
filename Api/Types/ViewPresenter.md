@@ -2,11 +2,11 @@
 title: ViewPresenter
 parent: Types
 grand_parent: API
-nav_order: 86
+nav_order: 102
 ---
 
 # ViewPresenter
 
 ## Description
 
-Presents a view in the scene.
+MonoBehavior for presenting a view in the scene. Used to e.g. create and load the main scene view.

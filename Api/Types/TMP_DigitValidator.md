@@ -2,7 +2,7 @@
 title: TMP_DigitValidator
 parent: Types
 grand_parent: API
-nav_order: 75
+nav_order: 87
 ---
 
 # TMP_DigitValidator

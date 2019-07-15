@@ -2,11 +2,11 @@
 title: INotifyPropertyChanged
 parent: Types
 grand_parent: API
-nav_order: 48
+nav_order: 51
 ---
 
 # INotifyPropertyChanged
 
 ## Description
 
-Base class for bindable objects.
+Interface for objects notifying listeners a property has been changed.

@@ -2,7 +2,7 @@
 title: Group
 parent: Views
 grand_parent: API
-nav_order: 3
+nav_order: 6
 ---
 
 # Group
@@ -11,7 +11,7 @@ Based on [UIImageView](UIImageView)
 
 ## Description
 
-Group view.
+The group is used to spacially arrange child views next to each other either horizontally or vertically based on the Orientation property.
 
 ## Dependency Properties
 

@@ -2,11 +2,11 @@
 title: AssetBundle
 parent: Types
 grand_parent: API
-nav_order: 1
+nav_order: 2
 ---
 
 # AssetBundle
 
 ## Description
 
-Base class for asset bundles.
+Base class for asset bundles. Loads/unloads the bundle on-demand as it's requested by views.

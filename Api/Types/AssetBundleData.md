@@ -2,11 +2,11 @@
 title: AssetBundleData
 parent: Types
 grand_parent: API
-nav_order: 2
+nav_order: 3
 ---
 
 # AssetBundleData
 
 ## Description
 
-Asset bundle data provider. Contains all the asset bundles used by the framework.
+AssetBundle data provider. Contains references to all asset bundles in the project.
