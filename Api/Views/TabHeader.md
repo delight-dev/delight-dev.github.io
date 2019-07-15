@@ -17,9 +17,9 @@ Base view for tab headers displayed by the TabPanel.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
-| AutoSize | [AutoSize](Api/Types/AutoSize) |  |
+| AutoSize | [AutoSize](../Types/AutoSize) |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
 | BackgroundFillAmount | float |  |
@@ -39,12 +39,12 @@ Base view for tab headers displayed by the TabPanel.
 | BubbleNotifyChildLayoutChanged | bool |  |
 | CanToggleOff | bool |  |
 | CanToggleOn | bool |  |
-| ContentTemplateData | [ContentTemplateData](Api/Types/ContentTemplateData) |  |
-| DefaultWidth | [ElementSize](Api/Types/ElementSize) |  |
+| ContentTemplateData | [ContentTemplateData](../Types/ContentTemplateData) |  |
+| DefaultWidth | [ElementSize](../Types/ElementSize) |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
@@ -55,19 +55,19 @@ Base view for tab headers displayed by the TabPanel.
 | IsPressed | bool |  |
 | IsToggleButton | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | TabIndex | int |  |
-| TextOffset | [ElementMargin](Api/Types/ElementMargin) |  |
-| TextPadding | [ElementMargin](Api/Types/ElementMargin) |  |
+| TextOffset | [ElementMargin](../Types/ElementMargin) |  |
+| TextPadding | [ElementMargin](../Types/ElementMargin) |  |
 | ToggleValue | bool |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

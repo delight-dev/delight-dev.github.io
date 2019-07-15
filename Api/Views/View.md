@@ -15,4 +15,4 @@ Base class for all views in the framework.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |

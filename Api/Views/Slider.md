@@ -17,7 +17,7 @@ Slider with a handle that can be moved with the mouse. Can be oriented horizonta
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
@@ -35,34 +35,34 @@ Slider with a handle that can be moved with the mouse. Can be oriented horizonta
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
 | BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
 | BackgroundUseSpriteMesh | bool |  |
-| Breadth | [ElementSize](Api/Types/ElementSize) |  |
+| Breadth | [ElementSize](../Types/ElementSize) |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
 | CanSlide | bool |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
 | IsReversed | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| Length | [ElementSize](Api/Types/ElementSize) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| Length | [ElementSize](../Types/ElementSize) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
 | Max | float |  |
 | Min | float |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| Orientation | [ElementOrientation](Api/Types/ElementOrientation) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| Orientation | [ElementOrientation](../Types/ElementOrientation) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | SetValueOnDragEnded | bool |  |
 | Steps | float |  |
 | UseFastShader | bool |  |
 | Value | float |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

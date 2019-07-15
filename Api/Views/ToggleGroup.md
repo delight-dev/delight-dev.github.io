@@ -17,7 +17,7 @@ Group view that makes its child buttons into toggle buttons and ensures only one
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
@@ -36,26 +36,26 @@ Group view that makes its child buttons into toggle buttons and ensures only one
 | BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
 | BackgroundUseSpriteMesh | bool |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
-| ContentAlignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| ContentAlignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| Orientation | [ElementOrientation](Api/Types/ElementOrientation) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| Orientation | [ElementOrientation](../Types/ElementOrientation) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
-| Spacing | [ElementSize](Api/Types/ElementSize) |  |
+| Spacing | [ElementSize](../Types/ElementSize) |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

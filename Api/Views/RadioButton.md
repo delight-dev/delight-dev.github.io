@@ -17,7 +17,7 @@ Presents a one-of-many selection option. If multiple radio buttons shares the sa
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
@@ -39,7 +39,7 @@ Presents a one-of-many selection option. If multiple radio buttons shares the sa
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
@@ -47,16 +47,16 @@ Presents a one-of-many selection option. If multiple radio buttons shares the sa
 | IsDisabled | bool |  |
 | IsInteractable | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
-| Spacing | [ElementSize](Api/Types/ElementSize) |  |
+| Spacing | [ElementSize](../Types/ElementSize) |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

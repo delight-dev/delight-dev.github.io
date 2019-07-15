@@ -21,4 +21,4 @@ Base class for all views that has a game object in the scene.
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |

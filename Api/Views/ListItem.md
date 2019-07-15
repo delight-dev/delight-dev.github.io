@@ -17,7 +17,7 @@ Base view for items displayed within the List view. Has the extra states: Disabl
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | AutoSizeToContent | bool |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
@@ -36,13 +36,13 @@ Base view for items displayed within the List view. Has the extra states: Disabl
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
 | BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
 | BackgroundUseSpriteMesh | bool |  |
-| Breadth | [ElementSize](Api/Types/ElementSize) |  |
+| Breadth | [ElementSize](../Types/ElementSize) |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
-| ContentTemplateData | [ContentTemplateData](Api/Types/ContentTemplateData) |  |
+| ContentTemplateData | [ContentTemplateData](../Types/ContentTemplateData) |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
@@ -52,17 +52,17 @@ Base view for items displayed within the List view. Has the extra states: Disabl
 | IsPressed | bool |  |
 | IsSelected | bool |  |
 | IsVisible | bool |  |
-| Item | [BindableObject](Api/Types/BindableObject) |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| Length | [ElementSize](Api/Types/ElementSize) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| Item | [BindableObject](../Types/BindableObject) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| Length | [ElementSize](../Types/ElementSize) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

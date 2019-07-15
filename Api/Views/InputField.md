@@ -17,7 +17,7 @@ Interactable input field enabling user to type single or multi-line text.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | AnimationTriggers | [AnimationTriggers](http://docs.unity3d.com/ScriptReference/AnimationTriggers.html) |  |
 | AsteriskChar | Char |  |
@@ -50,31 +50,31 @@ Interactable input field enabling user to type single or multi-line text.
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
-| Image | [Image](Api/Views/Image) |  |
+| Image | [Image](Image) |  |
 | InputType | [InputType](http://docs.unity3d.com/ScriptReference/InputType.html) |  |
 | Interactable | bool |  |
 | IsActive | bool |  |
 | IsVisible | bool |  |
 | KeyboardType | [TouchScreenKeyboardType](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboardType.html) |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
 | LineType | [LineType](http://docs.unity3d.com/ScriptReference/LineType.html) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
 | Navigation | [Navigation](http://docs.unity3d.com/ScriptReference/Navigation.html) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
 | OnEndEdit | [SubmitEvent](http://docs.unity3d.com/ScriptReference/SubmitEvent.html) |  |
 | OnlyTriggerValueChangedFromUI | bool |  |
 | OnValidateInput | [OnValidateInput](http://docs.unity3d.com/ScriptReference/OnValidateInput.html) |  |
 | OnValueChanged | [OnChangeEvent](http://docs.unity3d.com/ScriptReference/OnChangeEvent.html) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | Placeholder | [Graphic](http://docs.unity3d.com/ScriptReference/Graphic.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | ReadOnly | bool |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | SelectionAnchorPosition | int |  |
@@ -86,7 +86,7 @@ Interactable input field enabling user to type single or multi-line text.
 | TargetGraphic | [Graphic](http://docs.unity3d.com/ScriptReference/Graphic.html) |  |
 | Text | string |  |
 | TextComponent | [Text](http://docs.unity3d.com/ScriptReference/Text.html) |  |
-| TextMargin | [ElementMargin](Api/Types/ElementMargin) |  |
+| TextMargin | [ElementMargin](../Types/ElementMargin) |  |
 | Transition | [Transition](http://docs.unity3d.com/ScriptReference/Transition.html) |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |

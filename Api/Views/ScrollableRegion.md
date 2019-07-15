@@ -18,7 +18,7 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | Name | Type | Description |
 | --- | --- | --- |
 | AdditionalShaderChannels | [AdditionalCanvasShaderChannels](http://docs.unity3d.com/ScriptReference/AdditionalCanvasShaderChannels.html) |  |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | AutoSizeContentRegion | bool |  |
 | BlockingObjects | [BlockingObjects](http://docs.unity3d.com/ScriptReference/BlockingObjects.html) |  |
@@ -27,7 +27,7 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | CanScrollVertically | bool |  |
 | CanvasScalerReferencePixelsPerUnit | float |  |
 | CanvasScalerScaleFactor | float |  |
-| ContentAlignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| ContentAlignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | DebugOffsetText | string |  |
 | DecelerationRate | float |  |
 | DefaultSpriteDPI | float |  |
@@ -40,30 +40,30 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | FallbackScreenDPI | float |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
 | HasInertia | bool |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
-| HorizontalScrollbarVisibility | [ScrollbarVisibilityMode](Api/Types/ScrollbarVisibilityMode) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
+| HorizontalScrollbarVisibility | [ScrollbarVisibilityMode](../Types/ScrollbarVisibilityMode) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IgnoreReversedGraphics | bool |  |
 | IsActive | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
 | MaskContent | bool |  |
 | MatchWidthOrHeight | float |  |
 | NormalizedSortingGridSize | float |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverridePixelPerfect | bool |  |
 | OverrideSorting | bool |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | PhysicalUnit | [Unit](http://docs.unity3d.com/ScriptReference/Unit.html) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | PixelPerfect | bool |  |
 | PlaneDistance | float |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | ReferencePixelsPerUnit | float |  |
 | ReferenceResolution | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | RenderCamera | string |  |
@@ -71,7 +71,7 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | ScaleFactor | float |  |
 | ScreenMatchMode | [ScreenMatchMode](http://docs.unity3d.com/ScriptReference/ScreenMatchMode.html) |  |
-| ScrollBounds | [ScrollBounds](Api/Types/ScrollBounds) |  |
+| ScrollBounds | [ScrollBounds](../Types/ScrollBounds) |  |
 | ScrollSensitivity | float |  |
 | SortingLayerID | int |  |
 | SortingLayerName | string |  |
@@ -79,6 +79,6 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | TargetDisplay | int |  |
 | UiScaleMode | [ScaleMode](http://docs.unity3d.com/ScriptReference/ScaleMode.html) |  |
 | UseFastShader | bool |  |
-| VerticalScrollbarVisibility | [ScrollbarVisibilityMode](Api/Types/ScrollbarVisibilityMode) |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| VerticalScrollbarVisibility | [ScrollbarVisibilityMode](../Types/ScrollbarVisibilityMode) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |
 | WorldCamera | [Camera](http://docs.unity3d.com/ScriptReference/Camera.html) |  |

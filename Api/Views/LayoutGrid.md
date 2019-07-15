@@ -17,7 +17,7 @@ View that displays static content in a grid layout (note has the alias Grid in X
 
 | Name | Type | Description |
 | --- | --- | --- |
-| Alignment | [ElementAlignment](Api/Types/ElementAlignment) |  |
+| Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
@@ -36,28 +36,28 @@ View that displays static content in a grid layout (note has the alias Grid in X
 | BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
 | BackgroundUseSpriteMesh | bool |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
-| Columns | [ColumnDefinitions](Api/Types/ColumnDefinitions) |  |
-| ColumnSpacing | [ElementSize](Api/Types/ElementSize) |  |
+| Columns | [ColumnDefinitions](../Types/ColumnDefinitions) |  |
+| ColumnSpacing | [ElementSize](../Types/ElementSize) |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| Height | [ElementSize](Api/Types/ElementSize) |  |
+| Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
 | IsVisible | bool |  |
-| LayoutRoot | [LayoutRoot](Api/Views/LayoutRoot) |  |
-| LoadMode | [LoadMode](Api/Types/LoadMode) |  |
-| Margin | [ElementMargin](Api/Types/ElementMargin) |  |
-| Offset | [ElementMargin](Api/Types/ElementMargin) |  |
-| OffsetFromParent | [ElementMargin](Api/Types/ElementMargin) |  |
-| OverrideHeight | [ElementSize](Api/Types/ElementSize) |  |
-| OverrideWidth | [ElementSize](Api/Types/ElementSize) |  |
+| LayoutRoot | [LayoutRoot](LayoutRoot) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| Margin | [ElementMargin](../Types/ElementMargin) |  |
+| Offset | [ElementMargin](../Types/ElementMargin) |  |
+| OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
+| OverrideHeight | [ElementSize](../Types/ElementSize) |  |
+| OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
-| RaycastBlockMode | [RaycastBlockMode](Api/Types/RaycastBlockMode) |  |
-| Rows | [RowDefinitions](Api/Types/RowDefinitions) |  |
-| RowSpacing | [ElementSize](Api/Types/ElementSize) |  |
+| RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rows | [RowDefinitions](../Types/RowDefinitions) |  |
+| RowSpacing | [ElementSize](../Types/ElementSize) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
-| Spacing | [ElementSize](Api/Types/ElementSize) |  |
+| Spacing | [ElementSize](../Types/ElementSize) |  |
 | UseFastShader | bool |  |
-| Width | [ElementSize](Api/Types/ElementSize) |  |
+| Width | [ElementSize](../Types/ElementSize) |  |
