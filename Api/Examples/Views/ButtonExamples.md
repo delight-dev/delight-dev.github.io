@@ -1,5 +1,4 @@
 ---
-title: Button Examples
 nav_exclude: true
 ---
 
