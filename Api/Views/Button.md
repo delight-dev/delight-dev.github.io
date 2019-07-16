@@ -13,8 +13,8 @@ Based on [UIImageView](UIImageView)
 
 The button view is a clickable region with text. Has the additional states: Highlighted, Pressed and Disabled. The button can be set to toggle through IsToggleButton and to adjust its size to its text through the AutoSize field.
 
-{% capture button_examples %}{% include ButtonExamples.md %}{% endcapture %}
-{{ button_examples | markdownify }} 
+{% capture ButtonExamples %}{% include ButtonExamples.md %}{% endcapture %}
+{{ ButtonExamples | markdownify }}
 
 ## Dependency Properties
 
