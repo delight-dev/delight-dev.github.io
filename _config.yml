@@ -2,7 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
 title: "Delight"
-description: An open source component-oriented UI framework for Unity
+description: Delight is an open source component-oriented framework for Unity, mainly centered around creating user-interface components that can easily be extended, combined and shared using a text based declarative design language (similar to HTML).
 kramdown:
   parse_block_html: true
 
