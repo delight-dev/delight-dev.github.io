@@ -2,6 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
 title: "Delight"
+description: An open source component-oriented UI framework for Unity
 kramdown:
   parse_block_html: true
 
