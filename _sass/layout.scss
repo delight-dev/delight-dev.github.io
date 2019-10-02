@@ -16,8 +16,6 @@
 }
 
 .side-bar {
-	padding-top: $gutter-spacing-sm; // added
-	padding-bottom: $gutter-spacing-sm; // added
 	z-index: 100;
 	display: flex;
 	flex-wrap: wrap;
@@ -26,9 +24,7 @@
 	@include mq(md) {
 		flex-wrap: nowrap;
 		position: absolute;
-		width: $nav-width-md + 16px; // changed
-		padding-top: $gutter-spacing * 2; // added
-		padding-bottom: 0; // added
+		width: $nav-width-md;
 		height: 100%;
 		flex-direction: column;
 		border-right: $border $border-color;
@@ -46,7 +42,6 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		min-height: 600px; // added
 		width: 100%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
@@ -59,14 +54,10 @@
 	@include mq(md) {
 		position: relative;
 		max-width: $content-width;
-		padding-top: $gutter-spacing; // added
-		padding-bottom: $gutter-spacing; // added
-		padding-left: $gutter-spacing * 1.5; // added
 		margin-left: $nav-width-md;
 	}
 
 	@include mq(lg) {
-		padding-left: $gutter-spacing * 2; // added
 		margin-left: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
 	}
 }
@@ -108,19 +99,6 @@
 			display: flex;
 		}
 	}
-
-	.main-content {
-		padding-top: 0;
-
-		@include mq(md) {
-			display: flex;
-			justify-content: flex-end;
-			height: 60px;
-			padding-top: $sp-4;
-			padding-bottom: $sp-4;
-			border-bottom: $border $border-color;
-		}
-	}
 }
 
 .navigation,
@@ -158,12 +136,20 @@
 }
 
 .site-title {
-	background-image: url(logo-small.png);
-	background-position: 29px 7px;
-	background-repeat: no-repeat;
-	height: 60px;
-	padding-left: 88px;
-	padding-top: 16px;
+	@include container;
+	flex-grow: 1;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	padding-top: $sp-3;
+	padding-bottom: $sp-3;
+	color: $body-heading-color;
+	@include fs-6;
+
+	@include mq(md) {
+		padding-top: $sp-2;
+		padding-bottom: $sp-2;
+	}
 }
 
 @if variable-exists(logo) {
@@ -219,34 +205,4 @@ body {
 		position: static;
 		justify-self: end;
 	}
-}
-
-.xml-file {
-	text-transform: none;
-	background-color: #ff4879;
-	display: inline-block;
-	padding-top: 0.16em;
-	padding-right: 0.42em;
-	padding-bottom: 0.16em;
-	padding-left: 0.42em;
-	margin-right: .25rem;
-	margin-left: .25rem;
-	color: #fff;
-	vertical-align: middle;
-	font-size: 14px !important;
-}
-
-.cs-file {
-	text-transform: none;
-	background-color: #3b9bff;
-	display: inline-block;
-	padding-top: 0.16em;
-	padding-right: 0.42em;
-	padding-bottom: 0.16em;
-	padding-left: 0.42em;
-	margin-right: .25rem;
-	margin-left: .25rem;
-	color: #fff;
-	vertical-align: middle;
-	font-size: 14px !important;
 }
