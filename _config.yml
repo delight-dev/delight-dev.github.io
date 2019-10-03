@@ -13,6 +13,8 @@ aux_links:
     "Chat":
       - "//gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
 
+logo: logo-small.jpg
+
 plugins:
   - jekyll-seo-tag
 
