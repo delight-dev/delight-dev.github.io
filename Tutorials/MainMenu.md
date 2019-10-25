@@ -96,8 +96,8 @@ MainMenu.xml
 <MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="Delight ../Delight.xsd">
   <Group Spacing="10">
-    <Button Text="Play" Click="StartGame" />
-    <Button Text="Options" Click="Options" />
+    <Button Text="Play" Click="Play" />
+    <Button Text="Options" Click="ShowOptions" />
     <Button Text="Quit" Click="Quit" />
   </Group>
 </MainMenu>
@@ -118,17 +118,118 @@ namespace Delight
 {
     public partial class MainMenu
     {
-        public void Play(PointerEventData pointerData)
+        public void Play()
         {
             Debug.Log("Play clicked");
         }
 
-        public void Options(PointerEventData pointerData)
+        public void ShowOptions()
         {
             Debug.Log("Options clicked");
         }
 
-        public void Quit(PointerEventData pointerData)
+        public void Quit()
+        {
+            Debug.Log("Quit clicked");
+        }
+    }
+}
+```
+
+If you run the scene and click on the buttons you'll see the text being logged in the console:
+
+![](main-menu-clicklog.png)
+
+
+
+## Doing Layout
+
+This is the layout we are going for:
+
+![](main-menu-layout.png)
+
+The framework includes various views that can be used to do layout. We've seen the [Group](../Api/Views/Group) view that is used to group views vertically or horizontally with spacing between. A more basic layout view is the [Region](../Api/Views/Region) which is similar to the `<div>` element in HTML, simply used to create a region of space with a certain offset, width and height that child views can be placed inside. To get the above layout we add some regions to our main menu: 
+
+{: .xml-file }
+
+MainMenu.xml
+
+```xml
+<MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="Delight ../Delight.xsd">
+  <Region Width="25%" Alignment="Left" Margin="30,30,15,30" 
+          BackgroundColor="#ef706a">
+    <Group Spacing="10px" Alignment="Top">
+      <Button Text="Play" Click="Play" Width="140" />
+      <Button Text="Options" Click="ShowOptions" Width="140" />
+      <Button Text="Quit" Click="Quit" Width="140" />
+    </Group>
+  </Region>
+  <Region Width="75%" Alignment="Right" Margin="15,30,30,30" 
+          BackgroundColor="#949494">
+    <!-- content area --> 
+  </Region>
+</MainMenu>
+
+```
+
+We've added background color to the regions just to make it easy to see them. We'll remove the background colors as we move on. 
+
+
+
+## Showing submenus
+
+We want to show a LevelSelect view when the user clicks on the Play button and a Options view when the Options button is clicked. To do this we can add a [ViewSwitcher](../Api/Views/ViewSwitcher) view and add the submenu views as children:
+
+{: .xml-file }
+
+MainMenu.xml
+
+```xml
+<MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="Delight ../Delight.xsd">
+  <Region Width="25%" Alignment="Left" Margin="30,30,15,30" 
+          BackgroundColor="#ef706a">
+    <Group Spacing="10px" Alignment="Top">
+      <Button Text="Play" Click="Play" Width="140" />
+      <Button Text="Options" Click="ShowOptions" Width="140" />
+      <Button Text="Quit" Click="Quit" Width="140" />
+    </Group>
+  </Region>
+  <Region Width="75%" Alignment="Right" Margin="15,30,30,30" 
+          BackgroundColor="#949494">
+    <ViewSwitcher Id="SubmenuSwitcher" ShowFirstByDefault="False">
+      <LevelSelect Id="LevelSelect" />
+      <Options Id="Options" />
+    </ViewSwitcher>
+  </Region>
+</MainMenu>
+
+```
+
+
+We've given the views names through the Id attribute, so we can easily reference them in code-behind. The LevelSelect and Option views are automatically generated and to switch between them we add the following to our code-behind:
+
+{: .cs-file }
+
+MainMenu.cs
+
+```c#
+namespace Delight
+{
+    public partial class MainMenu
+    {
+        public void Play()
+        {
+            SubmenuSwitcher.SwitchTo(LevelSelect);
+        }
+
+        public void ShowOptions()
+        {
+            SubmenuSwitcher.SwitchTo(Options);
+        }
+
+        public void Quit()
         {
             Debug.Log("Quit clicked");
         }
@@ -139,14 +240,6 @@ namespace Delight
 
 
 
-
-
-
-Create a view-switcher 
-
-Create a options-menu
-
-Styling the buttons
 
 
 

@@ -2,7 +2,7 @@
 title: MarkLight Migration Guide
 parent: Tutorials
 has_children: false
-nav_order: 3
+nav_order: 4
 ---
 # MarkLight Migration Guide
 
@@ -170,8 +170,9 @@ Here are the step to migrate views from MarkLight to Delight. This example shows
      		// ...
      ```
      
+
    Replace fields and properties with versions that notifies observers when they are changed: 
-     
+
      ```c#
      	public class SearchItemPresentation : BindableObject
      	{
@@ -182,9 +183,9 @@ Here are the step to migrate views from MarkLight to Delight. This example shows
                  set { SetProperty(ref _name, value); }	
      		}
      ```
-     
+
      The following sublime find/replace regex might help:
-     
+
      ```
      Find:
      (public)\s+([a-zA-z0-9]+)\s+([a-zA-z0-9]+)\s*\{\s*+get;\s*set;\s*\}
@@ -196,7 +197,7 @@ Here are the step to migrate views from MarkLight to Delight. This example shows
      Replace:
      private \2 _\3\; \n \1 \2 \3 \n \{ \n get \{ return _\3\; \} \n set \{ SetProperty\(ref _\3\, value\)\; \} \n \}\n
      ```
-     
+
      
 
 4. Now it's time to add/uncomment the XML in the root element in SearchView.xml. 
@@ -455,7 +456,6 @@ Here are the step to migrate views from MarkLight to Delight. This example shows
   </Grid>
   ```
   
-
 - When referencing assets in XML you only need to specify their name: 
   `<Image Sprite="MySprite" />`
 
