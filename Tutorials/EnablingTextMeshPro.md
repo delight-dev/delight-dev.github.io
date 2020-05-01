@@ -12,7 +12,7 @@ nav_order: 4
 
    {: .xml-file }
 
-   config.txt
+   Content/Config.txt
 
    ```yaml
    Modules: 

@@ -219,20 +219,20 @@ To bind to localized labels we can use the `@Loc` syntax:
 </NewView>
 ```
 
-This binds to the `Greeting1` label in the localized dictionary.
+This binds to the `Greeting1` label in the localization dictionary.
 
 
 
 ## Binding Cheat Sheet
 
-| Binding               | Example Syntax                                               |
-| --------------------- | ------------------------------------------------------------ |
-| Simple Binding        | `<CheckBox IsChecked="{MyBoolValue}" />` |
-| Binding Path          | `<Label Text="{Input.Text}" />` |
-| Model Binding         | `<Label Text="{@MyModelValue}" />` |
-| Multi Binding         | `<Label Text="$Sum({Input1.Text}, {Input2.Text})" />` |
-| Format String         | `<Label Text="Hello {Firstname.Text} {Lastname.Text}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
-| Collection Binding    | `<List Items="{highscore in @Highscores}">` |
-| Negated Binding       | `<CheckBox IsChecked="{!MyBoolValue}" />` |
-| Localization Binding  | `<Label Text="{@Loc.Greeting1}" />` |
+| Binding              | Example Syntax                                               |
+| -------------------- | ------------------------------------------------------------ |
+| Simple Binding       | `<CheckBox IsChecked="{MyBoolValue}" />`                     |
+| Binding Path         | `<Label Text="{Player.Name}" />`                             |
+| Model Binding        | `<Label Text="{@MyModelValue}" />`                           |
+| Multi Binding        | `<Label Text="$Sum({Number1}, {Number2})" />`                |
+| Format String        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
+| Collection Binding   | `<List Items="{highscore in @Highscores}">`                  |
+| Negated Binding      | `<CheckBox IsChecked="{!MyBoolValue}" />`                    |
+| Localization Binding | `<Label Text="{@Loc.Greeting1}" />`                          |
 
