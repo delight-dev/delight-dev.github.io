@@ -233,6 +233,7 @@ This binds to the `Greeting1` label in the localization dictionary.
 | Multi Binding        | `<Label Text="$Sum({Number1}, {Number2})" />`                |
 | Format String        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
 | Collection Binding   | `<List Items="{highscore in @Highscores}">`                  |
+| Collection Index     | `<Label Text="{highscore.Index}" />`                         |
 | Negated Binding      | `<CheckBox IsChecked="{!MyBoolValue}" />`                    |
 | Localization Binding | `<Label Text="{@Loc.Greeting1}" />`                          |
 
