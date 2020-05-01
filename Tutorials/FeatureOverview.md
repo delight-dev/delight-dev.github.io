@@ -1,6 +1,5 @@
 ---
 title: Feature Overview
-parent: Tutorials
 has_children: false
 nav_order: 2
 nav_exclude: true

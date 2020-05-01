@@ -141,7 +141,7 @@ If either `Input1.Text` or `Input2.Text` changes value the values are transforme
 
 ## Format String Binding
 
-To transform multiple values into a formatted string:
+To transform multiple values into a formatted string using the following syntax:
 
 {: .xml-file }
 
@@ -260,7 +260,7 @@ This binds to the `Greeting1` label in the localized dictionary.
 | Model Binding         | `<Label Text="{@MyModelValue}" />` |
 | Multi Binding         | `<Label Text="$Sum({Input1.Text}, {Input2.Text})" />` |
 | Format String         | `<Label Text="Hello {Firstname.Text} {Lastname.Text}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
-| Collection Binding    | `<List Id="HighscoreList" Items="{highscore in @Highscores}">` |
+| Collection Binding    | `<List Items="{highscore in @Highscores}">` |
 | Negated Binding       | `<CheckBox IsChecked="{!MyBoolValue}" />` |
 | Localization Binding  | `<Label Text="{@Loc.Greeting1}" />` |
 
