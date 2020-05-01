@@ -19,10 +19,6 @@ Data binding is a way to connect data to your views and to keep data synchronize
 
 Bindings are declared using `{}` syntax: 
 
-{: .xml-file }
-
-MyView.xml
-
 ```xml
 <NewView MyBoolValue="t:bool = True">
      
@@ -38,10 +34,6 @@ If the checkbox is toggled `IsChecked` will get a new value that will propagate 
 ## Binding Paths
 
 You can bind to nested properties:
-
-{: .xml-file }
-
-MyView.xml
 
 ```xml
 <MyView>
@@ -143,10 +135,6 @@ If either `Input1.Text` or `Input2.Text` changes value the values are transforme
 
 To transform multiple values into a formatted string using the following syntax:
 
-{: .xml-file }
-
-MyView.xml
-
 ```xml
 <MyView>
   
@@ -160,10 +148,6 @@ MyView.xml
 ```
 
 You can also add format modifiers to control things like number of decimals printed:
-
-{: .xml-file }
-
-MyView.xml
 
 ```xml
 <MyView>
@@ -188,10 +172,6 @@ To print the slider value with one decimal. For a comprehensive list of string f
 
 You can bind to collections using the `{item in MyCollection}` syntax:
 
-{: .xml-file }
-
-HighscoreTest.xml
-
 ```xml
 <HighscoreTest>
   
@@ -212,10 +192,6 @@ Here we bind the collection `Highscores` that resides in our model to the list v
 
 When binding to a boolean we have the option to negate the value using the `!` symbol:
 
-{: .xml-file }
-
-NewView.xml
-
 ```xml
 <NewView MyBoolValue="t:bool = True">
    
@@ -234,10 +210,6 @@ The second checkbox will always have the negated value.
 ## Localization Binding
 
 To bind to localized labels we can use the `@Loc` syntax:
-
-{: .xml-file }
-
-NewView.xml
 
 ```xml
 <NewView>
