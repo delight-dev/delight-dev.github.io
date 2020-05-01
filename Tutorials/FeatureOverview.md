@@ -3,19 +3,37 @@ title: Feature Overview
 parent: Tutorials
 has_children: false
 nav_order: 2
+nav_exclude: true
 ---
 # Feature Overview
 
 1. TOC
 {:toc}
 
-## Component-oriented architecture
+## Component-oriented framework
+
+Delight is a component-oriented framework for building well-structured and easily maintainable UI components (views) in Unity and integrate them with your game model. This document goes through the main features of the framework. 
+
+[View.xml] [View_g.cs] [View.cs] <-> [Model.txt] [Model_g.cs] [Model.cs]
+
+
+
 ## Views
-## Data-binding
-## Data schemas
+
+Think of views as pieces of your game UI, like buttons, combo-boxes, windows, data grids, that like LEGO blocks can be combined into more advanced views like main menus, highscore lists, chat windows, etc. 
+
+The framework makes it easy for you to create these reusable views that can then be shared, extended, styled, and plugged into different projects. For example a highscore view may consist of the following parts:
+
+
+
+
+
 ## Styling
+
+## Data-binding
+
+## Data schemas
 ## On-demand loading
-## Localization
 ## Layout
 ## Dynamic lists
-## Animations
+## Localization
