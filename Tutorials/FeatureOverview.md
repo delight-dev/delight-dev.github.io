@@ -27,8 +27,13 @@ The framework makes it easy for you to create these reusable views that can then
 
 ## Data-binding
 
+Data binding is a way to connect data to your views and to keep data synchronized. 
+
 ## Data schemas
 ## On-demand loading
+
+## Asset Management
+
 ## Layout
 ## Dynamic lists
 ## Localization

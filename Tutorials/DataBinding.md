@@ -164,7 +164,7 @@ It translates to the following C# operation:
 
 `Label.Text = String.Format("{0:0.0}", Slider1.Value);`
 
-To print the slider value with one decimal. For a comprehensive list of string formatting options check out the [String.Format Method](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netcore-3.1) documentation. 
+It prints the slider value with one decimal. For a comprehensive list of string formatting options check out the [String.Format Method](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netcore-3.1) documentation. 
 
 
 
@@ -233,7 +233,7 @@ This binds to the `Greeting1` label in the localization dictionary.
 | Multi Binding        | `<Label Text="$Sum({Number1}, {Number2})" />`                |
 | Format String        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
 | Collection Binding   | `<List Items="{highscore in @Highscores}">`                  |
-| Collection Index     | `<Label Text="{highscore.Index}" />`                         |
+| Item Index           | `<Label Text="{highscore.Index}" />`<br>`<Label Text="{highscore.ZeroIndex}" />` |
 | Negated Binding      | `<CheckBox IsChecked="{!MyBoolValue}" />`                    |
 | Localization Binding | `<Label Text="{@Loc.Greeting1}" />`                          |
 
