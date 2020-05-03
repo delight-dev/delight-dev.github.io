@@ -2,7 +2,7 @@
 title: TMP_FontAsset
 parent: Types
 grand_parent: API
-nav_order: 88
+nav_order: 104
 ---
 
 # TMP_FontAsset

@@ -2,7 +2,7 @@
 title: ElementMargin
 parent: Types
 grand_parent: API
-nav_order: 37
+nav_order: 41
 ---
 
 # ElementMargin

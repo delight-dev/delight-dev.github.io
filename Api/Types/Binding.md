@@ -2,7 +2,7 @@
 title: Binding
 parent: Types
 grand_parent: API
-nav_order: 17
+nav_order: 18
 ---
 
 # Binding

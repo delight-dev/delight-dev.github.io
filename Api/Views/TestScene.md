@@ -2,7 +2,7 @@
 title: TestScene
 parent: Views
 grand_parent: API
-nav_order: 26
+nav_order: 29
 ---
 
 # TestScene
@@ -51,11 +51,13 @@ TestScene view.
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | PixelPerfect | bool |  |
 | PlaneDistance | float |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | ReferencePixelsPerUnit | float |  |
 | ReferenceResolution | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | RenderCamera | string |  |
 | RenderMode | [RenderMode](http://docs.unity3d.com/ScriptReference/RenderMode.html) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | ScaleFactor | float |  |
 | ScreenMatchMode | [ScreenMatchMode](http://docs.unity3d.com/ScriptReference/ScreenMatchMode.html) |  |

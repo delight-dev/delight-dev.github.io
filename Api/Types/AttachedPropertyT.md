@@ -2,7 +2,7 @@
 title: AttachedProperty<T>
 parent: Types
 grand_parent: API
-nav_order: 9
+nav_order: 10
 ---
 
 # AttachedProperty<T>

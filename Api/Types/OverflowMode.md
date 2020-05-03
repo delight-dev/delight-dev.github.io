@@ -2,7 +2,7 @@
 title: OverflowMode
 parent: Types
 grand_parent: API
-nav_order: 64
+nav_order: 70
 ---
 
 # OverflowMode

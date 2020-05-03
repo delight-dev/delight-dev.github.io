@@ -2,7 +2,7 @@
 title: ElementSize
 parent: Types
 grand_parent: API
-nav_order: 40
+nav_order: 44
 ---
 
 # ElementSize

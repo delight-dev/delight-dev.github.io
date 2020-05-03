@@ -2,7 +2,7 @@
 title: MaterialAsset
 parent: Types
 grand_parent: API
-nav_order: 60
+nav_order: 66
 ---
 
 # MaterialAsset

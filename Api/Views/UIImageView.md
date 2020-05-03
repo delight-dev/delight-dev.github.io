@@ -2,7 +2,7 @@
 title: UIImageView
 parent: Views
 grand_parent: API
-nav_order: 29
+nav_order: 32
 ---
 
 # UIImageView
@@ -30,6 +30,7 @@ Base class for views that has a background sprite and color.
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -52,7 +53,9 @@ Base class for views that has a background sprite and color.
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | UseFastShader | bool |  |
 | Width | [ElementSize](../Types/ElementSize) |  |

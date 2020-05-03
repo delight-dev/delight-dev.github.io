@@ -2,7 +2,7 @@
 title: ElementAlignment
 parent: Types
 grand_parent: API
-nav_order: 36
+nav_order: 40
 ---
 
 # ElementAlignment

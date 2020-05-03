@@ -30,6 +30,7 @@ A check box view consisting of a box that can be ticked and a text label.
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -55,7 +56,9 @@ A check box view consisting of a box that can be ticked and a text label.
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | Spacing | [ElementSize](../Types/ElementSize) |  |
 | UseFastShader | bool |  |

@@ -30,6 +30,7 @@ Generic collection view. Used by views such as Lists and TabPanel that wants to 
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -53,7 +54,9 @@ Generic collection view. Used by views such as Lists and TabPanel that wants to 
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | UseFastShader | bool |  |
 | Width | [ElementSize](../Types/ElementSize) |  |

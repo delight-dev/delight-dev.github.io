@@ -2,7 +2,7 @@
 title: DependencyProperty
 parent: Types
 grand_parent: API
-nav_order: 34
+nav_order: 38
 ---
 
 # DependencyProperty

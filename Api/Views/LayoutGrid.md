@@ -2,7 +2,7 @@
 title: Grid
 parent: Views
 grand_parent: API
-nav_order: 10
+nav_order: 12
 ---
 
 # Grid
@@ -30,6 +30,7 @@ View that displays static content in a grid layout (note has the alias Grid in X
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -54,7 +55,9 @@ View that displays static content in a grid layout (note has the alias Grid in X
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Rows | [RowDefinitions](../Types/RowDefinitions) |  |
 | RowSpacing | [ElementSize](../Types/ElementSize) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |

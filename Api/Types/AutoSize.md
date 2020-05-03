@@ -2,7 +2,7 @@
 title: AutoSize
 parent: Types
 grand_parent: API
-nav_order: 10
+nav_order: 11
 ---
 
 # AutoSize

@@ -2,7 +2,7 @@
 title: INotifyPropertyChanged
 parent: Types
 grand_parent: API
-nav_order: 51
+nav_order: 56
 ---
 
 # INotifyPropertyChanged

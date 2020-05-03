@@ -2,7 +2,7 @@
 title: Tab
 parent: Views
 grand_parent: API
-nav_order: 23
+nav_order: 26
 ---
 
 # Tab
@@ -29,7 +29,6 @@ Base views for tab content displayed within the TabPanel.
 | IgnoreObject | bool |  |
 | IsActive | bool |  |
 | IsVisible | bool |  |
-| Item | [BindableObject](../Types/BindableObject) |  |
 | LayoutRoot | [LayoutRoot](LayoutRoot) |  |
 | LoadMode | [LoadMode](../Types/LoadMode) |  |
 | Margin | [ElementMargin](../Types/ElementMargin) |  |
@@ -38,7 +37,9 @@ Base views for tab content displayed within the TabPanel.
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | TabHeaderId | string |  |
 | Text | string |  |

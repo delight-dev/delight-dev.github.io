@@ -2,14 +2,14 @@
 title: View
 parent: Views
 grand_parent: API
-nav_order: 31
+nav_order: 34
 ---
 
 # View
 
 ## Description
 
-Base class for all views in the framework.
+Base class for views.
 
 ## Dependency Properties
 

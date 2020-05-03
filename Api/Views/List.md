@@ -2,7 +2,7 @@
 title: List
 parent: Views
 grand_parent: API
-nav_order: 12
+nav_order: 14
 ---
 
 # List
@@ -31,6 +31,7 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -43,6 +44,7 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | CanSelect | bool |  |
 | ContentAlignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | DeselectAfterSelect | bool |  |
+| DisableItemArrangement | bool |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
@@ -67,8 +69,10 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Padding | [ElementMargin](../Types/ElementMargin) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | RealizationMargin | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | SelectedItem | [BindableObject](../Types/BindableObject) |  |
 | SelectOnMouseUp | bool |  |

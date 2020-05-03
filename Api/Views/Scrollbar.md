@@ -2,12 +2,12 @@
 title: Scrollbar
 parent: Views
 grand_parent: API
-nav_order: 21
+nav_order: 23
 ---
 
 # Scrollbar
 
-Based on [UIView](UIView)
+Based on [UIImageView](UIImageView)
 
 ## Description
 
@@ -19,6 +19,23 @@ A scrollbar with a draggable handle. Used by the ScrollableRegion view.
 | --- | --- | --- |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
+| BackgroundAlphaHitTestMinimumThreshold | float |  |
+| BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
+| BackgroundFillAmount | float |  |
+| BackgroundFillCenter | bool |  |
+| BackgroundFillClockwise | bool |  |
+| BackgroundFillMethod | [FillMethod](http://docs.unity3d.com/ScriptReference/FillMethod.html) |  |
+| BackgroundFillOrigin | int |  |
+| BackgroundMaskable | bool |  |
+| BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
+| BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
+| BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
+| BackgroundPreserveAspect | bool |  |
+| BackgroundRaycastTarget | bool |  |
+| BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
+| BackgroundUseSpriteMesh | bool |  |
 | Breadth | [ElementSize](../Types/ElementSize) |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
 | DisableLayoutUpdate | bool |  |
@@ -39,7 +56,9 @@ A scrollbar with a draggable handle. Used by the ScrollableRegion view.
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | ScrollPosition | float |  |
 | UseFastShader | bool |  |

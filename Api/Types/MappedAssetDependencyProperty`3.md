@@ -2,7 +2,7 @@
 title: MappedAssetDependencyProperty`3
 parent: Types
 grand_parent: API
-nav_order: 58
+nav_order: 63
 ---
 
 # MappedAssetDependencyProperty`3

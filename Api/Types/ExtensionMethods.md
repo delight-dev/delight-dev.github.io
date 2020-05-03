@@ -2,7 +2,7 @@
 title: ExtensionMethods
 parent: Types
 grand_parent: API
-nav_order: 45
+nav_order: 49
 ---
 
 # ExtensionMethods

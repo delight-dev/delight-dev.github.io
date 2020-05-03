@@ -2,7 +2,7 @@
 title: Texture2DAssetData
 parent: Types
 grand_parent: API
-nav_order: 86
+nav_order: 100
 ---
 
 # Texture2DAssetData

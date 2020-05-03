@@ -2,7 +2,7 @@
 title: FontAssetData
 parent: Types
 grand_parent: API
-nav_order: 48
+nav_order: 52
 ---
 
 # FontAssetData

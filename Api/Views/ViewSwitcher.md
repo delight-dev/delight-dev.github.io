@@ -2,7 +2,7 @@
 title: ViewSwitcher
 parent: Views
 grand_parent: API
-nav_order: 32
+nav_order: 35
 ---
 
 # ViewSwitcher
@@ -20,6 +20,7 @@ Provides logic for switching between mutliple child views and displaying one at 
 | Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
+| ChildLoadMode | [LoadMode](../Types/LoadMode) |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
@@ -36,11 +37,12 @@ Provides logic for switching between mutliple child views and displaying one at 
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | ShowFirstByDefault | bool |  |
 | StartView | string |  |
 | SwitchMode | [SwitchMode](../Types/SwitchMode) |  |
 | UseFastShader | bool |  |
 | Width | [ElementSize](../Types/ElementSize) |  |
-| ViewsHiddenWhileLoading | bool |  |

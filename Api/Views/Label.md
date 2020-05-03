@@ -2,7 +2,7 @@
 title: Label
 parent: Views
 grand_parent: API
-nav_order: 9
+nav_order: 11
 ---
 
 # Label
@@ -11,55 +11,102 @@ Based on [UIView](UIView)
 
 ## Description
 
-Presents text. Based on the UGUI text component.
+View that presents text. Based on TextMeshPro text component.
 
 ## Dependency Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
-| AlignByGeometry | bool |  |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) |  |
 | Alpha | float |  |
 | AutoSize | [AutoSize](../Types/AutoSize) |  |
+| AutoSizeTextContainer | bool |  |
 | BubbleNotifyChildLayoutChanged | bool |  |
+| CharacterSpacing | float |  |
+| CharacterWidthAdjustment | float |  |
+| ColorGradient | VertexGradient |  |
+| ColorGradientPreset | TMP_ColorGradient |  |
 | DisableLayoutUpdate | bool |  |
+| EnableAutoSizing | bool |  |
+| EnableCulling | bool |  |
+| EnableKerning | bool |  |
 | EnableScriptEvents | bool |  |
+| EnableVertexGradient | bool |  |
 | EnableWordWrapping | bool |  |
 | ExtraPadding | bool |  |
-| Font | [Font](http://docs.unity3d.com/ScriptReference/Font.html) |  |
+| FaceColor | [Color32](http://docs.unity3d.com/ScriptReference/Color32.html) |  |
+| FirstVisibleCharacter | int |  |
+| Font | [TMP_FontAsset](../Types/TMP_FontAsset) |  |
 | FontColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
-| FontSize | int |  |
-| FontStyle | [FontStyle](http://docs.unity3d.com/ScriptReference/FontStyle.html) |  |
+| FontMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
+| FontMaterials | [Material[]](http://docs.unity3d.com/ScriptReference/Material[].html) |  |
+| FontSharedMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
+| FontSharedMaterials | [Material[]](http://docs.unity3d.com/ScriptReference/Material[].html) |  |
+| FontSize | float |  |
+| FontSizeMax | float |  |
+| FontSizeMin | float |  |
+| FontStyle | FontStyles |  |
+| FontWeight | FontWeight |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
+| GeometrySortingOrder | VertexSortingOrder |  |
+| HavePropertiesChanged | bool |  |
 | Height | [ElementSize](../Types/ElementSize) |  |
-| HorizontalOverflow | [HorizontalWrapMode](http://docs.unity3d.com/ScriptReference/HorizontalWrapMode.html) |  |
+| HorizontalMapping | TextureMappingOptions |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
+| IgnoreRectMaskCulling | bool |  |
+| IgnoreVisibility | bool |  |
 | IsActive | bool |  |
+| IsLinkedTextComponent | bool |  |
+| IsOrthographic | bool |  |
+| IsOverlay | bool |  |
+| IsRightToLeftText | bool |  |
+| IsUsingLegacyAnimationComponent | bool |  |
 | IsVisible | bool |  |
+| IsVolumetricText | bool |  |
 | LayoutRoot | [LayoutRoot](LayoutRoot) |  |
 | LineSpacing | float |  |
+| LineSpacingAdjustment | float |  |
+| LinkedTextComponent | TMP_Text |  |
 | LoadMode | [LoadMode](../Types/LoadMode) |  |
+| MappingUvLineOffset | float |  |
 | Margin | [ElementMargin](../Types/ElementMargin) |  |
 | Maskable | bool |  |
+| MaskOffset | [Vector4](http://docs.unity3d.com/ScriptReference/Vector4.html) |  |
 | Material | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
+| MaxVisibleCharacters | int |  |
+| MaxVisibleLines | int |  |
+| MaxVisibleWords | int |  |
 | Offset | [ElementMargin](../Types/ElementMargin) |  |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
 | OnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
-| OverflowMode | string |  |
+| OutlineColor | [Color32](http://docs.unity3d.com/ScriptReference/Color32.html) |  |
+| OutlineWidth | float |  |
+| OverflowMode | TextOverflowModes |  |
+| OverrideColorTags | bool |  |
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
+| PageToDisplay | int |  |
+| ParagraphSpacing | float |  |
+| ParseCtrlCharacters | bool |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | RaycastTarget | bool |  |
-| ResizeTextForBestFit | bool |  |
-| ResizeTextMaxSize | int |  |
-| ResizeTextMinSize | int |  |
+| RenderMode | TextRenderFlags |  |
+| RichText | bool |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
-| SupportRichText | bool |  |
+| SpriteAsset | [TMP_SpriteAsset](../Types/TMP_SpriteAsset) |  |
 | Text | string |  |
-| TextAlignment | [ElementAlignment](../Types/ElementAlignment) |  |
-| TextComponentTextAlignment | [TextAnchor](http://docs.unity3d.com/ScriptReference/TextAnchor.html) |  |
+| TextAlignment | TextAlignmentOptions |  |
+| TextMargin | [Vector4](http://docs.unity3d.com/ScriptReference/Vector4.html) |  |
+| TextMeshProUGUIAlpha | float |  |
+| TintAllSprites | bool |  |
 | UseFastShader | bool |  |
-| VerticalOverflow | [VerticalWrapMode](http://docs.unity3d.com/ScriptReference/VerticalWrapMode.html) |  |
+| UseMaxVisibleDescender | bool |  |
+| VertexBufferAutoSizeReduction | bool |  |
+| VerticalMapping | TextureMappingOptions |  |
 | Width | [ElementSize](../Types/ElementSize) |  |
+| WordSpacing | float |  |
+| WordWrappingRatios | float |  |

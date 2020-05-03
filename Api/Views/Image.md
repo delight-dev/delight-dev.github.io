@@ -2,7 +2,7 @@
 title: Image
 parent: Views
 grand_parent: API
-nav_order: 7
+nav_order: 9
 ---
 
 # Image
@@ -47,9 +47,12 @@ View that displays an image sprite. Based on the UGUI ImageComponent. Adjusts it
 | OverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| PixelsPerUnitMultiplier | float |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | PreserveAspect | bool |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | RaycastTarget | bool |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | Sprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
 | Type | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |

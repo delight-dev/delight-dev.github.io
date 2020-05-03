@@ -2,7 +2,7 @@
 title: InputField
 parent: Views
 grand_parent: API
-nav_order: 8
+nav_order: 10
 ---
 
 # InputField
@@ -11,7 +11,7 @@ Based on [UIImageView](UIImageView)
 
 ## Description
 
-Interactable input field enabling user to type single or multi-line text.
+Interactable input field view enabling user to type single or multi-line text. Based on TextMeshPro input field component.
 
 ## Dependency Properties
 
@@ -32,6 +32,7 @@ Interactable input field enabling user to type single or multi-line text.
 | BackgroundMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) |  |
 | BackgroundOnCullStateChanged | [CullStateChangedEvent](http://docs.unity3d.com/ScriptReference/CullStateChangedEvent.html) |  |
 | BackgroundOverrideSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
+| BackgroundPixelsPerUnitMultiplier | float |  |
 | BackgroundPreserveAspect | bool |  |
 | BackgroundRaycastTarget | bool |  |
 | BackgroundSprite | [Sprite](http://docs.unity3d.com/ScriptReference/Sprite.html) |  |
@@ -43,50 +44,74 @@ Interactable input field enabling user to type single or multi-line text.
 | CaretPosition | int |  |
 | CaretWidth | int |  |
 | CharacterLimit | int |  |
-| CharacterValidation | [CharacterValidation](http://docs.unity3d.com/ScriptReference/CharacterValidation.html) |  |
+| CharacterValidation | CharacterValidation |  |
 | Colors | [ColorBlock](http://docs.unity3d.com/ScriptReference/ColorBlock.html) |  |
-| ContentType | [ContentType](http://docs.unity3d.com/ScriptReference/ContentType.html) |  |
+| ContentType | ContentType |  |
 | CustomCaretColor | bool |  |
 | DisableLayoutUpdate | bool |  |
 | EnableScriptEvents | bool |  |
+| FontAsset | [TMP_FontAsset](../Types/TMP_FontAsset) |  |
 | GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
 | Height | [ElementSize](../Types/ElementSize) |  |
 | IgnoreFlip | bool |  |
 | IgnoreObject | bool |  |
 | Image | [Image](Image) |  |
-| InputType | [InputType](http://docs.unity3d.com/ScriptReference/InputType.html) |  |
+| InputType | InputType |  |
+| InputValidator | TMP_InputValidator |  |
 | Interactable | bool |  |
 | IsActive | bool |  |
+| IsRichTextEditingAllowed | bool |  |
 | IsVisible | bool |  |
 | KeyboardType | [TouchScreenKeyboardType](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboardType.html) |  |
 | LayoutRoot | [LayoutRoot](LayoutRoot) |  |
-| LineType | [LineType](http://docs.unity3d.com/ScriptReference/LineType.html) |  |
+| LineLimit | int |  |
+| LineType | LineType |  |
 | LoadMode | [LoadMode](../Types/LoadMode) |  |
 | Margin | [ElementMargin](../Types/ElementMargin) |  |
 | Navigation | [Navigation](http://docs.unity3d.com/ScriptReference/Navigation.html) |  |
 | Offset | [ElementMargin](../Types/ElementMargin) |  |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) |  |
-| OnEndEdit | [SubmitEvent](http://docs.unity3d.com/ScriptReference/SubmitEvent.html) |  |
+| OnDeselect | SelectionEvent |  |
+| OnEndEdit | SubmitEvent |  |
+| OnEndTextSelection | TextSelectionEvent |  |
+| OnFocusSelectAll | bool |  |
 | OnlyTriggerValueChangedFromUI | bool |  |
-| OnValidateInput | [OnValidateInput](http://docs.unity3d.com/ScriptReference/OnValidateInput.html) |  |
-| OnValueChanged | [OnChangeEvent](http://docs.unity3d.com/ScriptReference/OnChangeEvent.html) |  |
+| OnSelect | SelectionEvent |  |
+| OnSubmit | SubmitEvent |  |
+| OnTextSelection | TextSelectionEvent |  |
+| OnTouchScreenKeyboardStatusChanged | TouchScreenKeyboardEvent |  |
+| OnValidateInput | OnValidateInput |  |
+| OnValueChanged | OnChangeEvent |  |
 | OverrideHeight | [ElementSize](../Types/ElementSize) |  |
 | OverrideWidth | [ElementSize](../Types/ElementSize) |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | Placeholder | [Graphic](http://docs.unity3d.com/ScriptReference/Graphic.html) |  |
+| PointSize | float |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | ReadOnly | bool |  |
+| ResetOnDeActivation | bool |  |
+| RestoreOriginalTextOnEscape | bool |  |
+| RichText | bool |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
+| ScrollSensitivity | float |  |
 | SelectionAnchorPosition | int |  |
 | SelectionColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
 | SelectionFocusPosition | int |  |
+| SelectionStringAnchorPosition | int |  |
+| SelectionStringFocusPosition | int |  |
 | SetValueOnEndEdit | bool |  |
 | ShouldHideMobileInput | bool |  |
+| ShouldHideSoftKeyboard | bool |  |
 | SpriteState | [SpriteState](http://docs.unity3d.com/ScriptReference/SpriteState.html) |  |
+| StringPosition | int |  |
 | TargetGraphic | [Graphic](http://docs.unity3d.com/ScriptReference/Graphic.html) |  |
 | Text | string |  |
-| TextComponent | [Text](http://docs.unity3d.com/ScriptReference/Text.html) |  |
+| TextComponent | TMP_Text |  |
 | TextMargin | [ElementMargin](../Types/ElementMargin) |  |
+| TextViewport | [RectTransform](http://docs.unity3d.com/ScriptReference/RectTransform.html) |  |
 | Transition | [Transition](http://docs.unity3d.com/ScriptReference/Transition.html) |  |
 | UseFastShader | bool |  |
+| VerticalScrollbar | [Scrollbar](Scrollbar) |  |
 | Width | [ElementSize](../Types/ElementSize) |  |

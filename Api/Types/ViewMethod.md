@@ -2,7 +2,7 @@
 title: ViewMethod
 parent: Types
 grand_parent: API
-nav_order: 101
+nav_order: 121
 ---
 
 # ViewMethod

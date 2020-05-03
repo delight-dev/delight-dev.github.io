@@ -2,7 +2,7 @@
 title: ContentTemplate
 parent: Types
 grand_parent: API
-nav_order: 30
+nav_order: 33
 ---
 
 # ContentTemplate

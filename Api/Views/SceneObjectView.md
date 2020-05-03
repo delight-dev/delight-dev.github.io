@@ -2,7 +2,7 @@
 title: SceneObjectView
 parent: Views
 grand_parent: API
-nav_order: 19
+nav_order: 21
 ---
 
 # SceneObjectView

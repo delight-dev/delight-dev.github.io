@@ -2,7 +2,7 @@
 title: IInitialize
 parent: Types
 grand_parent: API
-nav_order: 49
+nav_order: 54
 ---
 
 # IInitialize

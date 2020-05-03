@@ -2,7 +2,7 @@
 title: BindableCollectionSubset<T>
 parent: Types
 grand_parent: API
-nav_order: 15
+nav_order: 16
 ---
 
 # BindableCollectionSubset<T>

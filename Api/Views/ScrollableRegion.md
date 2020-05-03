@@ -2,7 +2,7 @@
 title: ScrollableRegion
 parent: Views
 grand_parent: API
-nav_order: 20
+nav_order: 22
 ---
 
 # ScrollableRegion
@@ -63,21 +63,25 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | PixelPerfect | bool |  |
 | PlaneDistance | float |  |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) |  |
 | ReferencePixelsPerUnit | float |  |
 | ReferenceResolution | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | RenderCamera | string |  |
 | RenderMode | [RenderMode](http://docs.unity3d.com/ScriptReference/RenderMode.html) |  |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) |  |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) |  |
 | ScaleFactor | float |  |
 | ScreenMatchMode | [ScreenMatchMode](http://docs.unity3d.com/ScriptReference/ScreenMatchMode.html) |  |
 | ScrollBounds | [ScrollBounds](../Types/ScrollBounds) |  |
+| ScrollEnabled | bool |  |
 | ScrollSensitivity | float |  |
 | SortingLayerID | int |  |
 | SortingLayerName | string |  |
 | SortingOrder | int |  |
 | TargetDisplay | int |  |
 | UiScaleMode | [ScaleMode](http://docs.unity3d.com/ScriptReference/ScaleMode.html) |  |
+| UnblockDragEventsInChildren | bool |  |
 | UseFastShader | bool |  |
 | VerticalScrollbarVisibility | [ScrollbarVisibilityMode](../Types/ScrollbarVisibilityMode) |  |
 | Width | [ElementSize](../Types/ElementSize) |  |
