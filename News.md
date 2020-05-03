@@ -4,14 +4,9 @@ title: "News"
 
 # News
 
-<ul class="entries">
-  {% for post in site.posts %}
-  <li>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+{% for post in site.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p>{{ post.date | date_to_string }} - {{ post.author }}</p>
 
-  </li>
-  {% endfor %}
-</ul>
-
-
-{% include recent-posts.html %}
+  {{ post.content }}
+{% endfor %}
