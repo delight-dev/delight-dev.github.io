@@ -11,13 +11,13 @@ nav_order: 5
 
 ## Introduction
 
-This tutorial goes over the presentation of static and dynamic lists of data through the *List* view. It shows how to bind collections of data to the List and how to handle common operations such as item selection, adding, updating and sorting. There are a number of other views that work with list data such as the *ComboBox* but most of the information in this tutorial will be applicable to those views as well. 
+This tutorial goes over how to work with and present static and dynamic lists of data through the [List](../Api/Views/List) view. It shows how to bind collections of data to the List and how to handle common operations such as item selection, adding and updating. There are a number of other views that can present dynamic list data such as the [ComboBox](../Api/Views/ComboBox) and [TabPanel](../Api/Views/TabPanel) but most of the information in this tutorial will be applicable to those views as well. 
 
 
 
 ## Static List
 
-If you want to present a static list of items, i.e. list that don't change during runtime, you can use either a *Group* or a *List* view. Group view is useful if you only want to snug items together horizontally or vertically. The *List* view provides additional functionality such as selection logic, scrolling and the option to have items wrap as they reach the boundaries of the list. 
+If you want to present a static list of items, i.e. list that don't change during runtime, you can use either a [Group](../Api/Views/Group) or a [List](../Api/Views/List) view. Group view is useful if you only want to snug items together horizontally or vertically. The *List* view provides additional functionality such as selection logic, scrolling and the option to have items wrap as they reach the boundaries of the list. 
 
 {: .xml-file }
 
@@ -67,7 +67,7 @@ Sprite Icon
 "Spear", RainbowSquare
 ```
 
-The schema above generates a global bindable collection *Weapons* populated with three items. For more information on schemas check out the Data Modelling tutorial. Presenting the weapons:
+The schema above generates a global bindable collection *Weapons* populated with three items. Presenting the weapons:
 
 {: .xml-file }
 
@@ -182,4 +182,5 @@ namespace Delight
 
 ![](lists-dynamic.png)
 
-In code the global weapons collection is accessed through *Models.Weapons* and can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to. 
+In code the global weapons collection is accessed through *Models.Weapons* and can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
+
