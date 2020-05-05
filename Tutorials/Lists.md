@@ -111,7 +111,7 @@ If the *Weapons* collection is updated anywhere the list will be automatically u
 
 
 
-## List operations
+## List Operations
 
 Any changes to the list are done through the *Weapons* collection. Let's add some buttons that demonstrates common list operations:
 
