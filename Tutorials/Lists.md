@@ -141,7 +141,11 @@ WeaponsList.xml
 </WeaponsList>
 ```
 
-We added a local dependency called *SelectedWeapon* that we've bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
+We've added a local dependency property called *SelectedWeapon* that is bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
+
+{: .cs-file }
+
+WeaponsList.cs
 
 ```cs
 namespace Delight
@@ -182,5 +186,5 @@ namespace Delight
 
 ![](lists-dynamic.png)
 
-In code the global weapons collection is accessed through *Models.Weapons* and can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
+In code the global weapons collection is accessed through *Models.Weapons*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
 
