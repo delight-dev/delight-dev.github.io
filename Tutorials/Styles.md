@@ -26,7 +26,8 @@ MyStyles.xml
 ```xml
 <MyStyles>
   <Button BackgroundColor="Red" /> 
-  <Button Style="BigBlueButton" BackgroundColor="Blue" Width="300" Height="80" /> 
+  <Button Style="BigBlueButton" BackgroundColor="Blue" 
+          Width="300" Height="80" /> 
 </MyStyles>
 ```
 
@@ -59,7 +60,8 @@ MyStyles.xml
 
 ```xml
 <Button Style="BigButton" Width="300" Height="80" /> 
-<Button Style="BigBlueButton" BasedOn="BigButton" BackgroundColor="Blue"  /> 
+<Button Style="BigBlueButton" BasedOn="BigButton" 
+        BackgroundColor="Blue"  /> 
 ```
 
 

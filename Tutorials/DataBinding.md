@@ -153,7 +153,8 @@ You can also add format modifiers to control things like number of decimals prin
 <MyView>
   
   <Group Orientation="Vertical">
-    <Slider Id="Slider1" Orientation="Vertical" Min="20" Max="180" Value="50" />
+    <Slider Id="Slider1" Orientation="Vertical" 
+            Min="20" Max="180" Value="50" />
     <Label Text="{Slider1.Value:0.0}" />
   </Group> 
    
@@ -175,7 +176,8 @@ You can bind to collections using the `{item in MyCollection}` syntax:
 ```xml
 <HighscoreTest>
   
-    <List Id="HighscoreList" Items="{highscore in @Highscores}" Width="300">
+    <List Id="HighscoreList" Items="{highscore in @Highscores}" 
+          Width="300">
       <ListItem Width="100%">
         <Label Text="{highscore.Name}: {highscore.ScoreText}"/>
       </ListItem> 

@@ -28,13 +28,16 @@ MyStaticList.xml
 
   <List BackgroundColor="White">
     <ListItem Size="100;30">
-      <Label Text="Item 1" AutoSize="True" Alignment="Left" Margin="10,0,0,0" />
+      <Label Text="Item 1" AutoSize="True" Alignment="Left" 
+             Margin="10,0,0,0" />
     </ListItem>
     <ListItem Size="100;30">
-      <Label Text="Item 2" AutoSize="True" Alignment="Left" Margin="10,0,0,0" />
+      <Label Text="Item 2" AutoSize="True" Alignment="Left" 
+             Margin="10,0,0,0" />
     </ListItem>
     <ListItem Size="100;30">      
-      <Label Text="Item 3" AutoSize="True" Alignment="Left" Margin="10,0,0,0" />
+      <Label Text="Item 3" AutoSize="True" Alignment="Left" 
+             Margin="10,0,0,0" />
       <CheckBox Alignment="Right" />
     </ListItem>
   </List>
@@ -100,14 +103,93 @@ Three important things are going on here:
 If the *Weapons* collection is updated anywhere the list will be automatically updated as well. The below example shows a more advanced item template:
 
 ```xml
-  <List Items="{weapon in @Weapons}" BackgroundColor="White">
-    <ListItem Width="150">
-      <Image Sprite="{weapon.Icon}" Alignment="Left" Offset="10,0,0,0" />
-      <Label Text="{weapon.Name}" AutoSize="True" Alignment="Left" 
-             Margin="40,0,0,0" />
-    </ListItem>
-  </List>
+<List Items="{weapon in @Weapons}" BackgroundColor="White">
+  <ListItem Width="150">
+    <Image Sprite="{weapon.Icon}" Alignment="Left" Offset="10,0,0,0" />
+    <Label Text="{weapon.Name}" AutoSize="True" Alignment="Left" 
+           Margin="40,0,0,0" />
+  </ListItem>
+</List>
 ```
+
+
+
+## List Operations
+
+Any changes to the list are done through the *Weapons* collection. Let's add some buttons that demonstrates common list operations:
+
+{: .xml-file }
+
+WeaponsList.xml
+
+```xml
+<WeaponsList SelectedWeapon="t:Weapon">
+
+  <Group Orientation="Horizontal">
+
+    <Group Spacing="5">
+      <Button Text="Add" Width="100" Click="AddWeapon" />
+      <Button Text="Remove" Width="100" Click="RemoveWeapon" />
+      <Button Text="Update" Width="100" Click="UpdateSelectedWeapon" />
+      <Button Text="Update All" Width="100" Click="UpdateAllWeapons" />
+    </Group>
+
+    <List Items="{weapon in @Weapons}" Margin="10,0,0,0" 
+          BackgroundColor="White" SelectedItem="{SelectedWeapon}">
+      <Label Text="{weapon.Name}" Margin="10,0,0,0" />
+    </List>
+
+  </Group>
+  
+</WeaponsList>
+```
+
+We've added a local dependency property called *SelectedWeapon* that is bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
+
+{: .cs-file }
+
+WeaponsList.cs
+
+```cs
+namespace Delight
+{
+    public partial class WeaponsList
+    {
+        public void AddWeapon()
+        {
+            Models.Weapons.Add(new Weapon { Name = "New Weapon" });
+        }
+
+        public void RemoveWeapon()
+        {
+            if (SelectedWeapon == null)
+                return;
+
+            Models.Weapons.Remove(SelectedWeapon);
+        }
+
+        public void UpdateSelectedWeapon()
+        {
+            if (SelectedWeapon == null)
+                return;
+
+            SelectedWeapon.Name = "Updated";
+        }
+
+        public void UpdateAllWeapons()
+        {
+            foreach (var weapon in Models.Weapons)
+            {
+                weapon.Name = "Updated All";
+            }
+        }
+    }
+}
+```
+
+![](lists-dynamic.png)
+
+In code the global weapons collection is accessed through *Models.Weapons*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
 
 
 
@@ -187,4 +269,3 @@ namespace Delight
 ![](lists-dynamic.png)
 
 In code the global weapons collection is accessed through *Models.Weapons*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
-
