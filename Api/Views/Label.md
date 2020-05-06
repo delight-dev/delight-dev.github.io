@@ -91,12 +91,12 @@ View that presents text. Based on TextMeshPro text component.
 | ParagraphSpacing | float |  |
 | ParseCtrlCharacters | bool |  |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Changes the pivot point of the view. |
-| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | TEST123: Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
 | RaycastTarget | bool |  |
 | RenderMode | TextRenderFlags |  |
 | RichText | bool |  |
-| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | TEST222: Rotation of the view. |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
 | SpriteAsset | [TMP_SpriteAsset](../Types/TMP_SpriteAsset) |  |
 | Text | string |  |

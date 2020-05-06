@@ -59,9 +59,9 @@ Arranges content in a series of tabs that can be switched between. Tabs can be o
 | OverrideHeight | [ElementSize](../Types/ElementSize) | Overrides regular Height value. Used to e.g. automatically size items without changing the default Height value set. |
 | OverrideWidth | [ElementSize](../Types/ElementSize) | Overrides regular Width value. Used to e.g. automatically size items without changing the default Width value set. |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Changes the pivot point of the view. |
-| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | TEST123: Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
-| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | TEST222: Rotation of the view. |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
 | SelectedTabIndex | int |  |
 | TabHeaderHeight | [ElementSize](../Types/ElementSize) |  |

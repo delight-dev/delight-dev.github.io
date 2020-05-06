@@ -51,13 +51,13 @@ Represents a layout root canvas under which all UI views must reside.
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Changes the pivot point of the view. |
 | PixelPerfect | bool |  |
 | PlaneDistance | float |  |
-| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | TEST123: Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
+| Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
 | ReferencePixelsPerUnit | float |  |
 | ReferenceResolution | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
 | RenderCamera | string |  |
 | RenderMode | [RenderMode](http://docs.unity3d.com/ScriptReference/RenderMode.html) |  |
-| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | TEST222: Rotation of the view. |
+| Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
 | ScaleFactor | float |  |
 | ScreenMatchMode | [ScreenMatchMode](http://docs.unity3d.com/ScriptReference/ScreenMatchMode.html) |  |
