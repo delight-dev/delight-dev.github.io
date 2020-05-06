@@ -13,6 +13,9 @@ Based on [Collection](Collection)
 
 The list presents a static or dynamic list of items. The list can be set to be scrollable through the IsScrollable property. items can be made selectable. Items can be arranged vertically or horizontally. The items can overflow or be wrapped to create flowing lists.
 
+{% capture ListExamples %}{% include Examples/Views/ListExamples.md %}{% endcapture %}
+{{ ListExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

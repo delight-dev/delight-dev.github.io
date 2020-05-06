@@ -1,3 +1,14 @@
 ## Examples
 
-Here we can show various examples on how the Button view can be used which will be included in the API docs. 
+Button with click handler:
+
+```xml
+<Button Text="Click Me" FontSize="14" Click="MyClickHandler" TextPadding="10" />
+```
+
+Toggle button that starts out toggled:
+
+```xml
+<Button Text="Toggle Me" FontSize="14" IsToggleButton="True" ToggleValue="True"
+        ToggleClick="MyToggleHandler" />
+```
