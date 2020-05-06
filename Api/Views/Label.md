@@ -41,7 +41,7 @@ View that presents text. Based on TextMeshPro text component.
 | FontMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) | Font material to be used. |
 | FontMaterials | [Material[]](http://docs.unity3d.com/ScriptReference/Material[].html) | Font materials to be used. |
 | FontSharedMaterial | [Material](http://docs.unity3d.com/ScriptReference/Material.html) | Shared font material. |
-| FontSharedMaterials | [Material[]](http://docs.unity3d.com/ScriptReference/Material[].html) |  |
+| FontSharedMaterials | [Material[]](http://docs.unity3d.com/ScriptReference/Material[].html) | Shared font materials. |
 | FontSize | float | The point size of the font. |
 | FontSizeMax | float | Maximum point size of the font when text auto-sizing is enabled. |
 | FontSizeMin | float | Minimum point size of the font when text auto-sizing is enabled. |
