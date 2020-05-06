@@ -19,7 +19,7 @@ View that presents text. Based on TextMeshPro text component.
 | --- | --- | --- |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) | Used to align the view relative to the layout parent region it resides in. |
 | Alpha | float | Can be used to adjust the alpha color of this view and all its children. E.g. used for fade in/out animations. Is separate from and different from the background color of the view as it affects the children as well. |
-| AutoSize | [AutoSize](../Types/AutoSize) |  |
+| AutoSize | [AutoSize](../Types/AutoSize) | Enum indicating if and how the label should automatically resize itself to the size of the text. |
 | AutoSizeTextContainer | bool |  |
 | BubbleNotifyChildLayoutChanged | bool | Boolean indicating if parent always should be notified when the child changes layout. |
 | CharacterSpacing | float |  |
@@ -30,7 +30,7 @@ View that presents text. Based on TextMeshPro text component.
 | EnableAutoSizing | bool |  |
 | EnableCulling | bool |  |
 | EnableKerning | bool |  |
-| EnableScriptEvents | bool |  |
+| EnableScriptEvents | bool | Boolean indicating if unity script events (Update, LateUpdate, Awake, etc) should be relayed to the view code-behind through the corresponding methods that can be overriden. |
 | EnableVertexGradient | bool |  |
 | EnableWordWrapping | bool |  |
 | ExtraPadding | bool |  |
@@ -47,16 +47,16 @@ View that presents text. Based on TextMeshPro text component.
 | FontSizeMin | float |  |
 | FontStyle | FontStyles |  |
 | FontWeight | FontWeight |  |
-| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
+| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) | GameObject in the hierarchy that corresponds to the view. |
 | GeometrySortingOrder | VertexSortingOrder |  |
 | HavePropertiesChanged | bool |  |
 | Height | [ElementSize](../Types/ElementSize) | The height of the view in pixels or percents. |
 | HorizontalMapping | TextureMappingOptions |  |
 | IgnoreFlip | bool | Used when doing localization override default behavior of flipping the view Right to Left or Left to Rigth. |
-| IgnoreObject | bool |  |
+| IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
 | IgnoreRectMaskCulling | bool |  |
 | IgnoreVisibility | bool |  |
-| IsActive | bool |  |
+| IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsLinkedTextComponent | bool |  |
 | IsMaskingGraphic | bool |  |
 | IsOrthographic | bool |  |
@@ -69,7 +69,7 @@ View that presents text. Based on TextMeshPro text component.
 | LineSpacing | float |  |
 | LineSpacingAdjustment | float |  |
 | LinkedTextComponent | TMP_Text |  |
-| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | MappingUvLineOffset | float |  |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
 | Maskable | bool |  |
@@ -90,7 +90,7 @@ View that presents text. Based on TextMeshPro text component.
 | PageToDisplay | int |  |
 | ParagraphSpacing | float |  |
 | ParseCtrlCharacters | bool |  |
-| Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Changes the pivot point of the view. |
+| Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | The pivot point of the view. |
 | Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
 | RaycastTarget | bool |  |

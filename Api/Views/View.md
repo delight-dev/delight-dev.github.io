@@ -15,4 +15,4 @@ Base class for views.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |

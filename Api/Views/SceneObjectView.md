@@ -17,8 +17,8 @@ Base class for all views that has a game object in the scene.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| EnableScriptEvents | bool |  |
-| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
-| IgnoreObject | bool |  |
-| IsActive | bool |  |
-| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| EnableScriptEvents | bool | Boolean indicating if unity script events (Update, LateUpdate, Awake, etc) should be relayed to the view code-behind through the corresponding methods that can be overriden. |
+| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) | GameObject in the hierarchy that corresponds to the view. |
+| IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
+| IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
+| LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |

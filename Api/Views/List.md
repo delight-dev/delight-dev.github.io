@@ -19,7 +19,7 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | --- | --- | --- |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) | Used to align the view relative to the layout parent region it resides in. |
 | Alpha | float | Can be used to adjust the alpha color of this view and all its children. E.g. used for fade in/out animations. Is separate from and different from the background color of the view as it affects the children as well. |
-| AlternateItems | bool |  |
+| AlternateItems | bool | Boolean indicating if the state of every other (odd) list items should be Alternate by default. Used to alternate the style of list items. |
 | BackgroundAlphaHitTestMinimumThreshold | float |  |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
 | BackgroundFillAmount | float |  |
@@ -39,46 +39,46 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | BackgroundType | [Type](http://docs.unity3d.com/ScriptReference/Type.html) |  |
 | BackgroundUseSpriteMesh | bool |  |
 | BubbleNotifyChildLayoutChanged | bool | Boolean indicating if parent always should be notified when the child changes layout. |
-| CanDeselect | bool |  |
-| CanMultiSelect | bool |  |
-| CanReselect | bool |  |
-| CanSelect | bool |  |
-| ContentAlignment | [ElementAlignment](../Types/ElementAlignment) |  |
-| DeselectAfterSelect | bool |  |
-| DisableItemArrangement | bool |  |
+| CanDeselect | bool | Boolean indicating if selected list items can be deselected by clicking on them again. |
+| CanMultiSelect | bool | Boolean indicating if the user can select multiple list items. |
+| CanReselect | bool | Boolean indicating if the selected item should be reselected if clicked on again. |
+| CanSelect | bool | Boolean indicating if the user can select items in the list. |
+| ContentAlignment | [ElementAlignment](../Types/ElementAlignment) | Alignment of the list items. |
+| DeselectAfterSelect | bool | Boolean indicating if the item should immediatelly be deselected after being selected. |
+| DisableItemArrangement | bool | Boolean indicating if the list shouldn't arrange its items. Used if items are arranged elsewhere. |
 | DisableLayoutUpdate | bool | Boolean indicating if automatic layout updates for this view should be disabled. When disabled the view doesn't call UpdateLayout() when properties such as Width, Height, etc. changes. |
-| EnableScriptEvents | bool |  |
-| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) |  |
+| EnableScriptEvents | bool | Boolean indicating if unity script events (Update, LateUpdate, Awake, etc) should be relayed to the view code-behind through the corresponding methods that can be overriden. |
+| GameObject | [GameObject](http://docs.unity3d.com/ScriptReference/GameObject.html) | GameObject in the hierarchy that corresponds to the view. |
 | Height | [ElementSize](../Types/ElementSize) | The height of the view in pixels or percents. |
-| HorizontalSpacing | [ElementSize](../Types/ElementSize) |  |
+| HorizontalSpacing | [ElementSize](../Types/ElementSize) | Horizontal spacing between the list items. |
 | IgnoreFlip | bool | Used when doing localization override default behavior of flipping the view Right to Left or Left to Rigth. |
-| IgnoreObject | bool |  |
-| IsActive | bool |  |
-| IsScrollable | bool |  |
-| IsStatic | bool |  |
-| IsVirtualized | bool |  |
+| IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
+| IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
+| IsScrollable | bool | Boolean indicating if the list can be scrolled. |
+| IsStatic | bool | Boolean indicating if the list is static. |
+| IsVirtualized | bool | Boolean indicating if the list is virtualized. Virtualized lists have far better performance when dealing with large number of items as only items visible in the viewport are generated. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| Items | [BindableCollection](../Types/BindableCollection) |  |
+| Items | [BindableCollection](../Types/BindableCollection) | The data collection that is used to generate the collection view items. |
 | LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
-| LoadMode | [LoadMode](../Types/LoadMode) |  |
+| LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) | Offset set by a parent view. Used by views like Group to arrange children without changing their own Offset values. |
-| Orientation | [ElementOrientation](../Types/ElementOrientation) |  |
-| Overflow | [OverflowMode](../Types/OverflowMode) |  |
+| Orientation | [ElementOrientation](../Types/ElementOrientation) | Orientation of the list. |
+| Overflow | [OverflowMode](../Types/OverflowMode) | Enum indicating if items should overflow or wrap as they reach the boundaries of the list. Used to create flowing lists. |
 | OverrideHeight | [ElementSize](../Types/ElementSize) | Overrides regular Height value. Used to e.g. automatically size items without changing the default Height value set. |
 | OverrideWidth | [ElementSize](../Types/ElementSize) | Overrides regular Width value. Used to e.g. automatically size items without changing the default Width value set. |
-| Padding | [ElementMargin](../Types/ElementMargin) |  |
-| Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Changes the pivot point of the view. |
+| Padding | [ElementMargin](../Types/ElementMargin) | Adds padding to the list. |
+| Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | The pivot point of the view. |
 | Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
-| RealizationMargin | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) |  |
+| RealizationMargin | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | Used when IsVirtualized is set to true and determines how close the list item needs to be to the visible viewport in order to be realized. |
 | Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
-| SelectedItem | [BindableObject](../Types/BindableObject) |  |
-| SelectOnMouseUp | bool |  |
-| SortDirection | [ElementSortDirection](../Types/ElementSortDirection) |  |
-| Spacing | [ElementSize](../Types/ElementSize) |  |
+| SelectedItem | [BindableObject](../Types/BindableObject) | References the data collection item that corresponds to the currently selected list item. |
+| SelectOnMouseUp | bool | Boolean indicating if list items should be selected on mouse up. |
+| SortDirection | [ElementSortDirection](../Types/ElementSortDirection) | Determines the sort direction of the list items. |
+| Spacing | [ElementSize](../Types/ElementSize) | Horizontal and vertical spacing between the list items. |
 | UseFastShader | bool | Boolean indicating if the default UI shader should be replaced by a simpler and faster one. The faster shader does not support masking and clipping. |
-| VerticalSpacing | [ElementSize](../Types/ElementSize) |  |
+| VerticalSpacing | [ElementSize](../Types/ElementSize) | Vertical spacing between the list items. |
 | Width | [ElementSize](../Types/ElementSize) | The width of the view in pixels or percents. |
