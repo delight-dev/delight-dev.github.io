@@ -3,7 +3,7 @@ title: "Home"
 permalink: /index.html
 ---
 
-# Create UI components in Unity
+# Component-oriented UI framework for Unity
 
 {: .fs-6 .fw-300} 
 
@@ -37,7 +37,7 @@ Delight is an open source component-oriented framework for Unity, mainly centere
    
    </NewScene>
    ```
-  
+
 
 
 3. Open the Unity scene `NewScene.unity` that has been created in the same folder and run it.

@@ -2,7 +2,7 @@
 title: Lists
 parent: Tutorials
 has_children: false
-nav_order: 5
+nav_order: 6
 ---
 # Lists
 
@@ -73,7 +73,6 @@ Sprite Icon
 "Cherry", RainbowSquare
 "Mango", RainbowSquare
 "Nectarine", RainbowSquare
-
 ```
 
 The schema above generates a global bindable collection *Fruits* populated with data. Presenting the fruits:
@@ -291,7 +290,6 @@ Virtualized lists only creates objects for the items visible in the viewport whi
     <Label Text="{fruit.Name}" />
   </ListItem>
 </List>
-
 ```
 
 To create the virtualized list we do the following:
@@ -362,7 +360,6 @@ FruitList.xml
     <Label Text="{fruit.Name}" FontColor="Blue" />
   </ListItem>
 </List>
-
 ```
 
 To create a list with multiple templates we do the following:
