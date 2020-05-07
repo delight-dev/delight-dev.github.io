@@ -179,14 +179,14 @@ namespace Delight
             if (SelectedFruit == null)
                 return;
 
-            SelectedFruit.Name = "Updated";
+            SelectedFruit.Name += "*";
         }
 
         public void UpdateAllFruits()
         {
             foreach (var fruit in Models.Fruits)
             {
-                fruit.Name = "Updated All";
+                fruit.Name += "*";
             }
         }
     }
