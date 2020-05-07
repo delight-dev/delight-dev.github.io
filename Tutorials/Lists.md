@@ -11,7 +11,7 @@ nav_order: 5
 
 ## Introduction
 
-This tutorial goes over how to work with and present static and dynamic lists of data through the [List](../Api/Views/List) view. It shows how to bind collections of data to the List and how to handle common operations such as item selection, adding and updating. There are a number of other views that can present dynamic list data such as the [ComboBox](../Api/Views/ComboBox) and [TabPanel](../Api/Views/TabPanel) but most of the information in this tutorial will be applicable to those views as well. 
+This tutorial goes over how to work with the [List](../Api/Views/List) view. It shows how to create static lists, dynamic lists, virtualized lists, flow lists and more. It demonstrates how to bind collections of data to the List view and how to handle common operations such as item selection, adding and updating. There are a number of other views that can present dynamic list data such as the [ComboBox](../Api/Views/ComboBox) and [TabPanel](../Api/Views/TabPanel) but most of the information in this tutorial will be applicable to those views as well. 
 
 
 
@@ -51,7 +51,7 @@ The items are arranged vertically by default and the size of the list will autom
 
 
 
-## Dynamic Lists
+## Dynamic List
 
 To display a data collection in a dynamic list we first need to define the data model. The easiest way to do this is by using schemas to generate the necessary classes.
 
@@ -60,53 +60,59 @@ To display a data collection in a dynamic list we first need to define the data 
 Schema.txt
 
 ```text
-= Weapon
+= Fruit
 string Name
 Sprite Icon
 
-+ Weapon (Name, Icon)
-"Sword", RainbowSquare
-"Dagger", RainbowSquare
-"Spear", RainbowSquare
++ Fruit (Name, Icon)
+"Apple", RainbowSquare
+"Watermelon", RainbowSquare
+"Orange", RainbowSquare
+"Strawberry", RainbowSquare
+"Grape", RainbowSquare
+"Cherry", RainbowSquare
+"Mango", RainbowSquare
+"Nectarine", RainbowSquare
+
 ```
 
-The schema above generates a global bindable collection *Weapons* populated with three items. Presenting the weapons:
+The schema above generates a global bindable collection *Weapons* populated with data. Presenting the fruits:
 
 {: .xml-file }
 
-WeaponsList.xml
+FruitList.xml
 
 ```xml
-<WeaponsList>
+<FruitList>
 
-  <List Items="{weapon in @Weapons}">    
-    <Label Text="{weapon.Name}" />
+  <List Items="{fruit in @Fruits}">    
+    <Label Text="{fruit.Name}" />
   </List>
 
-</WeaponsList>
+</FruitList>
 ```
 
 Three important things are going on here:
 
-1. The first thing we do is to bind the *Weapons* collection to the list view:
+1. The first thing we do is to bind the *Fruits* collection to the list view:
 
-   `<List Items="{weapon in @Weapons}">`
+   `<List Items="{fruit in @Fruits}">`
 
-   *weapon* is the name we use to refer to the items in the list (you can use any name you want) and *@Weapons* refers to our data model, the *@* symbol specifies that it refers to our data model and not a local property in *MyDynamicList*. 
+   *fruit* is the name we use to refer to the items in the list (you can use any name you want) and *@Fruits* refers to our data model, the *@* symbol specifies that it refers to our data model and not a local property in  the *FruitList* view. 
 
 2. We define the item template which in this case consist of a single *Label* that will automatically be wrapped by a *ListItem* view by the framework. 
 
 3. Lastly we bind the item property *Name* to the label:
 
-   `<Label Text="{weapon.Name}"  />`
+   `<Label Text="{fruit.Name}"  />`
 
-If the *Weapons* collection is updated anywhere the list will be automatically updated as well. The below example shows a more advanced item template:
+If the *Fruits* collection is updated anywhere the list will be automatically updated as well. The below example shows a more advanced item template:
 
 ```xml
-<List Items="{weapon in @Weapons}" BackgroundColor="White">
+<List Items="{fruit in @Fruits}" BackgroundColor="White">
   <ListItem Width="150">
-    <Image Sprite="{weapon.Icon}" Alignment="Left" Offset="10,0,0,0" />
-    <Label Text="{weapon.Name}" AutoSize="True" Alignment="Left" 
+    <Image Sprite="{fruit.Icon}" Alignment="Left" Offset="10,0,0,0" />
+    <Label Text="{fruit.Name}" AutoSize="True" Alignment="Left" 
            Margin="40,0,0,0" />
   </ListItem>
 </List>
@@ -116,156 +122,285 @@ If the *Weapons* collection is updated anywhere the list will be automatically u
 
 ## List Operations
 
-Any changes to the list are done through the *Weapons* collection. Let's add some buttons that demonstrates common list operations:
+Any changes to the list are done through the *Fruits* collection. Let's add some buttons that demonstrates common list operations:
 
 {: .xml-file }
 
-WeaponsList.xml
+FruitList.xml
 
 ```xml
-<WeaponsList SelectedWeapon="t:Weapon">
+<FruitList SelectedFruit="t:Fruit">
 
   <Group Orientation="Horizontal">
 
     <Group Spacing="5">
-      <Button Text="Add" Width="100" Click="AddWeapon" />
-      <Button Text="Remove" Width="100" Click="RemoveWeapon" />
-      <Button Text="Update" Width="100" Click="UpdateSelectedWeapon" />
-      <Button Text="Update All" Width="100" Click="UpdateAllWeapons" />
+      <Button Text="Add" Width="100" Click="AddFruit" />
+      <Button Text="Remove" Width="100" Click="RemoveFruit" />
+      <Button Text="Update" Width="100" Click="UpdateSelectedFruit" />
+      <Button Text="Update All" Width="100" Click="UpdateAllFruits" />
     </Group>
 
-    <List Items="{weapon in @Weapons}" Margin="10,0,0,0" 
-          BackgroundColor="White" SelectedItem="{SelectedWeapon}">
-      <Label Text="{weapon.Name}" Margin="10,0,0,0" />
+    <List Items="{fruit in @Fruits}" Margin="10,0,0,0" 
+          BackgroundColor="White" SelectedItem="{SelectedFruit}">
+      <Label Text="{fruit.Name}" Margin="10,0,0,0" />
     </List>
 
   </Group>
   
-</WeaponsList>
+</FruitList>
 ```
 
-We've added a local dependency property called *SelectedWeapon* that is bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
+We've added a local dependency property called *SelectedFruit* that is bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
 
 {: .cs-file }
 
-WeaponsList.cs
+FruitList.cs
 
 ```cs
 namespace Delight
 {
-    public partial class WeaponsList
+    public partial class FruitList
     {
-        public void AddWeapon()
+        public void AddFruit()
         {
-            Models.Weapons.Add(new Weapon { Name = "New Weapon" });
+            Models.Fruits.Add(new Fruit { Name = "New Fruit" });
         }
 
-        public void RemoveWeapon()
+        public void RemoveFruit()
         {
-            if (SelectedWeapon == null)
+            if (SelectedFruit == null)
                 return;
 
-            Models.Weapons.Remove(SelectedWeapon);
+            Models.Fruits.Remove(SelectedFruit);
         }
 
-        public void UpdateSelectedWeapon()
+        public void UpdateSelectedFruit()
         {
-            if (SelectedWeapon == null)
+            if (SelectedFruit == null)
                 return;
 
-            SelectedWeapon.Name = "Updated";
+            SelectedFruit.Name = "Updated";
         }
 
-        public void UpdateAllWeapons()
+        public void UpdateAllFruits()
         {
-            foreach (var weapon in Models.Weapons)
+            foreach (var fruit in Models.Fruits)
             {
-                weapon.Name = "Updated All";
+                fruit.Name = "Updated All";
             }
         }
     }
 }
 ```
 
-![](lists-dynamic.png)
+![](lists-fruit-list.gif)
 
-In code the global weapons collection is accessed through *Models.Weapons*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
+In code the global fruits collection is accessed through *Models.Fruits*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
+
+A  few more list operations that can be useful:
+
+```cs
+// scroll to item
+Models.Fruits.ScrollTo(fruit);
+
+// select item
+Models.Fruits.Select(fruit);
+
+// replace list
+Models.Fruits.Replace(newFruitList);
+```
 
 
 
-## List Operations
+## Scrollable List
 
-Any changes to the list are done through the *Weapons* collection. Let's add some buttons that demonstrates common list operations:
+Scrollable lists have a defined viewport size and allows the user to scroll through its content. 
+
+```xml
+<List Items="{fruit in @Fruits}" IsScrollable="True"
+      Width="150" Height="100" BackgroundColor="White">
+  <ListItem Height="30"> 
+    <Label Text="{fruit.Name}" />
+  </ListItem>
+</List>
+```
+
+![](lists-scrollable-list.gif)
+
+To create a scrollable list do the following:
+
+1. Set `IsScrollable="True"` on the list.
+2. Set `Width` and `Height` on the list to define the viewport size. 
+
+There are a number of properties that are interesting when working with scrollable lists. The below example shows some of them.
+
+```xml
+<List Items="{fruit in @Fruits}" IsScrollable="True"
+      Width="150" Height="100" BackgroundColor="White"
+      ScrollableRegionContentAlignment="Top" 
+      DisableInteractionScrollDelta="1" 
+      HasInertia="False" 
+      VerticalScrollbarVisibility="Auto" 
+      VerticalScrollbarBackgroundColor="#c3c3c3" 
+      VerticalScrollbarHandleColor="#9f9f9f" 
+      VerticalScrollbarBarColor="#c3c3c3"
+      VerticalScrollbarWidth="6" 
+      VerticalScrollbarBarMargin="0,0,2,0" 
+      VerticalScrollbarOffset="0,0,0,0">
+  <ListItem Height="30"> 
+    <Label Text="{fruit.Name}" />
+  </ListItem>
+</List>
+```
+
+
+
+## Flow List
+
+In a flow list items are arranged horizontally or vertically and wrap around to the next line when reaching the bounds of the list. 
+
+```xml
+<List Overflow="Wrap" Items="{fruit in @Fruits}" Spacing="5" Width="460"
+      Orientation="Horizontal">
+  <ListItem Width="150" Height="150" BackgroundColor="Lavender">
+    <Label Text="{fruit.Name}" AutoSize="True" />
+  </ListItem>
+</List>
+```
+
+![](lists-flow-list.gif)
+
+To create the horizontally flowing list we do the following:
+
+1. Set `Overflow="Wrap"` which makes the items wrap when they reach the edge of the bounds.
+2. Set `Orientation="Horizontal"` to make the items flow horizontally. 
+3. Set `Width` so the list has a defined horizontal size. 
+
+To make the list flow vertically you can set orientation to *Vertical* and specify the *Height* of the list. 
+
+
+
+## Virtualized List
+
+Virtualized lists only creates objects for the items visible in the viewport which greatly improves performance of lists that are large. To create a virtualized list simply set *IsVirtualized="True"*. 
+
+```xml
+<List Items="{fruit in @Fruits}" IsVirtualized="True"
+      Width="150" Height="100" BackgroundColor="White">
+  <ListItem Height="30"> 
+    <Label Text="{fruit.Name}" />
+  </ListItem>
+</List>
+
+```
+
+To create the virtualized list we do the following:
+
+1. Set `IsVirtualized="True"` on the list. 
+2. Set `Width`and `Height` on the list to define the viewport size.
+3. Set `Height` on the list item to define the item size (see section below on how to create dynamically sized virtualized items).
+
+Virtualized lists always have a defined size and are always scrollable. Items need to have a pre-defined size.
+
+
+
+### Virtualized Lists with Differently Sized Items
+
+The list items in a virtualized list need to have a pre-defined size in order to calculate their position in the list (before they are created). You may have a virtualized list that features differently sized items, e.g. a chat window where each chat entry size depends on the length of the text. To do this you can specify the `VirtualItemGetter`method on the list: 
 
 {: .xml-file }
 
-WeaponsList.xml
+FruitList.xml
 
 ```xml
-<WeaponsList SelectedWeapon="t:Weapon">
-
-  <Group Orientation="Horizontal">
-
-    <Group Spacing="5">
-      <Button Text="Add" Width="100" Click="AddWeapon" />
-      <Button Text="Remove" Width="100" Click="RemoveWeapon" />
-      <Button Text="Update" Width="100" Click="UpdateSelectedWeapon" />
-      <Button Text="Update All" Width="100" Click="UpdateAllWeapons" />
-    </Group>
-
-    <List Items="{weapon in @Weapons}" Margin="10,0,0,0" BackgroundColor="White"
-          SelectedItem="{SelectedWeapon}">
-      <Label Text="{weapon.Name}" Margin="10,0,0,0" />
-    </List>
-
-  </Group>
-  
-</WeaponsList>
+<List Items="{fruit in @Fruits}" IsVirtualized="True" 
+      Width="150" Height="100" BackgroundColor="White"
+      VirtualItemGetter="GetVirtualFruitItem">
 ```
 
-We've added a local dependency property called *SelectedWeapon* that is bound to the *SelectedItem* in the list. We also created some buttons and click handlers to manipulate the list:
+And implement it in code-behind: 
 
 {: .cs-file }
 
-WeaponsList.cs
+FruitList.cs
 
-```cs
+```c#
 namespace Delight
 {
-    public partial class WeaponsList
+    public partial class FruitList
     {
-        public void AddWeapon()
+        public VirtualItem GetVirtualFruitItem(Fruit fruit)
         {
-            Models.Weapons.Add(new Weapon { Name = "New Weapon" });
+            // calculate dynamic height based on fruit data
+            int height = fruit.Size; 
+            return VirtualItem.FromHeight(height);
         }
+    }
+}
+```
 
-        public void RemoveWeapon()
+*GetVirtualFruitItem()* takes the item data as a parameter and returns a virtual item that has a pre-defined size that you can calculate based on the item data. 
+
+
+
+## Multiple Item Templates
+
+A list may have multiple item templates.
+
+{: .xml-file }
+
+FruitList.xml
+
+```xml
+<List Items="{fruit in @Fruits}" TemplateSelector="FruitItemTemplateSelector" 
+      Width="150" BackgroundColor="White">
+  <ListItem Id="FruitA" Height="30">
+    <Label Text="{fruit.Name}" />
+  </ListItem>
+  <ListItem Id="FruitB" Height="30">
+    <Image Sprite="{fruit.Icon}" Alignment="Right" Offset="0,0,10,0" />
+    <Label Text="{fruit.Name}" FontColor="Blue" />
+  </ListItem>
+</List>
+
+```
+
+To create a list with multiple templates we do the following:
+
+1. Specify multiple `<ListItem>`'s each with a unique ID set. These are the different templates we'll use.
+2. Specify the `TemplateSelector` method on the list and implement it in code-behind.
+
+{: .cs-file }
+
+FruitList.cs
+
+```c#
+namespace Delight
+{
+    public partial class FruitList
+    {
+        public string FruitItemTemplateSelector(Fruit fruit)
         {
-            if (SelectedWeapon == null)
-                return;
-
-            Models.Weapons.Remove(SelectedWeapon);
-        }
-
-        public void UpdateSelectedWeapon()
-        {
-            if (SelectedWeapon == null)
-                return;
-
-            SelectedWeapon.Name = "Updated";
-        }
-
-        public void UpdateAllWeapons()
-        {
-            foreach (var weapon in Models.Weapons)
+            switch (fruit.Name)
             {
-                weapon.Name = "Updated All";
+                case "Watermelon":
+                case "Apple":
+                case "Mango":
+                case "Cherry":
+                default:
+                    return "FruitA"; // use the template "FruitA"
+
+                case "Orange":
+                case "Strawberry":
+                case "Grape":
+                case "Nectarine":
+                    return "FruitB"; // use the template "FruitB"
             }
         }
     }
 }
 ```
 
-![](lists-dynamic.png)
+*FruitItemTemplateSelector()* takes the item data as a parameter and returns the ID of the template to be used to display the item. 
 
-In code the global weapons collection is accessed through *Models.Weapons*, which can be manipulated from any part of your game and the changes will automatically propagate to any lists that it's bound to.
+![](lists-multiple-templates.png)

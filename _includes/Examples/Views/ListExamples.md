@@ -32,4 +32,4 @@ Dynamic list:
 </List>
 ```
 
-See the [Lists tutorial](../../Tutorials/Lists) for more examples. 
+See the [Lists tutorial](../../Tutorials/Lists) for information on how to create scrollable lists, virtualized lists, flowing lists and more. 
