@@ -76,7 +76,7 @@ Sprite Icon
 
 ```
 
-The schema above generates a global bindable collection *Weapons* populated with data. Presenting the fruits:
+The schema above generates a global bindable collection *Fruits* populated with data. Presenting the fruits:
 
 {: .xml-file }
 
