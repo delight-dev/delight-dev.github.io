@@ -15,7 +15,7 @@ This tutorial goes a bit more in-depth what views are. After going through this 
 
 
 
-## Anotomy of a View
+## Anatomy of a View
 
 
 We'll start by creating a simple view and break down its parts to see how it ticks. If you don't know how to create a view and display it in a scene, check out the initial steps in [Creating a Main Menu](MainMenu) tutorial.
@@ -84,7 +84,56 @@ public partial class MyView
 }
 ```
 
-This code-behind can be  customized to add methods and internal logic to the view. This file won't be overwritten when the XML changes.   
+This code-behind can be  customized to add methods and internal logic to the view. This file won't be overwritten when the XML changes. Also note that it's a partial class so you have access to the content generated in *MyView_g.cs*.
+
+
+
+## Dependency Properties
+
+Dependency properties are declared in the view XML root element using the following syntax: 
+
+`PropertyName="t:PropertyType"`
+
+or
+
+`PropertyName="t:PropertyType = DefaultValue"`
+
+{: .xml-file }
+
+MyView.xml
+
+```xml
+<MyView MyString="t:string = Default Text">
+</MyView>
+```
+
+The dependency property can then be accessed through view XML:
+
+{: .xml-file }
+
+AnotherView.xml
+
+```xml
+<AnotherView>
+  <MyView MyString="Test" />
+</AnotherView>
+```
+
+You can also access it through code: 
+
+{: .cs-file }
+
+MyView.cs
+
+```csharp
+public partial class MyView
+{
+    public void SomeMethod()
+    {
+        MyString = "Test";
+    }
+}
+```
 
 
 
