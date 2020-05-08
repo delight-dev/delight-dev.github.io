@@ -41,7 +41,7 @@ namespace Delight
     {
         public async void ToggleBigView()
         {
-            if (BigView.IsLoaded)
+            if (!BigView.IsLoaded)
             {
                 await BigView.LoadAsync();
             }
