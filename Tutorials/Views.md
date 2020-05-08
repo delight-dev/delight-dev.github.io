@@ -45,7 +45,7 @@ public partial class MyView : UIView
         MyButton = new Button(this, this, "MyButton", MyButtonTemplate);
     }
 
-    public readonly static DependencyProperty<string> MyStringProperty = 
+    public static DependencyProperty<string> MyStringProperty = 
         new DependencyProperty<string>("MyString");
     public string MyString
     {
@@ -61,8 +61,7 @@ public partial class MyView : UIView
 public static class MyViewTemplates 
 { 
     // etc ...
-}
-    
+}    
 ```
 
 Note that the auto-generated code-behind will be overwritten every time the XML changes or when *Rebuild All* is pressed in the Delight window. It contains the following important parts:
@@ -242,7 +241,7 @@ public partial class MyView
 {
     private void SomeMethod()
     {
-		MyAction.Invoke(this, "Action parameter");
+        MyAction.Invoke(this, "Action parameter");
     }
 }
 ```
@@ -268,7 +267,7 @@ public partial class AnotherView
 {
     private void SomeActionHandler(string actionArgs)
     {
-		Debug.Log(actionArgs);
+        Debug.Log(actionArgs);
     }
 }
 ```
@@ -277,22 +276,12 @@ The action argument passed is a string in this case but can be of any type.
 
 
 
-Unity Components
-
-Mapped Dependency Properties
-
-Attached Properties
-
-On-demand loading
-
-
-
 ## Runtime Instantiation of a View
 
 ```csharp
 var myView = new MyView();
 myView.Load(); // load the view synchronously
-// await myView.LoadAsync(); // can be called instead to load the view asynchronously
+// await myView.LoadAsync(); // load the view asynchronously
 ```
 
 The above code manually instantiates a view during run-time. You can also attach a `ViewPresenter` unity component to a game object in your scene, to automatically create and load a specified view upon scene start. 
