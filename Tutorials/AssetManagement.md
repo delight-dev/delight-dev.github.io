@@ -17,7 +17,7 @@ This tutorial goes over how to work with assets such as Sprites, Fonts, Material
 
 ## Asset Content
 
-All assets used by the framework needs to reside inside the content folder: `Content/Assets/Resources` (path can be [configured](ConfigFile)). Once placed in that folder the assets can be referenced in the XML by their name:
+All assets used by the framework needs to reside inside the content folder: `Content/Assets/Resources` (path can be [configured](Config)). Once placed in that folder the assets can be referenced in the XML by their name:
 
 {: .xml-file }
 
