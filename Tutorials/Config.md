@@ -11,7 +11,7 @@ nav_order: 9
 
 ## Config.txt
 
-The config file `Content/Config.txt` allows you to configure the framework.
+The config file `Content/Config.txt` allows you to configure the framework. Example config:
 
 {: .config-file }
 
