@@ -43,7 +43,7 @@ public partial class MyView : UIView
     public void SomeMethod()
     {
         MyImage.Sprite = Assets.Sprites.CheckBox;
-        // MyImage.Sprite = Assets.Sprites["RainbowSquare"];
+        // MyImage.Sprite = Assets.Sprites["CheckBox"];
     }
 }
 ```
