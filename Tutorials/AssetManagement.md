@@ -55,7 +55,7 @@ Asset bundles are generated automatically based on the folder the asset resides 
 
 ![](asset-management-folders.png)
 
-Any assets put in a folder not called `Resources` under `Content/Assets/` will be put into bundles that corresponds to the name of the folder. In this case the framework generates two asset bundles called `Bundle1` and `Bundle2`. 
+Any assets put in a folder not called `Resources` under `Content/Assets/` will be put into bundles that corresponds to the name of the folder. In this case the framework generates two asset bundles called `Bundle1` and `Bundle2`. If the sprite  `Frame1` is referenced, `Bundle1` gets loaded and if `BigSprite` is referenced, `Bundle2` gets loaded.
 
 
 

@@ -155,9 +155,7 @@ public partial class MyView
 }
 ```
 
-The most common way to add custom load/initialization logic is to override the `AfterLoad()` method. This method is called after the view and its children has been loaded. A view can be loaded/unloading
-
-The following methods can be overridden to do custom logic during the load/initialization of the view. They are shown in the order they are called:
+The most common way to add custom load/initialization logic is to override the `AfterLoad()` method. This method is called after the view and its children has been loaded. The following methods can be overridden to do custom logic during the load/initialization of the view. They are shown in the order they are called:
 
 | Method                | Description                                                  |
 | --------------------- | ------------------------------------------------------------ |
