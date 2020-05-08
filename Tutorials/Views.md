@@ -166,6 +166,8 @@ The following methods can be overridden to do custom logic during the load/initi
 | BeforeLoad()          | Called just before the view and its children are loaded.     |
 | AfterChildrenLoaded() | Called just after the children are loaded, but before dependency properties are loaded. |
 | AfterLoad()           | Called after the view and its children has been loaded.      |
+| BeforeUnload()        | Called just before the view and its children are unloaded.   |
+| AfterUnload()         | Called after the view and its children has been unloaded.    |
 
 
 
@@ -334,4 +336,124 @@ myView.Load(); // load the view synchronously
 ```
 
 The above code manually instantiates a view during run-time. You can also attach a `ViewPresenter` unity component to a game object in your scene, to automatically create and load a specified view upon scene start. 
+
+
+
+## Mapped Dependency Properties
+
+Mapped dependency properties refers to properties that reside in either another view or on a custom type, most commonly unity components. This allows easy access to those properties. We declare mapped dependency properties using the `m.` prefix. 
+
+### Mapping Unity Components
+
+Mapping the [Shadow](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-Shadow.html) unity component to our view: 
+
+```xml
+<MyView MyShadow="t:UnityEngine.UI.Shadow" 
+        m.MyShadow="">
+</MyView>
+```
+
+1. First we declare the unity component as a dependency property `MyShadow="t:UnityEngine.UI.Shadow"`.
+2. Then we generate the mapped dependency properties through `m.MyShadow=""`. We use the `m.` prefix followed by the name of the property that will be mapped. This declaration tells the framework to scan the MyShadow property type for public fields and generate mapped dependency properties for them.  The value we set (in this case an empty string) gets added as a prefix to the generated dependency properties. 
+
+After doing this we can access the new properties:
+
+`<MyView EffectColor="Red" EffectDistance="1,1" />`
+
+Note that it's the view's responsibility to add the component on load. This should be done in `BeforeLoad()`: 
+
+{: .cs-file }
+
+MyView.cs
+
+```csharp
+public partial class MyView
+{
+    protected override void BeforeLoad()
+    {
+        base.BeforeLoad();
+        if (MyShadow == null)
+        {
+            MyShadow = GameObject.AddComponent<UnityEngine.UI.Shadow>();
+        }
+    }
+}
+```
+
+
+
+### Mapping Child View Properties
+
+```xml
+<MyView m.MyLabel="">
+  <Label Id="MyLabel" />
+</MyView>
+```
+
+The above example creates mapped dependency properties for all the properties on the `Label` view. This enables us to do things like: `<MyView Text="Hello" />` to set the `Text` property on the Label view.
+
+
+
+## Attached Properties
+
+Attached properties allows values to be associated with child views, e.g:
+
+```xml
+<GridExample>
+  <Grid Id="MyGrid">
+    <Label Id="MyLabel1" Grid.Cell="0,0" />
+    <Label Id="MyLabel2" Grid.Cell="0,1" />
+  </Grid>
+</GridExample>
+```
+
+The [Grid](../Api/Views/Grid) view has an attached property called `Cell`. In the above example the grid gets the equivalent call in code: 
+
+```csharp
+MyGrid.Cell.SetValue(MyLabel1, new CellIndex(0, 0));
+MyGrid.Cell.SetValue(MyLabel2, new CellIndex(0, 1));
+```
+
+The Grid view uses it to arrange the child labels into the specified cells. 
+
+To declare a custom attached property we use the `at:` prefix in our property declaration:
+
+{: .xml-file }
+
+MyView.xml
+
+```xml
+<MyView AttachedString="at:string">
+</MyView>
+```
+
+Now the attached property can be set in other views:
+
+{: .xml-file }
+
+AnotherView.xml
+
+```xml
+<AnotherView>    
+  <MyView>
+    <Button MyView.AttachedString="Test" />
+  </MyView>
+</AnotherView>
+```
+
+Attached properties are useful when you want child views of any type to be able to set values associated with it on some parent view. 
+
+
+
+## Property Initializors
+
+Property initializors are a construct that allows the user to specify multiple property values through one attribute. A common property initializor is `Size` declared using the `i.`prefix:
+
+```xml
+<UIView Width="t:ElementSize" Height="t:ElementSize" 
+        i.Size="Width, Height">   
+</UIView> 
+```
+
+This initializor allows us to set `Width` and `Height` property values through the `Size` attribute. So `<Region Size="100, 50" />` simply gets translated to: `<Region Width="100" Height="50" />` .
 
