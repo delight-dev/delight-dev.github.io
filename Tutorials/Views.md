@@ -305,6 +305,29 @@ public void MyButtonClick(Button button, PointerEventData pointerData)
 
 
 
+### Passing Arguments to Action Handlers in XML
+
+In some cases you might want to pass parameters to your action handlers through XML. The example below shows a common scenario when having click handlers inside a dynamic list item and wanting to pass along the list item to the action handler:
+
+```xml
+<List Items="{fruit in @Fruits}" BackgroundColor="White">
+  <ListItem Width="150">
+    <Button Text="Click Me" Click="MyClickHandler(fruit)" />
+  </ListItem>
+</List>
+```
+
+And you can add the parameter in code:
+
+```csharp
+public void MyClickHandler(Fruit fruit)
+{
+    // do something with the fruit
+}
+```
+
+
+
 ## Custom View Actions
 
 Standard view actions exists for the unity event system events such as `Click`, `Drag`, `Scroll`, `MouseDown` etc. But sometimes you want to define your own actions, and you do this by declaring it in the XML: 
