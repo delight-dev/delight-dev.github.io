@@ -135,6 +135,17 @@ public partial class MyView
 }
 ```
 
+### Generic Dependency Properties
+
+Dependency properties with generic types can be declared using the following syntax:
+
+```xml
+<MyView MyPlayerCollection="t:BindableCollection[Player]">
+</MyView>
+```
+
+Which is equivalent to the generic type: `BindableCollection<Player>` in code. 
+
 
 
 ## Custom Initialization and Load Logic
