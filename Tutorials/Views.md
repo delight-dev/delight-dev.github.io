@@ -88,6 +88,35 @@ This code-behind can be  customized to add methods and internal logic to the vie
 
 
 
+## Deriving Views
+
+To create a view that derives from another view use the `BasedOn` attribute:
+
+{: .xml-file }
+
+MyView.xml
+
+```xml
+<MyView BasedOn="LayoutRoot" MyString="t:string" PixelPerfect="True">
+  <Button Id="MyButton" Text="Hello" />
+</MyView>
+```
+
+{: .cs-file }
+
+MyView_g.cs
+
+```csharp
+public partial class MyView : LayoutRoot
+{ 
+    ...
+}
+```
+
+In this example `MyView` now inherits all the logic and content from the [LayoutRoot](../Api/Views/LayoutRoot) view, that is derived from by views that are at the root of the UI hierarchy, giving access to properties on the main UI canvas such as *PixelPerfect*, *RenderMode*, etc. Another common view to inherit from is [UIImageView](../Api/Views/UIImageView) that allows us to set things like *BackgroundColor* and *BackgroundSprite* on our view. Lastly you might want to consider basing your view on another if you want to extend and build upon their functionality.
+
+
+
 ## Dependency Properties
 
 Dependency properties are declared in the view XML root element using the following syntax: 
@@ -400,6 +429,20 @@ public partial class MyView
 ```
 
 The above example creates mapped dependency properties for all the properties on the `Label` view. This enables us to do things like: `<MyView Text="Hello" />` to set the `Text` property on the Label view.
+
+
+
+### Renaming Generated Properties
+
+The `rename.` prefix can be used to rename generated properties to e.g. give them names that are more descriptive. 
+
+```xml
+<MyView m.MyLabel="" rename.Text="Title">
+  <Label Id="MyLabel" />
+</MyView>
+```
+
+The above example  renames the `Text` property to be called `Title` instead.
 
 
 
