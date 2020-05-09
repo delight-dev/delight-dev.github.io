@@ -144,7 +144,7 @@ Dependency properties with generic types can be declared using the following syn
 </MyView>
 ```
 
-Which is equivalent to the generic type: `BindableCollection<Player>` in code. 
+Which creates a dependency property with the generic type `BindableCollection<Player>` in code. 
 
 
 
