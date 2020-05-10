@@ -50,7 +50,7 @@ The following config values can be set:
 | DefaultBasedOn          | Default view all views are based on if the BasedOn attribute isn't specified (UIView if not specified). |
 | BaseView                | Custom view all views will inherit from.                     |
 | AssetBundleVersion      | Set to non-zero integer to enable caching of asset bundles. Increment to invalidate bundle caches and force new updates. |
-| Modules                 | List of modules to activate. Active modules have DELIGHT_MODULE_\<NAME\> preprocessor symbol defined, allowing code to be activated/deactivated. View XML can set`Module="Name"`to specify which module they belong to. |
+| Modules                 | List of modules to activate. When a module is active the DELIGHT_MODULE_\<NAME\> preprocessor symbol is defined, allowing code to be activated/deactivated. In a view's  root element in the XML one can set *Module="Name"* to specify which module the view belongs to. |
 
 
 
