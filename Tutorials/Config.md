@@ -25,6 +25,7 @@ AssetBundleVersion: 1
 ContentFolders:
   MyContent/
   Example/Content/
+DefaultContentFolder: MyContent/
 StreamedBundles:
   Bundle1
   Bundle2
@@ -39,7 +40,8 @@ The following config values can be set:
 | ----------------------- | ------------------------------------------------------------ |
 | ServerUri               | URI that points to where remote asset bundles are stored.    |
 | BuildTargets            | Controls which model data is generated in the build.         |
-| ContentFolders          | Specifies where Delight content (views, models, etc) resides (besides the default folders) |
+| ContentFolders          | Specifies where additional Delight content (views, models, etc) resides. |
+| DefaultContentFolder    | Specifies default content folder where new content is placed when created by the Delight Designer |
 | StreamedBundles         | Specifies which bundles (by name) should be streamed locally rather than from remote URI. |
 | ServerUriLocator        | Name of class that locates server URI based on bundle name. Used e.g. if URI should be determined during run-time. |
 | UseSimulatedUriInEditor | Set to true/false indicating if a simulated server URI should be used in the editor. |
