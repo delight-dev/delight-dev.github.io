@@ -430,7 +430,7 @@ The paged list shows next/previous navigation buttons by default. You can also s
 
 ### Custom Page Navigation Buttons
 
-The page navigation buttons can be customized by adding *NavigationButton* templates to the list view. The below example is an excerpt of the *LevelSelectExample* view:
+The page navigation buttons can be customized by adding *NavigationButton* templates to the list view. The below example is an excerpt from the *LevelSelectExample* view:
 
 ```xml
 <List Items="{level in @Levels}" Overflow="Wrap" Orientation="Horizontal" Width="470" Height="310" Spacing="10"
@@ -452,7 +452,7 @@ The page navigation buttons can be customized by adding *NavigationButton* templ
 </List>
 ```
 
-It provides two NavigationButton templates one for the Next/Previous arrows and one for the Page buttons by setting *NavigationType="Page"*. The spacing and offset of the page buttons are also specified through the properties *PageNavigationGroupOffset* and *PageNavigationGroupSpacing*. 
+It provides two *NavigationButton* templates one for the Next/Previous arrows and one for the Page buttons by setting *NavigationType="Page"*. The spacing and offset of the page buttons are also specified through the properties *PageNavigationGroupOffset* and *PageNavigationGroupSpacing* on the List view. 
 
 ![](lists-paged-list-levelselect.gif)
 
