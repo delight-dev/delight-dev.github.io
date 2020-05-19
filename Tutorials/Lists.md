@@ -401,3 +401,58 @@ namespace Delight
 *FruitItemTemplateSelector()* takes the item data as a parameter and returns the ID of the template to be used to display the item. 
 
 ![](lists-multiple-templates.png)
+
+
+
+## List Paging
+
+Paging allows you to specify how many list items that should be shown at a time and allow for navigation between pages in the list. 
+
+```xml
+<List Items="{fruit in @Fruits}" IsPaged="True" PageSize="3"
+      Width="150" Height="90" BackgroundColor="White">
+  <ListItem Height="30"> 
+    <Label Text="{fruit.Name}" />
+  </ListItem>
+</List>
+```
+
+To create the paged list we do the following:
+
+1. Set `IsPaged="True"` on the list. 
+2. Set `PageSize` to specify the number of items per page.
+
+The paged list shows next/previous navigation buttons by default. You can also show page navigation buttons to allow jumping between pages. The buttons to be shown are controlled through the *ShowNavigationButtons* property. 
+
+![](lists-paged-list.gif)
+
+
+
+### Custom Page Navigation Buttons
+
+The page navigation buttons can be customized by adding *NavigationButton* templates to the list view. The below example is an excerpt of the *LevelSelectExample* view:
+
+```xml
+<List Items="{level in @Levels}" Overflow="Wrap" Orientation="Horizontal" Width="470" Height="310" Spacing="10"
+      Offset="0,170,0,0" DeselectAfterSelect="True" Alignment="Top" IsPaged="True" PageSize="6"
+      ShowNavigationButtons="All"
+      PageNavigationGroupOffset="0,50,0,0"
+      PageNavigationGroupSpacing="5">
+  <ListItem Size="150,150" BackgroundColor="White" BackgroundSprite="LevelSelectItemBg">
+    <Label Text="{level.Index:0}" FontSize="50" AutoSize="True" Font="AveriaSansLibre-Bold SDF"
+            FontColor="#ecce2d" Offset="0,0,0,30" />
+    <Image Sprite="{level.Stars}" PreserveAspect="True" Width="110" Offset="0,20,0,0" />
+  </ListItem>
+  <NavigationButton BackgroundSprite="LevelSelectRightArrow" BackgroundColor="#bbbbbb" Highlighted-BackgroundColor="White"
+                    Pressed-BackgroundColor="#bbbbbb"
+                    Width="50" Height="77" Offset="110,0,0,10" />
+  <NavigationButton BackgroundSprite="LevelSelectPageButton" Pressed-BackgroundSprite="LevelSelectPageButtonPressed" BackgroundColor="#bbbbbb" Highlighted-BackgroundColor="White"
+                    Pressed-BackgroundColor="#bbbbbb" NavigationType="Page"
+                    Width="50" Height="50" DisplayLabel="False" />
+</List>
+```
+
+It provides two NavigationButton templates one for the Next/Previous arrows and one for the Page buttons by setting *NavigationType="Page"*. The spacing and offset of the page buttons are also specified through the properties *PageNavigationGroupOffset* and *PageNavigationGroupSpacing*. 
+
+![](lists-paged-list-levelselect.gif)
+
