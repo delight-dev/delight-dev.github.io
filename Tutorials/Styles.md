@@ -75,9 +75,9 @@ It's worth pointing out that, despite what the name implies, styles can be used 
 MyStyles.xml
 
 ```xml
-<MyView>
+<MyStyles>
    <List SelectOnMouseUp="True" />
-</MyView>
+</MyStyles>
 ```
 
 
