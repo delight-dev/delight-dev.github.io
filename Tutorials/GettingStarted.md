@@ -1,17 +1,17 @@
 ---
-title: Creating a Main Menu
+title: Getting Started
 parent: Tutorials
 has_children: false
 nav_order: 1
 ---
-# Creating a Main Menu
+# Getting Started
 
 1. TOC
 {:toc}
 
 ## Introduction
 
-This tutorial serves as a practical introduction to the framework by showing you how to create a main menu. Be sure to also check out the [Quick Start](../index.html#quick-start)  guide on how to get started and the [Feature Overview](FeatureOverview) to get a conceptual overview of the framework. 
+This tutorial serves as a practical introduction to the framework by showing you how to create a main menu.
 
 
 
@@ -66,7 +66,7 @@ MainMenu.xml
 
 The name of the root tag `<MainMenu>` is the name we've given the view. The view contains three [Button](../Api/Views/Button) views that are arranged vertically by a [Group](../Api/Views/Group) view. The [API](../Api/Views/Views) contains detailed information about all the 40+ views included in the framework.
 
-`Spacing="10"` and `Text="Play"` are [dependency properties](FeatureOverview#dependency-properties) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
+`Spacing="10"` and `Text="Play"` are [dependency properties](Views#dependency-properties) that changes the layout and behavior of the  view. E.g. `Spacing="10"` tells the `Group` view to insert a spacing of 10 pixels between the buttons.
 
 Different views have different properties but most views are based on the `UIView` which has the following properties that are used to do layout:
 
@@ -142,13 +142,28 @@ If you run the scene and click on the buttons you'll see the text being logged i
 
 
 
-## Doing Layout
+## Styling
 
-This is the layout we are going for:
+To make the buttons look more interesting we're going to change their style. Open up the `Content/Styles/Styles.xml` file and add the following content:
 
-![](main-menu-layout.png)
+{: .xml-file }
 
-The framework includes various views that can be used to do layout. We've seen the [Group](../Api/Views/Group) view that is used to group views vertically or horizontally with spacing between. A more basic layout view is the [Region](../Api/Views/Region) which is similar to the `<div>` element in HTML, simply used to create a region of space with a certain offset, width and height that child views can be placed inside. To get the above layout we add some regions to our main menu: 
+Styles.xml
+
+```xml
+<Styles>
+  <Button Style="StoneButton" BackgroundSprite="MainMenuDemoButton" 
+          Pressed-BackgroundSprite="MainMenuDemoButtonPressed"
+          BackgroundColor="White" Highlighted-BackgroundColor="White" 
+          Pressed-BackgroundColor="White" Width="218" Height="117"
+          FontSize="40" Font="AveriaSansLibre-Bold SDF" TextOffset="0,0,0,6" 
+          StateAnimations="" FontColor="White" Highlighted-FontColor="White" 
+          Pressed-FontColor="#cccccc" />
+</Styles>
+
+```
+
+We've declared one button style `StoneButton` with some values that will be set whenever the style is applied. See the [Styles](Styles) tutorial for more information about styling views. Next step is to apply our new style to our buttons:
 
 {: .xml-file }
 
@@ -157,29 +172,22 @@ MainMenu.xml
 ```xml
 <MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="Delight ../Delight.xsd">
-  <Region Width="25%" Alignment="Left" Margin="30,30,15,30" 
-          BackgroundColor="#ef706a">
-    <Group Spacing="10px" Alignment="Top">
-      <Button Text="Play" Click="Play" Width="140" />
-      <Button Text="Options" Click="ShowOptions" Width="140" />
-      <Button Text="Quit" Click="Quit" Width="140" />
-    </Group>
-  </Region>
-  <Region Width="75%" Alignment="Right" Margin="15,30,30,30" 
-          BackgroundColor="#949494">
-    <!-- content area --> 
-  </Region>
+  <Group Spacing="10">
+    <Button Style="StoneButton" Text="Play" Click="Play" />
+    <Button Style="StoneButton" Text="Options" Click="ShowOptions" />
+    <Button Style="StoneButton" Text="Quit" Click="Quit" />
+  </Group>
 </MainMenu>
 
 ```
 
-We've added background color to the regions just to make it easy to see them. We'll remove the background colors as we move on. 
+
+
+![](main-menu-buttons.png)
 
 
 
-## Showing submenus
-
-We want to show a LevelSelect view when the user clicks on the Play button and a Options view when the Options button is clicked. To do this we can add a [ViewSwitcher](../Api/Views/ViewSwitcher) view and add the submenu views as children:
+Next  we modify the main menu to add a background image and title:
 
 {: .xml-file }
 
@@ -188,27 +196,56 @@ MainMenu.xml
 ```xml
 <MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="Delight ../Delight.xsd">
-  <Region Width="25%" Alignment="Left" Margin="30,30,15,30" 
-          BackgroundColor="#ef706a">
-    <Group Spacing="10px" Alignment="Top">
-      <Button Text="Play" Click="Play" Width="140" />
-      <Button Text="Options" Click="ShowOptions" Width="140" />
-      <Button Text="Quit" Click="Quit" Width="140" />
-    </Group>
-  </Region>
-  <Region Width="75%" Alignment="Right" Margin="15,30,30,30" 
-          BackgroundColor="#949494">
-    <ViewSwitcher Id="SubmenuSwitcher" ShowFirstByDefault="False">
-      <LevelSelect Id="LevelSelect" />
-      <Options Id="Options" />
-    </ViewSwitcher>
-  </Region>
+  <Image Sprite="MainMenuDemoBg" Height="480" PreserveAspect="True" />
+  <Label Style="MainMenuDemoTitle" Text="Main Menu" Offset="0,0,0,210" />
+  <Group Spacing="10" Offset="0,25,0,0">
+    <Button Style="StoneButton" Text="Play" Click="Play" />
+    <Button Style="StoneButton" Text="Options" Click="ShowOptions" />
+    <Button Style="StoneButton" Text="Quit" Click="Quit" />
+  </Group>
 </MainMenu>
+```
 
+The sprite *MainMenuDemoBg* is another asset that comes with the framework examples. We should now see the following:
+
+![](main-menu-buttons2.png)
+
+
+
+## Showing a Level Select Menu
+
+We want to show a LevelSelect view when the user clicks on the Play button. To do this we can add a [ViewSwitcher](../Api/Views/ViewSwitcher) view and add various views as children:
+
+{: .xml-file }
+
+MainMenu.xml
+
+```xml
+<MainMenu xmlns="Delight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="Delight ../Delight.xsd">
+  <ViewSwitcher Id="SubmenuSwitcher">
+    
+    <!-- first view, our main menu buttons, are shown by default -->
+    <Region Id="MainMenuWindow">
+      <Image Sprite="MainMenuDemoBg" Height="480" PreserveAspect="True" />
+      <Label Style="MainMenuDemoTitle" Text="Main Menu" Offset="0,0,0,210" />
+      <Group Spacing="10" Offset="0,25,0,0">
+        <Button Style="StoneButton" Text="Play" Click="Play" />
+        <Button Style="StoneButton" Text="Options" Click="ShowOptions" />
+        <Button Style="StoneButton" Text="Quit" Click="Quit" />
+      </Group>
+    </Region>
+    
+    <!-- second view, level select, is shown when we switch to it -->
+    <LevelSelectExample Id="LevelSelectWindow" NavigateBack="LevelSelectNavigateBack" />
+    
+  </ViewSwitcher>
+</MainMenu>
 ```
 
 
-We've given the views names through the Id attribute, so we can easily reference them in code-behind. The LevelSelect and Option views are automatically generated and to switch between them we add the following to our code-behind:
+
+The level select view already exists so now all we need to do is to implement some logic in code-behind to switch back and forth between our main menu buttons and the level select view.
 
 {: .cs-file }
 
@@ -221,26 +258,33 @@ namespace Delight
     {
         public void Play()
         {
-            SubmenuSwitcher.SwitchTo(LevelSelect);
+            SubmenuSwitcher.SwitchTo(LevelSelectWindow);
         }
 
         public void ShowOptions()
         {
-            SubmenuSwitcher.SwitchTo(Options);
+            Debug.Log("Options clicked");
         }
 
         public void Quit()
         {
             Debug.Log("Quit clicked");
         }
+        
+        public void LevelSelectNavigateBack()
+        {
+            SubmenuSwitcher.SwitchTo(MainMenuWindow);
+        }
     }
 }
 ```
 
+There you have it, a simple main menu. 
 
 
 
+## Delight Designer
 
+I recommend playing around in the delight designer to explore the different example views and edit them to get real-time feedback as you make changes in the XML. To enable the delight designer you need to [Enable TextMeshPro](EnablingTextMeshPro), and then press "Rebuild All" in the delight window, to update the designer, and then you can open the Delight Designer scene and play it to start the designer. 
 
-
-
+Good luck and if you have any questions be sure to check the rest of the tutorials and pop into the Delight [chat room](https://gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link) for support.
