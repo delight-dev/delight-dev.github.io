@@ -2,7 +2,7 @@
 title: TMP_SpriteAssetData
 parent: Types
 grand_parent: API
-nav_order: 110
+nav_order: 117
 ---
 
 # TMP_SpriteAssetData

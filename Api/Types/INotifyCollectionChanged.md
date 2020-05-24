@@ -2,7 +2,7 @@
 title: INotifyCollectionChanged
 parent: Types
 grand_parent: API
-nav_order: 55
+nav_order: 61
 ---
 
 # INotifyCollectionChanged

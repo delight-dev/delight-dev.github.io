@@ -2,7 +2,7 @@
 title: FloatValueConverter
 parent: Types
 grand_parent: API
-nav_order: 50
+nav_order: 56
 ---
 
 # FloatValueConverter

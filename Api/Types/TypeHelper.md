@@ -2,7 +2,7 @@
 title: TypeHelper
 parent: Types
 grand_parent: API
-nav_order: 112
+nav_order: 119
 ---
 
 # TypeHelper

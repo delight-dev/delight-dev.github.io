@@ -2,7 +2,7 @@
 title: GridSplitterHandle
 parent: Views
 grand_parent: API
-nav_order: 7
+nav_order: 10
 ---
 
 # GridSplitterHandle
@@ -47,9 +47,9 @@ Handle used to resize a rows or column in the Grid view. Created and managed by 
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsEnabled | bool | Boolean indicating if the user can interact with the grid splitter handle. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
+| MaskContent | bool | Boolean indicating if content of the view should be masked. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) | Offset set by a parent view. Used by views like Group to arrange children without changing their own Offset values. |
 | OverrideHeight | [ElementSize](../Types/ElementSize) | Overrides regular Height value. Used to e.g. automatically size items without changing the default Height value set. |

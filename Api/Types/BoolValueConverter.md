@@ -2,7 +2,7 @@
 title: BoolValueConverter
 parent: Types
 grand_parent: API
-nav_order: 21
+nav_order: 24
 ---
 
 # BoolValueConverter

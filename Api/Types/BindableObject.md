@@ -2,7 +2,7 @@
 title: BindableObject
 parent: Types
 grand_parent: API
-nav_order: 17
+nav_order: 20
 ---
 
 # BindableObject

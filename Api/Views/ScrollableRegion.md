@@ -2,7 +2,7 @@
 title: ScrollableRegion
 parent: Views
 grand_parent: API
-nav_order: 22
+nav_order: 26
 ---
 
 # ScrollableRegion
@@ -46,7 +46,6 @@ Presents scrollable content with optional scrollbars. Behaves similar to the UGU
 | IgnoreReversedGraphics | bool | Boolean indicating if graphics facing away from the raycaster should be ignored. |
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
 | MaskContent | bool | Boolean indicating if any content outside the bounds of the viewport should be masked. |

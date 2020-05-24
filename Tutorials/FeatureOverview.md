@@ -37,3 +37,6 @@ Data binding is a way to connect data to your views and to keep data synchronize
 ## Layout
 ## Dynamic lists
 ## Localization
+
+## Animations
+

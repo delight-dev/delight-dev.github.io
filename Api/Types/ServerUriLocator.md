@@ -2,7 +2,7 @@
 title: ServerUriLocator
 parent: Types
 grand_parent: API
-nav_order: 85
+nav_order: 93
 ---
 
 # ServerUriLocator

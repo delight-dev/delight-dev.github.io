@@ -2,7 +2,7 @@
 title: Mask
 parent: Views
 grand_parent: API
-nav_order: 16
+nav_order: 19
 ---
 
 # Mask
@@ -46,9 +46,9 @@ A view that masks any content using the background sprite and color as mask.
 | IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
+| MaskContent | bool | Boolean indicating if content of the view should be masked. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) | Offset set by a parent view. Used by views like Group to arrange children without changing their own Offset values. |
 | OverrideHeight | [ElementSize](../Types/ElementSize) | Overrides regular Height value. Used to e.g. automatically size items without changing the default Height value set. |
@@ -58,6 +58,6 @@ A view that masks any content using the background sprite and color as mask.
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
 | Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
-| ShowMaskGraphic | bool |  |
+| ShowMaskGraphic | bool | Show the graphic that is associated with the Mask render area. |
 | UseFastShader | bool | Boolean indicating if the default UI shader should be replaced by a simpler and faster one. The faster shader does not support masking and clipping. |
 | Width | [ElementSize](../Types/ElementSize) | The width of the view in pixels or percents. |

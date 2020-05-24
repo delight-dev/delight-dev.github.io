@@ -2,7 +2,7 @@
 title: XmlEditorComponent
 parent: Types
 grand_parent: API
-nav_order: 124
+nav_order: 131
 ---
 
 # XmlEditorComponent

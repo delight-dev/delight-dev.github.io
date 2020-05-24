@@ -2,7 +2,7 @@
 title: SpriteAssetData
 parent: Types
 grand_parent: API
-nav_order: 90
+nav_order: 98
 ---
 
 # SpriteAssetData

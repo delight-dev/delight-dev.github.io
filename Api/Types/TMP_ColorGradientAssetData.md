@@ -2,7 +2,7 @@
 title: TMP_ColorGradientAssetData
 parent: Types
 grand_parent: API
-nav_order: 102
+nav_order: 109
 ---
 
 # TMP_ColorGradientAssetData

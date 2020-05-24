@@ -2,7 +2,7 @@
 title: SplitMode
 parent: Types
 grand_parent: API
-nav_order: 88
+nav_order: 96
 ---
 
 # SplitMode

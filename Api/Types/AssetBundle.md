@@ -2,7 +2,7 @@
 title: AssetBundle
 parent: Types
 grand_parent: API
-nav_order: 2
+nav_order: 5
 ---
 
 # AssetBundle

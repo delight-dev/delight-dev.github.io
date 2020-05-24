@@ -2,7 +2,7 @@
 title: StorageMode
 parent: Types
 grand_parent: API
-nav_order: 92
+nav_order: 101
 ---
 
 # StorageMode

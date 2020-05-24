@@ -2,7 +2,7 @@
 title: PersistenceManager<T>
 parent: Types
 grand_parent: API
-nav_order: 71
+nav_order: 79
 ---
 
 # PersistenceManager<T>

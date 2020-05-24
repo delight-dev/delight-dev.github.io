@@ -2,7 +2,7 @@
 title: VirtualItem
 parent: Types
 grand_parent: API
-nav_order: 123
+nav_order: 130
 ---
 
 # VirtualItem

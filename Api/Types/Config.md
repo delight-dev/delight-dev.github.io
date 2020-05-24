@@ -2,7 +2,7 @@
 title: Config
 parent: Types
 grand_parent: API
-nav_order: 32
+nav_order: 36
 ---
 
 # Config

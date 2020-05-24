@@ -2,7 +2,7 @@
 title: DataProvider<T>
 parent: Types
 grand_parent: API
-nav_order: 35
+nav_order: 39
 ---
 
 # DataProvider<T>

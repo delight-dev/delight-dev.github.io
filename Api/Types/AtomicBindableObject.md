@@ -2,7 +2,7 @@
 title: AtomicBindableObject
 parent: Types
 grand_parent: API
-nav_order: 8
+nav_order: 11
 ---
 
 # AtomicBindableObject

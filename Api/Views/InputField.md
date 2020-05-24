@@ -2,7 +2,7 @@
 title: InputField
 parent: Views
 grand_parent: API
-nav_order: 10
+nav_order: 13
 ---
 
 # InputField
@@ -19,7 +19,7 @@ Interactable input field view enabling user to type single or multi-line text. B
 | --- | --- | --- |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) | Used to align the view relative to the layout parent region it resides in. |
 | Alpha | float | Can be used to adjust the alpha color of this view and all its children. E.g. used for fade in/out animations. Is separate from and different from the background color of the view as it affects the children as well. |
-| AnimationTriggers | [AnimationTriggers](http://docs.unity3d.com/ScriptReference/AnimationTriggers.html) |  |
+| AnimationTriggers | [AnimationTriggers](http://docs.unity3d.com/ScriptReference/AnimationTriggers.html) | The animation triggers for this selectable object. |
 | AsteriskChar | Char | Character used for password fields. |
 | BackgroundAlphaHitTestMinimumThreshold | float | Alpha values less than the threshold will cause raycast events to pass through the view. |
 | BackgroundColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) | Background color of the view. Color values can be specified by name (Red, Blue, Coral, etc), hexcode (#aarrggbb or #rrggbb) or rgb/rgba value ("1.0,0.0,0.5" or "1,1,1,0.5"). |
@@ -46,7 +46,7 @@ Interactable input field view enabling user to type single or multi-line text. B
 | CaretWidth | int | Width of the caret. |
 | CharacterLimit | int | How many characters the input field is limited to (0 = infinite). |
 | CharacterValidation | CharacterValidation | The type of validation to perform on a character. |
-| Colors | [ColorBlock](http://docs.unity3d.com/ScriptReference/ColorBlock.html) |  |
+| Colors | [ColorBlock](http://docs.unity3d.com/ScriptReference/ColorBlock.html) | The ColorBlock for this selectable object. |
 | ContentType | ContentType | The type of input expected. |
 | CustomCaretColor | bool | Boolean indicating if caret color is customized by CaretColor. |
 | DisableLayoutUpdate | bool | Boolean indicating if automatic layout updates for this view should be disabled. When disabled the view doesn't call UpdateLayout() when properties such as Width, Height, etc. changes. |
@@ -56,7 +56,7 @@ Interactable input field view enabling user to type single or multi-line text. B
 | Height | [ElementSize](../Types/ElementSize) | The height of the view in pixels or percents. |
 | IgnoreFlip | bool | Used when doing localization override default behavior of flipping the view Right to Left or Left to Rigth. |
 | IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
-| Image | [Image](Image) |  |
+| Image | [Image](Image) | Convenience function that converts the referenced Graphic to a Image, if possible. |
 | InputType | InputType | Type of input expected. |
 | InputValidator | TMP_InputValidator | Input validator used by the input field. |
 | Interactable | bool | Boolean indicating if input field is interactable. |
@@ -64,11 +64,11 @@ Interactable input field view enabling user to type single or multi-line text. B
 | IsRichTextEditingAllowed | bool | Boolean indicating if rich text editing is allowed. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
 | KeyboardType | [TouchScreenKeyboardType](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboardType.html) | Enum indicating touch screen keyboard type. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LineLimit | int | How many lines the input field is limited to (0 = infinite). |
-| LineType | LineType |  |
+| LineType | LineType | Line type used by the input field. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
+| MaskContent | bool | Boolean indicating if content of the view should be masked. |
 | Navigation | [Navigation](http://docs.unity3d.com/ScriptReference/Navigation.html) | Navigation settings. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) | Offset set by a parent view. Used by views like Group to arrange children without changing their own Offset values. |
@@ -98,9 +98,9 @@ Interactable input field view enabling user to type single or multi-line text. B
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
 | ScrollSensitivity | float | Indicates the sensitivity of scrolling the input field text. |
 | SelectionAnchorPosition | int | Determines the anchor position of selection. |
-| SelectionColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
-| SelectionFocusPosition | int |  |
-| SelectionStringAnchorPosition | int |  |
+| SelectionColor | [Color](http://docs.unity3d.com/ScriptReference/Color.html) | Color of the selection. |
+| SelectionFocusPosition | int | Selection focus position. |
+| SelectionStringAnchorPosition | int | Selection string anchor position. |
 | SelectionStringFocusPosition | int | Determines the focus position of the selection string. |
 | SetValueOnEndEdit | bool | Boolean indicating if the value of the input field text should be set after the user is done editing. |
 | ShouldHideMobileInput | bool | Boolean indicating if mobile input should be hidden. |

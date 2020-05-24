@@ -2,7 +2,7 @@
 title: ComboBox
 parent: Views
 grand_parent: API
-nav_order: 4
+nav_order: 3
 ---
 
 # ComboBox
@@ -29,7 +29,6 @@ Presents a static or dynamic list of items in a drop-down.
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsDropUp | bool | Boolean indicating if the combo box list should open above instead of below the button. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
@@ -41,5 +40,6 @@ Presents a static or dynamic list of items in a drop-down.
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
 | Rotation | [Quaternion](http://docs.unity3d.com/ScriptReference/Quaternion.html) | Rotation of the view. |
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
+| ShowSelectedItem | bool | Boolean indicating if the selected item should be shown in the button. |
 | UseFastShader | bool | Boolean indicating if the default UI shader should be replaced by a simpler and faster one. The faster shader does not support masking and clipping. |
 | Width | [ElementSize](../Types/ElementSize) | The width of the view in pixels or percents. |

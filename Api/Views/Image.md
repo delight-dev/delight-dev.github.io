@@ -2,7 +2,7 @@
 title: Image
 parent: Views
 grand_parent: API
-nav_order: 9
+nav_order: 12
 ---
 
 # Image
@@ -19,9 +19,9 @@ View that displays an image sprite. Based on the UGUI ImageComponent. Adjusts it
 | --- | --- | --- |
 | Alignment | [ElementAlignment](../Types/ElementAlignment) | Used to align the view relative to the layout parent region it resides in. |
 | Alpha | float | Can be used to adjust the alpha color of this view and all its children. E.g. used for fade in/out animations. Is separate from and different from the background color of the view as it affects the children as well. |
-| AlphaHitTestMinimumThreshold | float |  |
+| AlphaHitTestMinimumThreshold | float | Alpha values less than the threshold will cause raycast events to pass through the view. |
 | BubbleNotifyChildLayoutChanged | bool | Boolean indicating if parent always should be notified when the child changes layout. |
-| Color | [Color](http://docs.unity3d.com/ScriptReference/Color.html) |  |
+| Color | [Color](http://docs.unity3d.com/ScriptReference/Color.html) | Color of the image. Color values can be specified by name (Red, Blue, Coral, etc), hexcode (#aarrggbb or #rrggbb) or rgb/rgba value ("1.0,0.0,0.5" or "1,1,1,0.5"). |
 | DisableLayoutUpdate | bool | Boolean indicating if automatic layout updates for this view should be disabled. When disabled the view doesn't call UpdateLayout() when properties such as Width, Height, etc. changes. |
 | EnableScriptEvents | bool | Boolean indicating if unity script events (Update, LateUpdate, Awake, etc) should be relayed to the view code-behind through the corresponding methods that can be overriden. |
 | FillAmount | float | Amount of the view shown when Type is set to Filled. |
@@ -36,7 +36,6 @@ View that displays an image sprite. Based on the UGUI ImageComponent. Adjusts it
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsMaskingGraphic | bool | Boolean indicating if image is a masking graphic. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
 | Maskable | bool | Boolean indicating if the graphic allows masking. |

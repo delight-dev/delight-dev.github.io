@@ -2,7 +2,7 @@
 title: ElementSortDirection
 parent: Types
 grand_parent: API
-nav_order: 47
+nav_order: 53
 ---
 
 # ElementSortDirection

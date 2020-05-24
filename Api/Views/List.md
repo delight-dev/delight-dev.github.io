@@ -2,7 +2,7 @@
 title: List
 parent: Views
 grand_parent: API
-nav_order: 14
+nav_order: 17
 ---
 
 # List
@@ -57,14 +57,15 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | IgnoreFlip | bool | Used when doing localization override default behavior of flipping the view Right to Left or Left to Rigth. |
 | IgnoreObject | bool | Boolean indicating if the view should be ignored. Ignored objects don't run any load logic and don't respond to property changed events. |
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
+| IsPaged | bool | Boolean indicating if the list is paged. Customize paging through, e.g. PageSize and ShowNavigationButtons properties. |
 | IsScrollable | bool | Boolean indicating if the list can be scrolled. |
 | IsStatic | bool | Boolean indicating if the list is static. |
 | IsVirtualized | bool | Boolean indicating if the list is virtualized. Virtualized lists have far better performance when dealing with large number of items as only items visible in the viewport are generated. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
 | Items | [BindableCollection](../Types/BindableCollection) | The data collection that is used to generate the collection view items. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
+| MaskContent | bool | Boolean indicating if content of the view should be masked. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |
 | OffsetFromParent | [ElementMargin](../Types/ElementMargin) | Offset set by a parent view. Used by views like Group to arrange children without changing their own Offset values. |
 | Orientation | [ElementOrientation](../Types/ElementOrientation) | Orientation of the list. |
@@ -72,6 +73,12 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | OverrideHeight | [ElementSize](../Types/ElementSize) | Overrides regular Height value. Used to e.g. automatically size items without changing the default Height value set. |
 | OverrideWidth | [ElementSize](../Types/ElementSize) | Overrides regular Width value. Used to e.g. automatically size items without changing the default Width value set. |
 | Padding | [ElementMargin](../Types/ElementMargin) | Adds padding to the list. |
+| PageIndex | int | Zero-based index of the current page being displayed if IsPaged is set to true. |
+| PageNavigationGroupAlignment | [ElementAlignment](../Types/ElementAlignment) | Default alignment of page navigation button group. |
+| PageNavigationGroupOffset | [ElementMargin](../Types/ElementMargin) | Default offset of page navigation button group. |
+| PageNavigationGroupOrientation | [ElementOrientation](../Types/ElementOrientation) | Default orientation of page navigation button group. |
+| PageNavigationGroupSpacing | [ElementSize](../Types/ElementSize) | Default spacing of page navigation button group. |
+| PageSize | int | Number of items to be shown per page when IsPaged is set to true. |
 | Pivot | [Vector2](http://docs.unity3d.com/ScriptReference/Vector2.html) | The pivot point of the view. |
 | Position | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Directly sets the local position of the view relative to parent. Position otherwise set using the Alignment and Offset properties. |
 | RaycastBlockMode | [RaycastBlockMode](../Types/RaycastBlockMode) | Enum indicating if raycasts should be blocked. |
@@ -80,6 +87,7 @@ The list presents a static or dynamic list of items. The list can be set to be s
 | Scale | [Vector3](http://docs.unity3d.com/ScriptReference/Vector3.html) | Scale of the view. |
 | SelectedItem | [BindableObject](../Types/BindableObject) | References the data collection item that corresponds to the currently selected list item. |
 | SelectOnMouseUp | bool | Boolean indicating if list items should be selected on mouse up. |
+| ShowNavigationButtons | [NavigationButtonsVisibility](../Types/NavigationButtonsVisibility) | Enum indicating which navigation buttons should be shown when list is paged. |
 | SortDirection | [ElementSortDirection](../Types/ElementSortDirection) | Determines the sort direction of the list items. |
 | Spacing | [ElementSize](../Types/ElementSize) | Horizontal and vertical spacing between the list items. |
 | UseFastShader | bool | Boolean indicating if the default UI shader should be replaced by a simpler and faster one. The faster shader does not support masking and clipping. |

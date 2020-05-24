@@ -2,7 +2,7 @@
 title: Slider
 parent: Views
 grand_parent: API
-nav_order: 25
+nav_order: 29
 ---
 
 # Slider
@@ -49,10 +49,10 @@ Slider with a handle that can be moved with the mouse. Can be oriented horizonta
 | IsActive | bool | Boolean indicating if the view is active. Deactivated views deactivates corresponding game object, components, renderers and scripts. |
 | IsReversed | bool | Boolean indicating if slider direction is reversed. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | Length | [ElementSize](../Types/ElementSize) | The length of the slider. Corresponds to Width if horizontal and Height if vertical. |
 | LoadMode | [LoadMode](../Types/LoadMode) | Enum flags indicating when and how the view should be loaded by the framework. Can be changed when e.g. the view is to be loaded on-demand. |
 | Margin | [ElementMargin](../Types/ElementMargin) | Adding margins to a view changes the size of the area in which its content resides, but it does not change the width or height of the view. |
+| MaskContent | bool | Boolean indicating if content of the view should be masked. |
 | Max | float | Maximum value of the slider. |
 | Min | float | Minimum value of the slider. |
 | Offset | [ElementMargin](../Types/ElementMargin) | Determines the offset of the view. |

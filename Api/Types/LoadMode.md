@@ -2,7 +2,7 @@
 title: LoadMode
 parent: Types
 grand_parent: API
-nav_order: 61
+nav_order: 67
 ---
 
 # LoadMode

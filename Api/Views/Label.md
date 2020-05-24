@@ -2,7 +2,7 @@
 title: Label
 parent: Views
 grand_parent: API
-nav_order: 11
+nav_order: 14
 ---
 
 # Label
@@ -65,7 +65,6 @@ View that presents text. Based on TextMeshPro text component.
 | IsUsingLegacyAnimationComponent | bool | Property to handle legacy animation component. |
 | IsVisible | bool | Boolean indicating if view is visible or hidden. Invisible views still take up space but aren't interactable and have their alpha set to 0. |
 | IsVolumetricText | bool | Determines if the geometry of the characters will be quads or volumetric (cubes). |
-| LayoutRoot | [LayoutRoot](LayoutRoot) | Reference to the layout root view that is the main UICanvas that manages layout updates. All UI views resides under a layout root. |
 | LineSpacing | float | The amount of additional spacing to add between each lines of text. |
 | LineSpacingAdjustment | float | The amount of potential line spacing adjustment before text auto sizing kicks in. |
 | LinkedTextComponent | TMP_Text | The linked text component used for flowing the text from one text component to another. |
@@ -75,6 +74,7 @@ View that presents text. Based on TextMeshPro text component.
 | Maskable | bool | Boolean indicating if graphic is maskable. |
 | MaskOffset | [Vector4](http://docs.unity3d.com/ScriptReference/Vector4.html) | Offset of mask graphics. |
 | Material | [Material](http://docs.unity3d.com/ScriptReference/Material.html) | Material used by graphic. |
+| MaxWidth | [ElementSize](../Types/ElementSize) | Used when AutoSize is true and extends the label to the maxsize then expands vertically. |
 | MaxVisibleCharacters | int | Allows to control how many characters are visible from the input. |
 | MaxVisibleLines | int | Allows control over how many lines of text are displayed. |
 | MaxVisibleWords | int | Allows to control how many words are visible from the input. |

@@ -2,7 +2,7 @@
 title: SemaphoreLocker
 parent: Types
 grand_parent: API
-nav_order: 84
+nav_order: 92
 ---
 
 # SemaphoreLocker

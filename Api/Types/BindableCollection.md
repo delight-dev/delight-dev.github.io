@@ -2,7 +2,7 @@
 title: BindableCollection
 parent: Types
 grand_parent: API
-nav_order: 14
+nav_order: 17
 ---
 
 # BindableCollection
