@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 The group is used to spacially arrange child views next to each other either horizontally or vertically based on the Orientation property.
 
+{% capture GroupExamples %}{% include Examples/Views/GroupExamples.md %}{% endcapture %}
+{{ GroupExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |
