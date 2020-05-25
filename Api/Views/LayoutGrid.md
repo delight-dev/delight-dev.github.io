@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 View that displays static content in a grid layout (note has the alias Grid in XML).
 
+{% capture LayoutGridExamples %}{% include Examples/Views/LayoutGridExamples.md %}{% endcapture %}
+{{ LayoutGridExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

@@ -13,6 +13,9 @@ Based on [ListItem](ListItem)
 
 Base view for items displayed within the ComboBox view. Has the extra states: Disabled, Highlighted, Pressed and Selected.
 
+{% capture ComboBoxListItemExamples %}{% include Examples/Views/ComboBoxListItemExamples.md %}{% endcapture %}
+{{ ComboBoxListItemExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |
