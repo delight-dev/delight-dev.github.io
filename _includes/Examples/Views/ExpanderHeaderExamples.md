@@ -1,6 +1,6 @@
 ## Examples
 
-Expander with custom header:
+[Expander](Expander) with custom header:
 
 ```xml
 <Expander Width="300" Alignment="TopLeft">

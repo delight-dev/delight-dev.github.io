@@ -13,6 +13,9 @@ Based on [UIView](UIView)
 
 Base view for tab content displayed within the TabPanel.
 
+{% capture TabExamples %}{% include Examples/Views/TabExamples.md %}{% endcapture %}
+{{ TabExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

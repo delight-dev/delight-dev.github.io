@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 Base view for items displayed within the List view. Has the extra states: Disabled, Highlighted, Pressed and Selected.
 
+{% capture ListItemExamples %}{% include Examples/Views/ListItemExamples.md %}{% endcapture %}
+{{ ListItemExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

@@ -1,6 +1,6 @@
 ## Examples
 
-ComboBox with static items:
+[ComboBox](ComboBox) with static items:
 
 ```xml
 <ComboBox Id="ComboBox" ItemSelected="ItemSelected" IsDropUp="False">
@@ -17,7 +17,7 @@ ComboBox with static items:
 </ComboBox>
 ```
 
-ComboBox with dynamic items:
+[ComboBox](ComboBox) with dynamic items:
 
 ```xml
 <ComboBox Items="{player in @Players}" ItemSelected="ItemSelected">

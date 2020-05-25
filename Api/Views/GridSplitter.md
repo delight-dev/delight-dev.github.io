@@ -13,6 +13,9 @@ Based on [UIView](UIView)
 
 Allows for resizing of columns and rows in the Grid view.
 
+{% capture GridSplitterExamples %}{% include Examples/Views/GridSplitterExamples.md %}{% endcapture %}
+{{ GridSplitterExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

@@ -1,6 +1,6 @@
 ## Examples
 
-Static list:
+Static [List](List):
 
 ```xml
 <List BackgroundColor="White">
@@ -20,7 +20,7 @@ Static list:
 </List>  
 ```
 
-Dynamic list:
+Dynamic [List](List):
 
 ```xml
 <List Items="{fruit in @Fruits}" BackgroundColor="White">

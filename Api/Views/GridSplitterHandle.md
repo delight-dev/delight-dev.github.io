@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 Handle used to resize a rows or column in the Grid view. Created and managed by the GridSplitter view.
 
+{% capture GridSplitterHandleExamples %}{% include Examples/Views/GridSplitterHandleExamples.md %}{% endcapture %}
+{{ GridSplitterHandleExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

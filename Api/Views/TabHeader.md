@@ -13,6 +13,9 @@ Based on [Button](Button)
 
 Base view for tab headers displayed by the TabPanel.
 
+{% capture TabHeaderExamples %}{% include Examples/Views/TabHeaderExamples.md %}{% endcapture %}
+{{ TabHeaderExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |
