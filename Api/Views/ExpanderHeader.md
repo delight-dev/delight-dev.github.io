@@ -13,6 +13,9 @@ Based on [UIView](UIView)
 
 Defines the header of an expander.
 
+{% capture ExpanderHeaderExamples %}{% include Examples/Views/ExpanderHeaderExamples.md %}{% endcapture %}
+{{ ExpanderHeaderExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

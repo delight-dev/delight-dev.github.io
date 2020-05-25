@@ -23,10 +23,10 @@ Static list:
 Dynamic list:
 
 ```xml
-<List Items="{weapon in @Weapons}" BackgroundColor="White">
+<List Items="{fruit in @Fruits}" BackgroundColor="White">
   <ListItem Width="150">
-    <Image Sprite="{weapon.Icon}" Alignment="Left" Offset="10,0,0,0" />
-    <Label Text="{weapon.Name}" AutoSize="True" Alignment="Left" 
+    <Image Sprite="{fruit.Icon}" Alignment="Left" Offset="10,0,0,0" />
+    <Label Text="{fruit.Name}" AutoSize="True" Alignment="Left" 
            Margin="40,0,0,0" />
   </ListItem>
 </List>

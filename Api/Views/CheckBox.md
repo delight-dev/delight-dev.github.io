@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 A check box view consisting of a box that can be ticked and a text label.
 
+{% capture CheckBoxExamples %}{% include Examples/Views/CheckBoxExamples.md %}{% endcapture %}
+{{ CheckBoxExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

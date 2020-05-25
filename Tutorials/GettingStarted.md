@@ -80,7 +80,7 @@ Different views have different properties but most views are based on the `UIVie
 | BackgroundColor     | Background color of the view. Color values can be specified by name (Red, Blue, Coral, etc), hexcode (#aarrggbb or #rrggbb) or rgb/rgba value ("1.0,0.0,0.5" or "1,1,1,0.5"). Undefined by default. |
 | BackgroundSprite    | The background sprite of the view. The value is the name of the sprite asset file without extension, e.g. "mysprite". |
 
-You can also add your own custom dependency properties to your view which we'll go over later in this tutorial.
+You can also add your own custom dependency properties to your view.
 
 
 

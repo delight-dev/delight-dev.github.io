@@ -13,6 +13,9 @@ Based on [Frame](Frame)
 
 Defines the content of an expander.
 
+{% capture ExpanderContentExamples %}{% include Examples/Views/ExpanderContentExamples.md %}{% endcapture %}
+{{ ExpanderContentExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

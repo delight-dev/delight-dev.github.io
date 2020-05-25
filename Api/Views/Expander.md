@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 Expandable view with a header and content. When header is clicked the view expands to show content or collapses to hide it.
 
+{% capture ExpanderExamples %}{% include Examples/Views/ExpanderExamples.md %}{% endcapture %}
+{{ ExpanderExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

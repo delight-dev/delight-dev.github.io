@@ -13,6 +13,9 @@ Based on [UIImageView](UIImageView)
 
 View that resizes itself to its content by default.
 
+{% capture FrameExamples %}{% include Examples/Views/FrameExamples.md %}{% endcapture %}
+{{ FrameExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |

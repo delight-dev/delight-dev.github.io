@@ -13,6 +13,9 @@ Based on [UIView](UIView)
 
 Presents a static or dynamic list of items in a drop-down.
 
+{% capture ComboBoxExamples %}{% include Examples/Views/ComboBoxExamples.md %}{% endcapture %}
+{{ ComboBoxExamples | markdownify }}
+
 ## Dependency Properties
 
 | Name | Type | Description |
