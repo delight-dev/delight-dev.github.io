@@ -17,7 +17,8 @@ Expander with custom header:
   <ExpanderHeader Size="300,20">
     <Image Sprite="CheckBox" Expanded-Sprite="CheckBoxPressed" 
            ExpanderHeader.SetExpanderState="True" Alignment="Left" />
-    <Label Text="Expand Me" Alignment="Left" AutoSize="True" Margin="30,0,0,0" />
+    <Label Text="Expand Me" Alignment="Left" AutoSize="True" 
+           Margin="30,0,0,0" />
   </ExpanderHeader>
   
   <ExpanderContent Size="300,200" BackgroundColor="Blue">

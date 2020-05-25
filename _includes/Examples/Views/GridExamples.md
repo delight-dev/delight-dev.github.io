@@ -63,10 +63,10 @@ You can also use control which rows/columns should be split, the extent of the s
 ```xml
 <GridSplitter Thickness="5" SplitMode="Rows" Grid.Cell="0,1"
               SplitterColor="Black"/>
-<GridSplitter Thickness="5" SplitMode="Columns" Grid.Cell="0,0" Grid.CellSpan="1,2"
+<GridSplitter Thickness="5" SplitMode="Columns" Grid.Cell="1,0" Grid.CellSpan="1,2"
               SplitterColor="Green"/>
 ```
 
-The first gridsplitter splits all rows but the splitter handle starts from the second column.  The second gridsplitter splits the first two columns but the handle only extends one row. 
+The first gridsplitter takes the area starting from the begining of first row, second column (0,1) and spans the rest of the grid, and splits all rows within. The second splitter takes the area r handle starts from the second column.  The second gridsplitter splits the first two columns but the handle only extends one row. 
 
 ![](grid-splitters.png)
