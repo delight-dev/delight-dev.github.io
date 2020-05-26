@@ -8,6 +8,8 @@ kramdown:
 
 # Aux links for the upper right navigation
 aux_links:
+    "Asset Store":
+      - "https://assetstore.unity.com/packages/slug/150494"
     "GitHub":
       - "//github.com/delight-dev/Delight"
     "Chat":
