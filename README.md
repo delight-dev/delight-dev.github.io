@@ -4,7 +4,7 @@ nav_exclude: true
 
 # Delight Website
 
-Contains API docs, tutorials, extras and news for the Delight framework. 
+Contains API docs, tutorials, extras and news for the [Delight framework](https://github.com/delight-dev/Delight). 
 
 Delight is an open source component-oriented framework for Unity, mainly centered around creating user-interface components that can easily be extended, combined and shared using a text based declarative design language (similar to HTML). 
 
