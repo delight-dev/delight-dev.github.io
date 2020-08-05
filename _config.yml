@@ -14,6 +14,8 @@ aux_links:
       - "//github.com/delight-dev/Delight"
     "Chat":
       - "//gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
+    "Sponsor":
+      - "https://github.com/sponsors/delight-dev"
 
 logo: "/assets/images/logotype-small.png"
 
