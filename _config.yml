@@ -19,4 +19,7 @@ aux_links:
 
 logo: "/assets/images/logotype-small.png"
 
+plugins:
+  - jekyll-seo-tag
+
 ga_tracking: UA-144203074-1
