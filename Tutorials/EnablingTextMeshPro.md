@@ -2,7 +2,7 @@
 title: Enabling TextMeshPro
 parent: Tutorials
 has_children: false
-nav_order: 100
+nav_order: 11
 ---
 # Enabling TextMeshPro
 
