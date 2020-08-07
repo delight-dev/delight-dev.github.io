@@ -48,8 +48,3 @@ Congratulations, you've created your first scene in Delight :).
 
 Check out the [Tutorials](Tutorials/Tutorials) and get started creating some awesome UI components.
 
-
-
-## News
-
-{% include recent-posts.html %}
