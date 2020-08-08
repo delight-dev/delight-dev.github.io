@@ -2,6 +2,7 @@
 layout: post
 title: "Delight LIVE editor sneak peek :)"
 author: <a href="https://github.com/patrik-u">Patrik</a>
+nav_exclude: true
 ---
 
 Short video demonstrating the LIVE editor by creating a High Score view.
