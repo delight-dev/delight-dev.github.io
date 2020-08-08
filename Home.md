@@ -1,6 +1,7 @@
 ---
 title: "Home"
 permalink: /index.html
+nav_order: 1
 ---
 
 # Component-oriented UI framework for Unity
