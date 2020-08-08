@@ -18,7 +18,7 @@ This tutorial goes a bit more in-depth what views are. After going through this 
 ## Anatomy of a View
 
 
-We'll start by creating a simple view and break down its parts to see how it ticks. If you don't know how to create a view and display it in a scene, check out the initial steps in [Creating a Main Menu](MainMenu) tutorial.
+We'll start by creating a simple view and break down its parts to see how it ticks. If you don't know how to create a view and display it in a scene, check out the initial steps in  [Getting Started](GettingStarted) tutorial.
 
 {: .xml-file }
 
