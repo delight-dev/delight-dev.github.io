@@ -7,13 +7,13 @@ kramdown:
 
 # Aux links for the upper right navigation
 aux_links:
-    'Asset Store <i style="font-size:2.0em;" class="fab fa-unity"></i>':
+    'Asset Store&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-unity"></i>':
       - "https://assetstore.unity.com/packages/slug/150494"
-    'GitHub <i style="font-size:2.0em;" class="fab fa-github"></i>':
+    'GitHub&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-github"></i>':
       - "//github.com/delight-dev/Delight"
-    'Chat <i style="font-size:2.0em;" class="fab fa-gitter"></i>':
+    'Chat&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-gitter"></i>':
       - "//gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
-    'Sponsor <i style="font-size:2.0em;" class="fas fa-heart"></i>':
+    'Sponsor&nbsp;&nbsp; <i style="font-size:2.0em;" class="fas fa-heart"></i>':
       - "https://github.com/sponsors/delight-dev"
 
 logo: "/assets/images/logotype-small.png"
