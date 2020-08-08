@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Delight 2020.1.0 released"
+author: <a href="https://github.com/patrik-u">Patrik</a>
+---
+
+Delight 2020.1.0 is released. Available on the [Asset Store](https://assetstore.unity.com/packages/slug/150494) and [GitHub](https://github.com/delight-dev/Delight). Main highlights:
+
+- **LIVE editor**
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/8kbGgEk_V4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- **Paged lists**
+  ![](https://delight-dev.github.io/Images/PagedListNavigation.gif)
+
+- **State Animations**
+
+  Create animations that are triggered when view changes state.
+
+  ![](https://delight-dev.github.io/Images/StateAnimations.gif)
+
+- **Expander view**
+
+  ![](https://delight-dev.github.io/Images/ExpanderDemo.gif)
+
+
+
