@@ -5,7 +5,7 @@ title: "Delight"
 description: Delight is an open source component-oriented framework for Unity, mainly centered around creating user-interface components that can easily be extended, combined and shared using a text based declarative design language (similar to HTML).
 kramdown:
   parse_block_html: true
-
+ 
 # Aux links for the upper right navigation
 aux_links:
     'Asset Store&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-unity"></i>':
