@@ -232,7 +232,7 @@ This binds to the `Greeting1` label in the localization dictionary.
 | Simple Binding                       | `<CheckBox IsChecked="{MyBoolValue}" />`                     |
 | Binding Path                         | `<Label Text="{Player.Name}" />`                             |
 | Model Binding                        | `<Label Text="{@MyModelValue}" />`                           |
-| Multi Binding /<br>Transform Binding | `<Label Text="$ Sum({Number1}, {Number2})" />`<br>`<Label Text="$ Math.Pow({Number1}, {Number2}).ToString()" />` |
+| Multi Binding /<br>Transform Binding | `<Label Text="$ Sum({Number1}, {Number2})" />`<br>`<Label Text="$ Math.Pow({Num1}, {Num2}).ToString()" />` |
 | Format String                        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
 | Collection Binding                   | `<List Items="{highscore in @Highscores}">`                  |
 | Item Index                           | `<Label Text="{highscore.Index}" />`<br>`<Label Text="{highscore.ZeroIndex}" />` |
