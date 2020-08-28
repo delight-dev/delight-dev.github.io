@@ -127,7 +127,7 @@ namespace Delight
 }
 ```
 
-If either `Input1.Text` or `Input2.Text` changes value the values are transformed and propagated to the label text using the `Sum()` method. See the guide on [embedding C# code into your view XML](EmbeddingCSharp) for more information.
+If either `Input1.Text` or `Input2.Text` changes value the values are transformed and propagated to the label text using the `Sum()` method. See the guide on [embedding C# code into your view XML](EmbeddedCSharp) for more information.
 
 
 
