@@ -164,6 +164,8 @@ public partial class MyView
 }
 ```
 
+
+
 ### Generic Dependency Properties
 
 Dependency properties with generic types can be declared using the following syntax:
@@ -261,6 +263,7 @@ public override void OnChanged(string property)
 ```
 
 
+
 ## Action Handlers
 
 If you want to respond to actions you can attach action handlers to your views. 
@@ -325,6 +328,19 @@ public void MyClickHandler(Fruit fruit)
     // do something with the fruit
 }
 ```
+
+
+
+### Embedded Action Handlers
+
+Rather than declaring the action handlers in the code-behind you can specify them directly in the XML file using [embedded code expressions](EmbeddedCSharp) declared with `$` prefix:
+
+```xml
+<Button Text="Main Menu" Click="$ ViewSwitcher.SwitchTo(MainMenu)" />
+<Button Text="Trigger action" Click="$ SomeAction.Invoke()" />
+```
+
+Useful for simple actions. 
 
 
 

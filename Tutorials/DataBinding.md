@@ -84,9 +84,9 @@ namespace Delight
 
 
 
-## Multi Binding
+## Multi Binding / Transform Binding
 
-You can bind multiple values to a single target property using a transformation method specified using the `$` symbol:
+You can bind one or more values to a single target property and transform the values using embedded code expressions. You create an embedded expression using the `$` prefix:
 
 {: .xml-file }
 
@@ -98,7 +98,7 @@ MyView.xml
   <Group>
     <InputField Id="Input1" />
     <InputField Id="Input2" />
-    <Label Text="$Sum({Input1.Text}, {Input2.Text})" />   
+    <Label Text="$ Sum({Input1.Text}, {Input2.Text})" />   
   </Group>
    
 </MyView>
@@ -127,7 +127,7 @@ namespace Delight
 }
 ```
 
-If either `Input1.Text` or `Input2.Text` changes value the values are transformed and propagated to the label text using the `Sum()` method.
+If either `Input1.Text` or `Input2.Text` changes value the values are transformed and propagated to the label text using the `Sum()` method. See the guide on [embedding C# code into your view XML](EmbeddingCSharp) for more information.
 
 
 
@@ -227,15 +227,15 @@ This binds to the `Greeting1` label in the localization dictionary.
 
 ## Binding Cheat Sheet
 
-| Binding              | Example Syntax                                               |
-| -------------------- | ------------------------------------------------------------ |
-| Simple Binding       | `<CheckBox IsChecked="{MyBoolValue}" />`                     |
-| Binding Path         | `<Label Text="{Player.Name}" />`                             |
-| Model Binding        | `<Label Text="{@MyModelValue}" />`                           |
-| Multi Binding        | `<Label Text="$Sum({Number1}, {Number2})" />`                |
-| Format String        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
-| Collection Binding   | `<List Items="{highscore in @Highscores}">`                  |
-| Item Index           | `<Label Text="{highscore.Index}" />`<br>`<Label Text="{highscore.ZeroIndex}" />` |
-| Negated Binding      | `<CheckBox IsChecked="{!MyBoolValue}" />`                    |
-| Localization Binding | `<Label Text="{@Loc.Greeting1}" />`                          |
+| Binding                              | Example Syntax                                               |
+| ------------------------------------ | ------------------------------------------------------------ |
+| Simple Binding                       | `<CheckBox IsChecked="{MyBoolValue}" />`                     |
+| Binding Path                         | `<Label Text="{Player.Name}" />`                             |
+| Model Binding                        | `<Label Text="{@MyModelValue}" />`                           |
+| Multi Binding /<br>Transform Binding | `<Label Text="$ Sum({Number1}, {Number2})" />`<br>`<Label Text="$ Math.Pow({Number1}, {Number2}).ToString()" />` |
+| Format String                        | `<Label Text="Hello {Firstname} {Lastname}!" />`<br>`<Label Text="{Progress:0.0} %" />` |
+| Collection Binding                   | `<List Items="{highscore in @Highscores}">`                  |
+| Item Index                           | `<Label Text="{highscore.Index}" />`<br>`<Label Text="{highscore.ZeroIndex}" />` |
+| Negated Binding                      | `<CheckBox IsChecked="{!MyBoolValue}" />`                    |
+| Localization Binding                 | `<Label Text="{@Loc.Greeting1}" />`                          |
 
