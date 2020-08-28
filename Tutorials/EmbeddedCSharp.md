@@ -1,5 +1,5 @@
 ---
-title: Embedded C# Expressions in XML
+title: Embedded C# in XML
 parent: Tutorials
 has_children: false
 nav_order: 12
@@ -70,7 +70,7 @@ You can also use the word OR instead of `||`  although it's not necessary as the
 Multi-line expressions can be declared by inserting brackets into the expression. Start and end brackets are defined using two brackets:
 
 ```xml
-<Label Text="$ {{ string test = 'hello'; return test; }}" /> 
+<Label Text="$ {{{ string test = 'hello'; return test; }}}" /> 
 ```
 
 Note that you need to use a return statement to return the result of the evaluation.
