@@ -1,5 +1,5 @@
 ---
-title: EmbeddedCSharp
+title: Embedded C# Expressions in XML
 parent: Tutorials
 has_children: false
 nav_order: 12
@@ -33,7 +33,7 @@ The above example contains two embedded expressions:
 
    `Text="$ Math.Pow({ClickCount}, 2).ToString()"`
 
-   The above expression creates a [transform binding](DataBinding#MultiBinding) that will update whenever ClickCount changes. 
+   The above expression creates a [transform binding](DataBinding#multi-binding--transform-binding) that will update whenever ClickCount changes. 
 
 Note that in the expression you have access to all the local properties of the parent view as well as any other code in your project. 
 
