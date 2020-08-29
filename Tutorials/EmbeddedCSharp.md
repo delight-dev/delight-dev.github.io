@@ -1,5 +1,5 @@
 ---
-title: Embedded C# in XML
+title: Embedding C# in XML
 parent: Tutorials
 has_children: false
 nav_order: 12
@@ -105,6 +105,21 @@ Note that you need to use a return statement to return the result of the evaluat
        <Button Text="Delete" Click="$ Models.Fruits.Remove(fruit)" />
      </Group>
    </List>
+   ```
+
+4. Using view-switcher:
+
+   ```xml
+   <MyView>
+     <ViewSwitcher Id="MySwitcher">
+       <Region Id="ViewA">
+         <Button Text="Switch to B" Click="$ MySwitcher.SwitchTo(ViewB)" />
+       </Region>
+       <Region Id="ViewB">
+         <Button Text="Switch to A" Click="$ MySwitcher.SwitchTo(ViewA)" />
+       </Region>
+     </ViewSwitcher>
+   </MyView>
    ```
 
    
