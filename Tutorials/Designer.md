@@ -21,7 +21,7 @@ The Delight Designer allows you to create and edit view XML while the editor is 
 
 The designer requires the TextMeshPro module to be activated in the project:
 
-1. Download and import the latest TextMeshPro package into your project. 
+1. Import the latest TextMeshPro package into your project. You can do this through the package manager.
 
 2. Open Content/Config.txt and add the TextMeshPro module:
 

@@ -6,7 +6,7 @@ nav_order: 11
 ---
 # Enabling TextMeshPro
 
-1. Download and import the latest TextMeshPro package into your project. 
+1. Import the latest TextMeshPro package into your project. You can do this through the package manager.
 
 2. Open Content/Config.txt and add the TextMeshPro module:
 
