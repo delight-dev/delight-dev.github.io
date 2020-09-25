@@ -76,3 +76,9 @@ Now you can switch to the view you want to edit and the display region will stay
 The editor is going to be optimized, but right now it can get slow when you're editing complicated views. If it gets too slow you can disable the auto-parser by unchecking the checkbox in the lower-right corner: ![](designer-autoparse.png)
 
 After doing so the view will only be parsed when you click on the Parse button or press `F5`. 
+
+
+
+## Renaming Views
+
+The designer makes it easier to change the name of views. Simply rename the view in the XML editor and save. The designer will automatically rename the view files, the code-behind and all the references to the view in other XML. 
