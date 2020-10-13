@@ -34,6 +34,9 @@ The designer requires the TextMeshPro module to be activated in the project:
      TextMeshPro 
    ```
 
+   If you get XmlParseErrors at this point, it's because the Designer needs to reparsed: 
+
+3. Press "Rebuild All" on the Delight Window (accessible through the menu `Window->Delight`).
 
 
 Then you can open the Delight Designer through the button *Open Designer* in the Delight window or by manually opening and running the `Delight\Content\Scenes\DelightDesigner.unity` scene. 
@@ -81,4 +84,4 @@ After doing so the view will only be parsed when you click on the Parse button o
 
 ## Renaming Views
 
-The designer makes it easier to change the name of views. Simply rename the view in the XML editor and save. The designer will automatically rename the view files, the code-behind and all the references to the view in other XML. 
+The designer makes it easier to change the name of views. Simply rename the view in the XML editor (rename the start and end tag of the root element) and save. The designer will automatically rename the view files, the code-behind and all the references to the view in other XML. 
