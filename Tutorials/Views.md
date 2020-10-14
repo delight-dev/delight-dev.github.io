@@ -197,7 +197,7 @@ public partial class MyView
 }
 ```
 
-The most common way to add custom load/initialization logic is to override the `AfterLoad()` method. This method is called after the view and its children has been loaded. The following methods can be overridden to do custom logic during the load/initialization of the view. They are shown in the order they are called:
+The most common way to add custom load/initialization logic is to override the `AfterLoad()` method. This method is called after the view and its children has been loaded. Note that it's very important to call `base.AfterLoad();` because the base classes performs important logic that needs to be executed. The following methods can be overridden to do custom logic during the load/initialization of the view. They are shown in the order they are called:
 
 | Method                | Description                                                  |
 | --------------------- | ------------------------------------------------------------ |
@@ -208,6 +208,12 @@ The most common way to add custom load/initialization logic is to override the `
 | AfterLoad()           | Called after the view and its children has been loaded.      |
 | BeforeUnload()        | Called just before the view and its children are unloaded.   |
 | AfterUnload()         | Called after the view and its children has been unloaded.    |
+
+Some more pointers to help you decide where to put your logic: 
+
+1. If you need access to the view's GameObject it's available first in `BeforeLoad()` and this is generally where the logic to add unity components to the GameObject resides.
+2. If you want standard constructor logic (initializing private fields, adding event handlers, registering message recipients, etc) - `AfterInitialize()` is the place to put it. 
+3. When a view is unloaded, its GameObject is destroyed, components removed and all dependency properties are reset upon load. However, you might have created private fields that you want to clean up, or e.g. messenger recipients to unregister - then `AfterUnload()`  is the place to do it.
 
 
 
