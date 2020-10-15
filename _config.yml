@@ -12,8 +12,8 @@ aux_links:
       - "https://assetstore.unity.com/packages/slug/150494"
     'GitHub&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-github"></i>':
       - "//github.com/delight-dev/Delight"
-    'Chat&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-gitter"></i>':
-      - "//gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
+    'Chat&nbsp;&nbsp; <i style="font-size:2.0em;" class="fab fa-discord"></i>':
+      - "https://discord.gg/9BVyVsB"
     'Sponsor&nbsp;&nbsp; <i style="font-size:2.0em;" class="fas fa-heart"></i>':
       - "https://github.com/sponsors/delight-dev"
 
