@@ -287,4 +287,4 @@ There you have it, a simple main menu.
 
 I recommend playing around in the [delight designer](Designer) to explore the different example views and edit them to get real-time feedback as you make changes in the XML. To enable the delight designer you need to [Enable TextMeshPro](EnablingTextMeshPro), and then press "Rebuild All" in the delight window, to update the designer, and then you can open the Delight Designer scene and play it to start the designer. See the [Designer](Designer) tutorial for more information on how to use the designer.
 
-Good luck and if you have any questions be sure to check the rest of the tutorials and pop into the Delight [chat room](https://gitter.im/DelightChat/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link) for support.
+Good luck and if you have any questions be sure to check the rest of the tutorials and pop into the Delight [chat room](https://discord.gg/9BVyVsB) for support.
