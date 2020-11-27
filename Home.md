@@ -41,7 +41,7 @@ Delight is an open source component-oriented framework for Unity, mainly centere
 
 
 
-3. Open the Unity scene `NewScene.unity` that has been created in the same folder and run it.
+3. Open the Unity scene `NewScene.unity` that has been created in the same folder and run the scene.
 
 Congratulations, you've created your first scene in Delight :). 
 

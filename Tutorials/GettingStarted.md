@@ -41,7 +41,7 @@ Note you can also manually create new views by choosing `Create -> Delight View`
 You can now open `MainMenuScene.unity` which you can run throughout the tutorial to see the main menu taking shape.
 
 {: .info-box }
-All content files, like the XML files MainMenuScene.xml and MainMenu.xml are automatically processed by the framework as they are changed (if the editor is open). To manually tell the framework to process all content, press the "Reload All" button in the Delight window (Window -> Delight). Also note that files with the "_g" postfix are generated (and overwritten) when the XML files are processed.
+All content files, like the XML files MainMenuScene.xml and MainMenu.xml are automatically processed by the framework as they are changed (if the editor is open). To manually tell the framework to process all content, press the "Rebuild All" button in the Delight window (Window -> Delight). Also note that files with the "_g" postfix are generated (and overwritten) when the XML files are processed.
 
 
 
