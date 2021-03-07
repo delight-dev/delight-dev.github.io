@@ -145,7 +145,7 @@ In XML values like Width can be specified like `100%` and Offset like `0,0,0,0` 
    ```
 
 
-5. Using navigator:
+5. Using navigator: 
 
    ```xml
    <MyView>
