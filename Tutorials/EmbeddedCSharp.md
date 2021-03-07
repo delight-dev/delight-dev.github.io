@@ -49,19 +49,29 @@ Strings in expressions are specified using single quotes:
 
 
 
-## AND operator and the '&' symbol
+## Shorthands for AND, OR, etc.
 
-XML treats `&` as a special character, so you need to use `&amp;` to insert the symbol. Since the conditional logical AND operator (&&) is so common the framework translates the word AND to &&:
+XML treats `&`  and `<` and `>` as a special characters, which need to be escaped: `&amp;`, `&lt;` and `&gt;`. Since the conditional logical AND-operator `&&` and comparison operators like `<` is so common in C# the framework provides shorthands, like `AND` that is translated to `&&`,  `GT` (greater than) for `>`, and `LT` for `<`.
 
 ```xml
-<Label Text="Text" IsActive="$ {ClickCount} > 0 AND {ClickCount} < 10" /> 
+<Label Text="Text" IsActive="$ {ClickCount} GT 0 AND {ClickCount} LT 10" /> 
 ```
 
-Which translates to the C# code:  
+The above XML translates to the C# code:  
 
 `IsActive = ClickCount > 0 && ClickCount < 10`
 
-You can also use the word OR instead of `||`  although it's not necessary as the symbols are allowed in XML. 
+You can also use the word OR instead of `||`  although it's not necessary as the symbols are allowed in XML. It's also not necessary to replace the `>` symbol in attribute values, but shorthands are there for consistency.
+
+| Shorthand | Equivalent C# | Necessary |
+| --------- | ------------- | --------- |
+| LT        | <             | Yes       |
+| LTE       | <=            | Yes       |
+| GT        | >             | No        |
+| GTE       | >=            | No        |
+| EQ        | ==            | No        |
+| AND       | &&            | Yes       |
+| OR        | \|\|          | No        |
 
 
 
@@ -79,12 +89,24 @@ Note that you need to use a return statement to return the result of the evaluat
 
 {% endraw %}
 
+
+
+## XML values in expressions
+
+In XML values like Width can be specified like `100%` and Offset like `0,0,0,0` this is a convenient way to specify values and to do it in C# expressions you can use the notation `XML(<xml value>)`, e.g:
+
+```xml
+<Region Width="$ {@IsPortrait} ? XML(100%) : XML(50%)">
+```
+
+
+
 ## Common scenarios
 
 1. Switching views on/off based on conditions:
 
    ```xml
-   <Region IsActive="$ {MyEnum} == MyEnum.Active"> 
+   <Region IsActive="$ {MyEnum} == XML(Active)"> 
    </Region>
    ```
 
@@ -119,6 +141,22 @@ Note that you need to use a return statement to return the result of the evaluat
          <Button Text="Switch to A" Click="$ MySwitcher.SwitchTo(ViewA)" />
        </Region>
      </ViewSwitcher>
+   </MyView>
+   ```
+
+
+5. Using navigator:
+
+   ```xml
+   <MyView>
+     <Navigator>
+       <Region Id="ViewA" Navigator.Path="/">
+         <Button Text="Open B" Click="$ Navigator.Open('/test')" />
+       </Region>
+       <Region Id="ViewB" Navigator.Path="/test">
+         <Button Text="Open A" Click="$ Navigator.Open('/')" />
+       </Region>
+     </Navigator>
    </MyView>
    ```
 
